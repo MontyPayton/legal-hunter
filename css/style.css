@@ -1,0 +1,164 @@
+:root {
+    --color-text: #DB0000;
+    --color-text-w: #fff;
+    --bg-red: #CF3C3C;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 155px;
+}
+
+.color-red {
+    font-weight: 700;
+    color: var(--color-text);
+    margin-left: 45px;
+}
+
+.logo {
+    margin: 0 15px;
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-text)
+}
+
+.color-black {
+    color: #000;
+
+}
+
+.form {
+    display: flex;
+    margin-right: 152px;
+}
+
+.searh-icon {
+    width: 16px;
+    height: 16px;
+    background: url(../img/searh-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 40px;
+
+}
+
+.registration {
+    margin-left: 43px;
+}
+
+.item-form {
+    height: 434px;
+    background-color: aliceblue;
+    text-align: center;
+    background-image: url("../img/bg-head.png")
+}
+
+.item-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-form h1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: var(--color-text-w);
+    padding-top: 136px;
+    margin-bottom: 61px;
+}
+
+.item-form input {
+    width: 729px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    border-radius: 7px 0px 0px 7px;
+    padding-left: 20px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+::placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+::-ms-input-placeholder {
+    color: #000;
+}
+
+.item-form button {
+    width: 222px;
+    height: 43.83px;
+    background: var(--bg-red);
+    border-radius: 0px 6px 6px 0px;
+    border: none;
+    margin-left: 2px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--color-text-w);
+
+}

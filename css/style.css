@@ -2,7 +2,7 @@
     --color-text: #DB0000;
     --color-text-w: #fff;
     --bg-red: #CF3C3C;
-    --bg-item: #FAFAFA;
+    --bg-item: #F5F5F5;
     ;
 }
 
@@ -42,11 +42,12 @@ body {
 }
 
 .container {
-    max-width: 1500px;
     margin: 0 auto;
 }
 
 nav {
+    width: 1195px;
+    margin: 0 auto;
     height: 70px;
     display: flex;
     align-items: center;
@@ -57,7 +58,6 @@ nav {
     display: flex;
     font-size: 16px;
     line-height: 18px;
-    padding-left: 155px;
 }
 
 .color-red {
@@ -67,7 +67,7 @@ nav {
 }
 
 .logo {
-    margin: 0 15px;
+    
     display: flex;
     font-family: 'Montserrat';
     font-style: normal;
@@ -84,7 +84,6 @@ nav {
 
 .form {
     display: flex;
-    margin-right: 152px;
 }
 
 .searh-icon {
@@ -302,4 +301,34 @@ hr {
     background:#DB0000;
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+.a-foot{
+    margin-bottom: 128px;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 953px;
+
+}
+.footer-logo{
+   display: flex;
+justify-content: space-between; 
+flex-wrap: wrap;
+}
+
+
+footer{
+    max-width: 1195px;
+    margin: 0 auto;
+    height: 206px;
+    background-color:var(--color-text-w);
+}
+.footer-item-centr{
+    margin-left: 226px;
+}
+.footer-item-end{
+    margin-left: 126px;
 }

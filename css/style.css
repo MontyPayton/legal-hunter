@@ -311,14 +311,19 @@ hr {
     display: flex;
     justify-content: space-between;
     max-width: 953px;
-
+    padding-top: 42px;
+    padding-bottom: 46px;
 }
 .footer-logo{
-   display: flex;
-justify-content: space-between; 
-flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
 }
-
+.footer-logo p{
+    margin-top: 75px;
+}
 
 footer{
     max-width: 1195px;
@@ -327,8 +332,19 @@ footer{
     background-color:var(--color-text-w);
 }
 .footer-item-centr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 226px;
+    font-size: 14px;
+line-height: 16px;
 }
+
 .footer-item-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 126px;
+    font-size: 14px;
+line-height: 16px;
 }

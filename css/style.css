@@ -31,6 +31,9 @@ h6 {
 a {
     text-decoration: none;
 }
+button{
+    cursor: pointer;
+}
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
@@ -80,6 +83,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     color: var(--color-text);
+    cursor: pointer;
 
 }
 
@@ -101,9 +105,12 @@ body {
     margin-right: 40px;
 
 }
-
+.input{
+    cursor: pointer;
+}
 .registration {
     margin-left: 43px;
+    cursor: pointer;
 }
 
 .item-form {
@@ -354,8 +361,11 @@ footer {
     margin-left: 226px;
     font-size: 14px;
     line-height: 16px;
+    
 }
-
+.footer-item-centr p,.footer-item-end p{
+    cursor: pointer;
+}
 .footer-item-end {
     display: flex;
     flex-direction: column;
@@ -403,7 +413,8 @@ footer {
     border-radius: 50%;
     cursor: pointer;
 }
-.colse-popup img{
+
+.colse-popup img {
     position: absolute;
     top: 30%;
     right: 25%;
@@ -412,7 +423,7 @@ footer {
 .popup-wrapper {
     position: relative;
     width: 466px;
-    height: 462px;
+    /* height: 462px; */
     background: #fff;
     border-radius: 4px;
     margin: 0 auto;
@@ -425,7 +436,7 @@ footer {
     padding: 49px 0 42px;
 }
 
-.popup-form input {
+.popup_inp {
     display: block;
     width: 404px;
     height: 43px;
@@ -452,13 +463,60 @@ footer {
     border-radius: 9px;
     border: 0;
     margin-top: 52px;
-    margin-bottom: 22px;
    
+
 }
-.pop-form a{
+.popup-form div{
+    padding-bottom: 37px;
+    padding-top: 24px;
+}
+.pop-form a {
     font-size: 16px;
-line-height: 18px;
-color: #545454;
+    line-height: 18px;
+    color: #545454;
+}
+.popup-input{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    margin-right: 15px;
+}
+.popup-input-wrapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
 /* ______________________________/окно__________________________ */
+/* __________________________окно поиска_____________________ */
+/* .wrap {
+    width: 0px;
+    border-radius: 7px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+}
+.input{
+    border: 0;
+    background: transparent;
+    width: 0%;
+}
+/* .wrap .fas{
+    color: #fff;
+    font-size: 22px;
+} */
+/* .wrap.active{
+    width: 240px;
+    padding-left: 18px;
+    transition: all 0.6s ease;
+}
+.input.active{
+    width: 98%;
+    padding-left: 6px;
+    transition: all 0.4s 0.7s ease;
+}
+input::placeholder {
+
+    color: #fff;
+
+} */ 
+

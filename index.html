@@ -29,19 +29,26 @@
                     </a>
 
                 </div>
+                <!-- окно поиска_________________________ -->
+                
+                 <!-- /окно поиска_________________________ -->
                 <div class="form">
-                    <div class="searh-icon"></div>
+                    <!-- <div class="searh-icon"></div> -->
+                    <div class="wrap">
+                    <!-- <input type="text" class="input" placeholder="Поиск"> -->
+                    <div class="fas fa-search searh-icon" aria-hidden="true"></div>
+                </div>
                     <div class="input">Войти</div>
                     <div class="registration">Регистрация</div>
                 </div>
             </nav>
             <!-- ----------------------всплывающее окно_______________________ -->
-            <div class="popup-iner">
+            <div class="popup-iner" id="popup-min">
                 <div class="popup-wrapper">
                     <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
                     <div class="but-block">
                 <button class="popup-button">Я соискатель</button>
-                <button class="popup-button">Я работодатель</button>
+                <button class="popup-button btn-max">Я работодатель</button>
                 </div>
                 <p>Добро пожаловать!</p>
                 <div class="pop-form">
@@ -49,11 +56,45 @@
                         <input class="popup_inp" type="email" placeholder="Ваш E-mail">
                         <input class="popup_inp" type="password" placeholder="Пароль">
                         <button type="submit">Войти</button>
+                          <div>
+                        <a href="#">Восстановление пароля</a>
+                    </div>
                     </form>
-                     <a href="#">Восстановление пароля</a>
+                  
+                     
                 </div>
                 </div>
             </div>
+            <!-- ________________________________/окно___________________________ -->
+            <!-- ----------------------всплывающее окно-большое_______________________ -->
+            <div class="popup-iner" id="popup-max">
+                <div class="popup-wrapper">
+                    <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
+                    <div class="but-block">
+                <button class="popup-button btn-min">Я соискатель</button>
+                <button class="popup-button">Я работодатель</button>
+                </div>
+                <p>Регистрация работодателя</p>
+                <div class="pop-form">
+                    <form class="popup-form" >
+                        <input class="popup_inp" type="email" placeholder="Ваш E-mail">
+                        <input class="popup_inp" type="password" placeholder="Телефон">
+                        <input class="popup_inp" type="email" placeholder="Наименование организации">
+                        <input class="popup_inp" type="password" placeholder="Город">
+                        <input class="popup_inp" type="email" placeholder="Придумайте пароль">
+                        <input class="popup_inp" type="password" placeholder="Повторите пароль">
+                        <button type="submit">Зарегистрироваться</button>
+                        <div class='popup-input-wrapp'>
+                                <input class="popup-input" type="checkbox" name="" id="">согласен с
+                     <a href="#">правилами обработки данных</a>
+                        </div>
+                    </form>
+
+                
+                </div>
+                </div>
+            </div>
+            <!-- ________________________________/окно-большое___________________________ -->
         </header>
     </div>
     <div class="item-form">

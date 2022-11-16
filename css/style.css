@@ -105,6 +105,9 @@ body {
     margin-right: 40px;
 
 }
+.wrap{
+    position: relative;
+}  
 .input{
     cursor: pointer;
 }
@@ -491,8 +494,8 @@ footer {
 .input-head{
  width: 126px;
 position: absolute;
-top: 25px;
-right: 413px;
+top: -2px;
+right: 56px;
 display: none;
 } 
 .input-head-active{

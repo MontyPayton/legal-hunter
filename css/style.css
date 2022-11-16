@@ -381,12 +381,14 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    margin-top: 165px;
+    padding-top:165px;
     display: none;
 }
 
 .popup-iner.active {
     display: block;
+    background: rgb(127 127 127 / 77%);
+    
 }
 
 .popup-button {
@@ -486,37 +488,14 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
-
-/* ______________________________/окно__________________________ */
-/* __________________________окно поиска_____________________ */
-/* .wrap {
-    width: 0px;
-    border-radius: 7px;
-    box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+.input-head{
+ width: 126px;
+position: absolute;
+top: 25px;
+right: 413px;
+display: none;
+} 
+.input-head-active{
+    display: block;
 }
-.input{
-    border: 0;
-    background: transparent;
-    width: 0%;
-}
-/* .wrap .fas{
-    color: #fff;
-    font-size: 22px;
-} */
-/* .wrap.active{
-    width: 240px;
-    padding-left: 18px;
-    transition: all 0.6s ease;
-}
-.input.active{
-    width: 98%;
-    padding-left: 6px;
-    transition: all 0.4s 0.7s ease;
-}
-input::placeholder {
-
-    color: #fff;
-
-} */ 
 

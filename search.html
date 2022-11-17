@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,351 +10,303 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>serch</title>
 </head>
+
 <body>
-    <body >
-        <div>
-            <div class="container">
-                <header>
-                    <nav class="nav">
-                        <div class="item">
-                            <div class="color-bl"><a>Соискателям</a></div>
-                            <div class="color-red"><a>Работодателям</a></div>
-                        </div>
-                        <div class="logo">
-                            <a href="#">
-                                <img src="./img/logo.png" alt="">
-                            </a>
-        
-                        </div>
-                        <!-- окно поиска_________________________ -->
-                        
-                         <!-- /окно поиска_________________________ -->
-                        <div class="form">
-                            <!-- <div class="searh-icon"></div> -->
-                            <div class="wrap">
+    <div>
+        <div class="container">
+            <header>
+                <nav class="nav">
+                    <div class="item">
+                        <div class="color-bl mar-bl"><a>Соискателям</a></div>
+                        <div class="color-red"><a>Работодателям</a></div>
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="form">
+                        <div class="wrap">
                             <input type="text" class="input-head" placeholder="Поиск">
-                            <div class= "searh-icon" aria-hidden="true"></div>
+                            <div class="searh-icon" aria-hidden="true"></div>
                         </div>
-                             <div class="input-registration">
-                            <div class="input">Войти</div>
-                            <div class="registration">Регистрация</div>
-                            </div>
-                        </div>
-                    </nav>
-                    <!-- ----------------------всплывающее окно_______________________ -->
-                    <div class="popup-iner" id="popup-min">
-                        <div class="popup-wrapper">
-                            <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
-                            <div class="but-block">
-                        <button class="popup-button">Я соискатель</button>
-                        <button class="popup-button btn-max">Я работодатель</button>
-                        </div>
-                        <p>Добро пожаловать!</p>
-                        <div class="pop-form">
-                            <form class="popup-form" >
-                                <input class="popup_inp" type="email" placeholder="Ваш E-mail">
-                                <input class="popup_inp" type="password" placeholder="Пароль">
-                                <button type="submit">Войти</button>
-                                  <div>
-                                <a href="#">Восстановление пароля</a>
-                            </div>
-                            </form>
-                          
-                             
-                        </div>
-                        </div>
-                    </div>
-                    <!-- ________________________________/окно___________________________ -->
-                    <!-- ----------------------всплывающее окно-большое_______________________ -->
-                    <div class="popup-iner" id="popup-max">
-                        <div class="popup-wrapper">
-                            <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
-                            <div class="but-block">
-                        <button class="popup-button btn-min">Я соискатель</button>
-                        <button class="popup-button">Я работодатель</button>
-                        </div>
-                        <p>Регистрация работодателя</p>
-                        <div class="pop-form">
-                            <form class="popup-form" >
-                                <input class="popup_inp" type="email" placeholder="Ваш E-mail">
-                                <input class="popup_inp" type="text" placeholder="Телефон">
-                                <input class="popup_inp" type="text" placeholder="Наименование организации">
-                                <input class="popup_inp" type="text" placeholder="Город">
-                                <input class="popup_inp" type="password" placeholder="Придумайте пароль">
-                                <input class="popup_inp" type="password" placeholder="Повторите пароль">
-                                <button type="submit">Зарегистрироваться</button>
-                                <div class='popup-input-wrapp'>
-                                        <input class="popup-input" type="checkbox" name="" id="">согласен с
-                             <a href="#">правилами обработки данных</a>
-                                </div>
-                            </form>
-        
+                        <div class="personal-area"> <a href="">Личный кабинет</a> </div>
                         
-                        </div>
-                        </div>
                     </div>
-                    <!-- ________________________________/окно-большое___________________________ -->
-                </header>
-            </div>
-            <div class="item-form">
-                <h1>Поиск сотрудников среди студентов и выпускников МГЮА им. Кутафина</h1>
+                </nav>
+
+            </header>
+        </div>
+        <div class="item-form item-search">
+            <div>
                 <form action="">
                     <input type="text" placeholder="Должность или навыки">
-                    <button type="submit">Поиск сотрудников</button>
+                    <button type="submit">Поиск</button>
                 </form>
+                <div class="item-search-input">
+                    <input type="text" name="" id="" placeholder="Добавить тег">
+                </div>
             </div>
-            <div class="container-item-wrapper">
-                <div class="container-item">
-                    <div class="container-item-sections">
-                        <h3>Разделы резюме</h3>
-                        <div class="container-grid">
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Юрист</h4>
-                                    <p>223 резюме</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Судья</h4>
-                                    <p>223 резюме</p>
-                                </div>
-        
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Адвокат</h4>
-                                    <p>223 резюме</p>
-                                </div>
-        
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Консультант</h4>
-                                    <p>223 резюме</p>
-                                </div>
-        
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Прокурор</h4>
-                                    <p>223 резюме</p>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Юрист</h4>
-                                    <p>223 резюме</p>
-                                </div>
-        
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Юрист</h4>
-                                    <p>223 резюме</p>
-                                </div>
-        
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Юрист</h4>
-                                    <p>223 резюме</p>
-                                </div>
-        
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Юрист</h4>
-                                    <p>223 резюме</p>
-                                </div>
-        
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <h4>Юрист</h4>
-                                    <p>223 резюме</p>
-                                </div>
-        
-                            </div>
+        </div>
+        <div class="container-item-wrapper">
+            <div class="container-item">
+                <div class="container-item-top">
+                    <div class="search-h3">
+                        <div class="div-h3">Найдено 345 резюме</div>
+                        <div class="select-block">
+                            <p>Сортировать:</p>
+                            <select name="_">
+                                <option value="__">По популярности</option>
+                                <option value="__">По дате добавления</option>
+                            </select>
                         </div>
-                        <div class="a">
-                            <a href="#">Показать все</a>
-                        </div>
+
                     </div>
-                    <div class="container-item-top">
-                        <h3>Топ резюме</h3>
-                        <section>
-                            <div class="item-top-body">
-                                <div class="item-top-body-wrapper">
-                                    <div class="top-summary">
-                                        <div>
-                                            <a href="#">Помощник судьи</a>
-                                            <div class="time">
-                                                Сегодня в 12:48
-                                            </div>
+
+                    <section>
+                        <div class="item-top-body">
+                            <div class="item-top-body-wrapper">
+                                <div class="top-summary">
+                                    <div>
+                                        <a href="#">Помощник судьи</a>
+                                        <div class="time">
+                                            Сегодня в 12:48
                                         </div>
-                                        <h4>Выпускник магистратуры факультета судопроизводства</h4>
-                                        <p>Закончил гимназию с углублённым изучением английского языка,
-                                            благодаря чему владею английским языком на должном уровне,
-                                            что помогает мне в повседневной жизни, так и в работе.
-                                        </p>
-                                        <hr>
-                                        <div class="summary-footer">24 года</div>
                                     </div>
-                                </div>
-                                <div class="item-top-body-wrapper">
-                                    <div class="top-summary">
-                                        <div>
-                                            <a href="#">Помощник судьи</a>
-                                            <div class="time">
-                                                Сегодня в 12:48
-                                            </div>
-                                        </div>
-                                        <h4>Выпускник магистратуры факультета судопроизводства</h4>
-                                        <p>Закончил гимназию с углублённым изучением английского языка,
-                                            благодаря чему владею английским языком на должном уровне,
-                                            что помогает мне в повседневной жизни, так и в работе.
-                                        </p>
-                                        <hr>
-                                        <div class="summary-footer">24 года</div>
-                                    </div>
-                                </div>
-                                <div class="item-top-body-wrapper">
-                                    <div class="top-summary">
-                                        <div>
-                                            <a href="#">Помощник судьи</a>
-                                            <div class="time">
-                                                Сегодня в 12:48
-                                            </div>
-                                        </div>
-                                        <h4>Выпускник магистратуры факультета судопроизводства</h4>
-                                        <p>Закончил гимназию с углублённым изучением английского языка,
-                                            благодаря чему владею английским языком на должном уровне,
-                                            что помогает мне в повседневной жизни, так и в работе.
-                                        </p>
-                                        <hr>
-                                        <div class="summary-footer">24 года</div>
-                                    </div>
-                                </div>
-                                <div class="item-top-body-wrapper">
-                                    <div class="top-summary">
-                                        <div>
-                                            <a href="#">Помощник судьи</a>
-                                            <div class="time">
-                                                Сегодня в 12:48
-                                            </div>
-                                        </div>
-                                        <h4>Выпускник магистратуры факультета судопроизводства</h4>
-                                        <p>Закончил гимназию с углублённым изучением английского языка,
-                                            благодаря чему владею английским языком на должном уровне,
-                                            что помогает мне в повседневной жизни, так и в работе.
-                                        </p>
-                                        <hr>
-                                        <div class="summary-footer">24 года</div>
-                                    </div>
-                                </div>
-                                <div class="item-top-body-wrapper">
-                                    <div class="top-summary">
-                                        <div>
-                                            <a href="#">Помощник судьи</a>
-                                            <div class="time">
-                                                Сегодня в 12:48
-                                            </div>
-                                        </div>
-                                        <h4>Выпускник магистратуры факультета судопроизводства</h4>
-                                        <p>Закончил гимназию с углублённым изучением английского языка,
-                                            благодаря чему владею английским языком на должном уровне,
-                                            что помогает мне в повседневной жизни, так и в работе.
-                                        </p>
-                                        <hr>
-                                        <div class="summary-footer">24 года</div>
-                                    </div>
-                                </div>
-                                <div class="item-top-body-wrapper">
-                                    <div class="top-summary">
-                                        <div>
-                                            <a href="#">Помощник судьи</a>
-                                            <div class="time">
-                                                Сегодня в 12:48
-                                            </div>
-                                        </div>
-                                        <h4>Выпускник магистратуры факультета судопроизводства</h4>
-                                        <p>Закончил гимназию с углублённым изучением английского языка,
-                                            благодаря чему владею английским языком на должном уровне,
-                                            что помогает мне в повседневной жизни, так и в работе.
-                                        </p>
-                                        <hr>
-                                        <div class="summary-footer">24 года</div>
-                                    </div>
-                                </div>
-                                <div class="item-top-body-wrapper">
-                                    <div class="top-summary">
-                                        <div>
-                                            <a href="#">Помощник судьи</a>
-                                            <div class="time">
-                                                Сегодня в 12:48
-                                            </div>
-                                        </div>
-                                        <h4>Выпускник магистратуры факультета судопроизводства</h4>
-                                        <p>Закончил гимназию с углублённым изучением английского языка,
-                                            благодаря чему владею английским языком на должном уровне,
-                                            что помогает мне в повседневной жизни, так и в работе.
-                                        </p>
-                                        <hr>
-                                        <div class="summary-footer">24 года</div>
-                                    </div>
-                                </div>
-                                <div class="a a-foot">
-                                    <a href="#">Показать все</a>
+                                    <h4>Выпускник магистратуры факультета судопроизводства</h4>
+                                    <p>Закончил гимназию с углублённым изучением английского языка,
+                                        благодаря чему владею английским языком на должном уровне,
+                                        что помогает мне в повседневной жизни, так и в работе.
+                                    </p>
+                                    <hr>
+                                    <div class="summary-footer">24 года</div>
                                 </div>
                             </div>
-                            <!-- реклама доделать спросить-->
+                            <div class="item-top-body-wrapper">
+                                <div class="top-summary">
+                                    <div>
+                                        <a href="#">Помощник судьи</a>
+                                        <div class="time">
+                                            Сегодня в 12:48
+                                        </div>
+                                    </div>
+                                    <h4>Выпускник магистратуры факультета судопроизводства</h4>
+                                    <p>Закончил гимназию с углублённым изучением английского языка,
+                                        благодаря чему владею английским языком на должном уровне,
+                                        что помогает мне в повседневной жизни, так и в работе.
+                                    </p>
+                                    <hr>
+                                    <div class="summary-footer">24 года</div>
+                                </div>
+                            </div>
+                            <div class="item-top-body-wrapper">
+                                <div class="top-summary">
+                                    <div>
+                                        <a href="#">Помощник судьи</a>
+                                        <div class="time">
+                                            Сегодня в 12:48
+                                        </div>
+                                    </div>
+                                    <h4>Выпускник магистратуры факультета судопроизводства</h4>
+                                    <p>Закончил гимназию с углублённым изучением английского языка,
+                                        благодаря чему владею английским языком на должном уровне,
+                                        что помогает мне в повседневной жизни, так и в работе.
+                                    </p>
+                                    <hr>
+                                    <div class="summary-footer">24 года</div>
+                                </div>
+                            </div>
+                            <div class="item-top-body-wrapper">
+                                <div class="top-summary">
+                                    <div>
+                                        <a href="#">Помощник судьи</a>
+                                        <div class="time">
+                                            Сегодня в 12:48
+                                        </div>
+                                    </div>
+                                    <h4>Выпускник магистратуры факультета судопроизводства</h4>
+                                    <p>Закончил гимназию с углублённым изучением английского языка,
+                                        благодаря чему владею английским языком на должном уровне,
+                                        что помогает мне в повседневной жизни, так и в работе.
+                                    </p>
+                                    <hr>
+                                    <div class="summary-footer">24 года</div>
+                                </div>
+                            </div>
+                            <div class="item-top-body-wrapper">
+                                <div class="top-summary">
+                                    <div>
+                                        <a href="#">Помощник судьи</a>
+                                        <div class="time">
+                                            Сегодня в 12:48
+                                        </div>
+                                    </div>
+                                    <h4>Выпускник магистратуры факультета судопроизводства</h4>
+                                    <p>Закончил гимназию с углублённым изучением английского языка,
+                                        благодаря чему владею английским языком на должном уровне,
+                                        что помогает мне в повседневной жизни, так и в работе.
+                                    </p>
+                                    <hr>
+                                    <div class="summary-footer">24 года</div>
+                                </div>
+                            </div>
+                            <div class="item-top-body-wrapper">
+                                <div class="top-summary">
+                                    <div>
+                                        <a href="#">Помощник судьи</a>
+                                        <div class="time">
+                                            Сегодня в 12:48
+                                        </div>
+                                    </div>
+                                    <h4>Выпускник магистратуры факультета судопроизводства</h4>
+                                    <p>Закончил гимназию с углублённым изучением английского языка,
+                                        благодаря чему владею английским языком на должном уровне,
+                                        что помогает мне в повседневной жизни, так и в работе.
+                                    </p>
+                                    <hr>
+                                    <div class="summary-footer">24 года</div>
+                                </div>
+                            </div>
+                            <div class="item-top-body-wrapper">
+                                <div class="top-summary">
+                                    <div>
+                                        <a href="#">Помощник судьи</a>
+                                        <div class="time">
+                                            Сегодня в 12:48
+                                        </div>
+                                    </div>
+                                    <h4>Выпускник магистратуры факультета судопроизводства</h4>
+                                    <p>Закончил гимназию с углублённым изучением английского языка,
+                                        благодаря чему владею английским языком на должном уровне,
+                                        что помогает мне в повседневной жизни, так и в работе.
+                                    </p>
+                                    <hr>
+                                    <div class="summary-footer">24 года</div>
+                                </div>
+                            </div>
+                            <div class="a a-foot list">
+                                <div class="list-active">1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>6</div>
+                                <div>7</div>
+                                <div>...</div>
+                                <div>16</div>
+                            </div>
+                        </div>
+                        <!-- реклама доделать спросить-->
+                        <div class="right-body">
+                            <div class="right-item">
+                                <h3>Фильтры</h3>
+                                <input type="text" name="example" list="lst">
+                                <datalist id="lst">
+                                    <option value="One">
+                                    <option value="Two">
+                                </datalist>
+                            </div>
                             <div class="advertising">
                                 реклама
                             </div>
-                        </section>
-                    </div>
-        
+                        </div>
+                    </section>
                 </div>
-            </div>
-        
-            </div>
-            <footer>
-                <section>
-                    <div class="footer-wrapper">
-                        <div class="footer-logo">
-                            <div class="logo">
-                                <a href="#">
-                                    <img src="./img/logo.png" alt="">
-                                </a>
-                            </div>
-        
-                            <p>2022. Все права защищены</p>
-                        </div>
-        
-                        <div class="footer-item-centr">
-                            <p>Работодателям</p>
-                            <p>Соискателям</p>
-                            <p>Поиск резюме</p>
-                            <p>Поиск вакансий</p>
-                        </div>
-                        <div class="footer-item-end">
-                            <p>Форма обработки персональных данных</p>
-                            <p>Вход</p>
-                            <p>Регистрация</p>
-                            <p>Перейти на сайт МГЮА</p>
-                        </div>
-                    </div>
-                    <div></div>
-                </section>
-            </footer>
+
             </div>
         </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-            <script src="./js/add.js"></script>
-        </body>
+
+    </div>
+    <footer>
+        <section>
+            <div class="footer-wrapper">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <p>2022. Все права защищены</p>
+                </div>
+
+                <div class="footer-item-centr">
+                    <p>Работодателям</p>
+                    <p>Соискателям</p>
+                    <p>Поиск резюме</p>
+                    <p>Поиск вакансий</p>
+                </div>
+                <div class="footer-item-end">
+                    <p>Форма обработки персональных данных</p>
+                    <p>Вход</p>
+                    <p>Регистрация</p>
+                    <p>Перейти на сайт МГЮА</p>
+                </div>
+            </div>
+            <div></div>
+        </section>
+    </footer>
+    </div>
+    </div>
+    <!-- ----------------------всплывающее окно_______________________ -->
+    <div class="popup-iner" id="popup-min">
+        <div class="popup-wrapper">
+            <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
+            <div class="but-block">
+                <button class="popup-button btn-max">Я соискатель</button>
+                <button class="popup-button btn-min">Я работодатель</button>
+            </div>
+            <p>Добро пожаловать!</p>
+            <div class="pop-form">
+                <form class="popup-form">
+                    <input class="popup_inp" type="email" placeholder="Ваш E-mail">
+                    <input class="popup_inp" type="password" placeholder="Пароль">
+                    <button type="submit">Войти</button>
+                    <div>
+                        <a href="#">Восстановление пароля</a>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ________________________________/окно___________________________ -->
+    <!-- ----------------------всплывающее окно-большое_______________________ -->
+    <div class="popup-iner" id="popup-max">
+        <div class="popup-wrapper">
+            <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
+            <div class="but-block">
+                <button class="popup-button btn-max">Я соискатель</button>
+                <button class="popup-button btn-min">Я работодатель</button>
+            </div>
+            <p>Регистрация работодателя</p>
+            <div class="pop-form">
+                <form class="popup-form">
+                    <input class="popup_inp" type="email" placeholder="Ваш E-mail">
+                    <input class="popup_inp" type="text" placeholder="Телефон">
+                    <input class="popup_inp" type="text" placeholder="Наименование организации">
+                    <input class="popup_inp" type="text" placeholder="Город">
+                    <input class="popup_inp" type="password" placeholder="Придумайте пароль">
+                    <input class="popup_inp" type="password" placeholder="Повторите пароль">
+                    <button type="submit">Зарегистрироваться</button>
+                    <div class='popup-input-wrapp'>
+                        <input class="popup-input" type="checkbox" name="" id="">согласен с
+                        <a href="#">правилами обработки данных</a>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ________________________________/окно-большое___________________________ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/add.js"></script>
 </body>
+
 </html>

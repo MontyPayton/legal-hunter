@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>serch</title>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <header>
+                <nav class="nav">
+                    <div class="item">
+                        <div class="color-bl mar-bl"><a>Соискателям</a></div>
+                        <div class="color-red"><a>Работодателям</a></div>
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="form">
+                        <div class="wrap">
+                            <input type="text" class="input-head" placeholder="Поиск">
+                            <div class="searh-icon" aria-hidden="true"></div>
+                        </div>
+                        <div class="personal-area"> <a href="">Личный кабинет</a> </div>
+
+                    </div>
+                </nav>
+
+            </header>
+        </div>
+        <div class="container-item-wrapper">
+            <div class="container-item">
+                <div class="containeк-personal">
+                    <nav class="nav-personal">
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="item-personal">
+                        <h3>Персональная информация</h3>
+                        <hr>
+                        <form action="">
+                            <div>
+
+                            </div>
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <footer>
+                <section>
+                    <div class="footer-wrapper">
+                        <div class="footer-logo">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="./img/logo.png" alt="">
+                                </a>
+                            </div>
+
+                            <p>2022. Все права защищены</p>
+                        </div>
+
+                        <div class="footer-item-centr">
+                            <p>Работодателям</p>
+                            <p>Соискателям</p>
+                            <p>Поиск резюме</p>
+                            <p>Поиск вакансий</p>
+                        </div>
+                        <div class="footer-item-end">
+                            <p>Форма обработки персональных данных</p>
+                            <p>Вход</p>
+                            <p>Регистрация</p>
+                            <p>Перейти на сайт МГЮА</p>
+                        </div>
+                    </div>
+                    <div></div>
+                </section>
+            </footer>
+        
+    </div>
+    <!-- ----------------------всплывающее окно_______________________ -->
+    <div class="popup-iner" id="popup-min">
+        <div class="popup-wrapper">
+            <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
+            <div class="but-block">
+                <button class="popup-button btn-max">Я соискатель</button>
+                <button class="popup-button btn-min">Я работодатель</button>
+            </div>
+            <p>Добро пожаловать!</p>
+            <div class="pop-form">
+                <form class="popup-form">
+                    <input class="popup_inp" type="email" placeholder="Ваш E-mail">
+                    <input class="popup_inp" type="password" placeholder="Пароль">
+                    <button type="submit">Войти</button>
+                    <div>
+                        <a href="#">Восстановление пароля</a>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ________________________________/окно___________________________ -->
+    <!-- ----------------------всплывающее окно-большое_______________________ -->
+    <div class="popup-iner" id="popup-max">
+        <div class="popup-wrapper">
+            <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
+            <div class="but-block">
+                <button class="popup-button btn-max">Я соискатель</button>
+                <button class="popup-button btn-min">Я работодатель</button>
+            </div>
+            <p>Регистрация работодателя</p>
+            <div class="pop-form">
+                <form class="popup-form">
+                    <input class="popup_inp" type="email" placeholder="Ваш E-mail">
+                    <input class="popup_inp" type="text" placeholder="Телефон">
+                    <input class="popup_inp" type="text" placeholder="Наименование организации">
+                    <input class="popup_inp" type="text" placeholder="Город">
+                    <input class="popup_inp" type="password" placeholder="Придумайте пароль">
+                    <input class="popup_inp" type="password" placeholder="Повторите пароль">
+                    <button type="submit">Зарегистрироваться</button>
+                    <div class='popup-input-wrapp'>
+                        <input class="popup-input" type="checkbox" name="" id="">согласен с
+                        <a href="#">правилами обработки данных</a>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ________________________________/окно-большое___________________________ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/add.js"></script>
+</body>
+
+</html>

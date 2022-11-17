@@ -109,3 +109,14 @@ $(document).ready(function($) {
 $('.searh-icon').on('click', function () {
     $('.input-head').fadeToggle()
 })
+//================2 добавляем input==========
+
+$('.search-but').on('click', function () {
+	var num = 1
+	$(".none-active").append('<div class="search-wr"><input class="button-div-input"type="text" name="" id="'+(num++)+'" placeholder=""><div class="search-but del">x</div></div>');
+})
+
+$('search-but del').on('click', function () {
+	console.log("klick");
+	
+})	

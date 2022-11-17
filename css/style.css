@@ -31,6 +31,9 @@ h6 {
 a {
     text-decoration: none;
 }
+input {
+    outline:none;
+}
 button{
     cursor: pointer;
 }
@@ -401,7 +404,11 @@ footer {
     line-height: 17px;
     border-radius: 2px;
     border: 2px solid #ECECEC;
-    background-color: #ECECEC;
+    background-color: #ECECEC; 
+
+}
+.btn-max{
+    background-color: var(--color-text-w);
 }
 
 .but-block {
@@ -502,6 +509,29 @@ display: none;
     display: block;
 }
 /* //-------------------------search */
+/* //------------ input---------------- */
+.search-wr{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .button-div-input {
+    position: relative;
+
+  }
+  
+  .search-but {
+    position: absolute;
+    margin-right: 3px;
+    padding: 8px 10px;
+    border: none;
+  }
+  .none-active{
+    display: flex;
+  }
+/* //------------ /input---------------- */
 .personal-area a{
     font-family: 'Ubuntu';
 font-style: normal;
@@ -525,7 +555,7 @@ color: #000000;
     width: 1053px;
 }
 .item-search-input input{
-    width: 152px;
+    width: 100%;
 height: 32px;
 background: #FFFFFF;
 border: 1px solid #E8E8E8;

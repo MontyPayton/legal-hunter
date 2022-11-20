@@ -242,6 +242,9 @@ body {
     padding-top: 15px;
     padding-bottom: 6px;
 }
+.grid-item a{
+    text-decoration: none;
+}
 
 .grid-item p {
     font-size: 14px;
@@ -951,14 +954,13 @@ th {
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
-    padding: 16px 0 14px 0;
-
+    padding: 16px 0 14px 26px;
+    text-align: left;
 }
-
 td {
     background: var(--color-text-w);
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
-    padding-left: 26px;
+    padding: 17px 0 21px 26px;
 }

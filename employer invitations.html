@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300;400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Личный кабинет работодателя</title>
+    <title>Личный кабинет работодателя/приглашения</title>
 </head>
 
 <body>
@@ -44,6 +44,7 @@
         <div class="container-item-wrapper">
             <div class="container-item">
                 <div class="container-personal">
+                    <!-- ================навигация с лева============== -->
                     <nav class="nav-personal">
                         <ul>
                             <li class="big-ul-li-a"><a class="li-a" href="#">Личный кабинет</a></li>
@@ -56,75 +57,61 @@
                            
                         </ul>
                     </nav>
-                    <div class="item-personal">
-                        <h3>Персональная информация</h3>
-                        <hr>
-                        <form action="">
-                            <div class="personal-nickname">
-                                <div class="ava"></div>
-                                <div class="ava-item">
-                                    <p class="nickname">Московский городской суд</p>
-                                    <p> <a href="#">Поменять аватарку</a> </p>
-                                </div>
-
-                            </div>
-                            <hr>
-                            <div class="wrapp-tell">
-                                <div>
-                                    <h4>Название организации*</h4>
-                            <input type="text">
-                                </div>
-                                <div>
-                                      <h4>Контактный телефон*</h4>
-                            <input type="text">
-                                </div>
-                            </div>
-                            <div class="wrapp-tell">
-                                <div>
-                                    <h4>Юридический адрес*</h4>
-                            <input type="text">
-                                </div>
-                            <div>
-                                <h4>Руководитель*</h4>
-                            <input type="text">
-
-                            </div>
-                            
-                            </div>
-                            <h4>Краткое описание деятельности организации</h4>
-                            <input type="text">
-                            <div class="wrapp-tell">
-                            <div>
-                                <h4>ИНН*</h4>
-                            <input type="text">
-                            </div>
-                            <div>
-                                <h4>ОГРН*</h4>
-                            <input type="text">
-                            </div>
-                            </div>
-                            <div class="kpp">
-                                <h4>КПП*</h4>
-                            <input type="text">
-                            </div>
-                            <div class="additionally">
-                                   <h4>Дополнительная информация</h4> 
-                            <input type="text">
-                            </div>
-                            <div class="doc-wrap">
-                                 <button>Прикрепить выписку из ЕГРЮЛ</button>
-                         <a href="#">Выписка из ЕГРЮЛ.doc</a><div>x</div>
-                            </div>
-                        <div class="doc-wrap">
-                            <button>Прикрепить устав</button>
-                         <a href="#">Выписка из ЕГРЮЛ.doc</a><div>x</div>
+                    <!--  ================ /навигация с лева============== --> 
+                    <div class="item-personal tab-grid">
+                        <div class="click-item tab-grid">
+                             <div class="responses active-div"><h4 id="active-h4" >Принятые отклики</h4></div>
+                        <div class="invitations "><h4 >Приглашения</h4></div>
                         </div>
-                         
-                        </form>
+                       
                         <hr>
-                        <button>Верифицировать аккаунт</button>
+                        <div class="select-block-nav">
+                               <div class="select-block">
+                        <p>Сортировать:</p>
+                        <select name="_">
+                            <option value="__">По популярности</option>
+                            <option value="__">По дате добавления</option>
+                        </select>
                     </div>
+                    <div class="select-block">
+                        <p>Город:</p>
+                        <select name="_">
+                            <option value="__">Москва</option>
+                            <option value="__">Москва</option>
+                        </select>
+                    </div>
+                    </div>
+                    <table>
+                           <tr>
+                              <th>Имя</th>
+                              <th>Контакты</th>
+                              <th>Город</th>
+                              <th>Статус</th>
+                              <th>Вакансия</th>
+                              <th>Дата приглашения</th>
+                           </tr>
+                           <tr>
+                            <td>Иванов Иван Алексеевич</th>
+                            <td>ivanov@mail.ru</th>
+                            <td>Москва</td>
+                            <td>Принято</td>
+                            <td>Старший помощник судьи</td>
+                            <td>13.10.2022</td>
+                         </tr>
+                         <td>Иванов Иван Алексеевич</td>
+                         <td>ivanov@mail.ru</td>
+                         <td>Москва</td>
+                         <td>Принято</td>
+                         <td>Старший помощник судьи</td>
+                         <td>13.10.2022</td>
+                   
+                     </table>
+            
+                    </div>
+                    
+             
                 </div>
+                
             </div>
         </div>
         <footer>

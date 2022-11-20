@@ -120,3 +120,18 @@ $('search-but del').on('click', function () {
 	console.log("klick");
 	
 })	
+//====================== nav pers===========
+
+$(".active-li li").each(function(i) {
+	('click', function (i) {
+		console.log(i);
+	})
+	})	
+
+	$('.active-li li').on('click', function () {
+		let index = $(".active-li li").index( this );
+		console.log(index);
+		$(".active-li li").eq(index).addClass("active-menu");
+		
+	})	
+	

@@ -904,8 +904,15 @@ input[name="chacor"] {
     text-align: center;
     color: #666363;
     padding: 0 5px;
+    cursor: pointer;
 }
-
+#active-h4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+}
 .tab-grid div {
     height: 28px;
 }
@@ -915,13 +922,7 @@ input[name="chacor"] {
     border-bottom: 2px solid red
 }
 
-#active-h4 {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-}
+
 
 .item-personal.tab-grid hr {
     margin: 0;
@@ -943,6 +944,9 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 84px;
+   
+}
+.table-active{
     display: none;
 }
 
@@ -971,3 +975,7 @@ td {
     width: 125px;
 }
 /* ==========================/table==================== */
+/* ==========================table2==================== */
+.th-svg{
+    margin-right: 3px;
+}

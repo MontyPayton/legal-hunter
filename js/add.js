@@ -135,4 +135,19 @@ $(".active-li li").each(function(i) {
 		$(".active-li li").eq(index).addClass("active-menu");
 		
 	})	
+
 	
+$('.responses').on('click',function(){
+	$('.responses').addClass("active-div");
+	$('.invitations').removeClass("active-div");
+	$('.invitations h4').removeAttr("id");
+	$('.responses h4').prop('id', 'active-h4');
+	$('table').toggle()
+})
+$('.invitations').on('click',function(){
+	$('.invitations').addClass("active-div");
+	$('.responses').removeClass("active-div");
+	$('.invitations h4').prop('id', 'active-h4');
+	$('.responses h4').removeAttr("id");
+	$('table').toggle()
+})

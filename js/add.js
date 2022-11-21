@@ -113,13 +113,14 @@ $('.searh-icon').on('click', function () {
 
 $('.search-but').on('click', function () {
 	var num = 1
-	$(".none-active").append('<div class="search-wr"><input class="button-div-input"type="text" name="" id="'+(num++)+'" placeholder=""><div class="search-but del">x</div></div>');
+
+	$(".none-active").append('<div class="search-wr"><input class="button-div-input"type="text" name="" id="'+(num++)+'" placeholder="текст"><div class="search-but del">x</div></div>');
+
 })
 
-$('search-but del').on('click', function () {
-	console.log("klick");
-	
-})	
+
+
+
 //====================== nav pers===========
 
 $(".active-li li").each(function(i) {

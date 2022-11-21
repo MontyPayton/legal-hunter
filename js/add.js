@@ -123,18 +123,18 @@ $('.search-but').on('click', function () {
 
 //====================== nav pers===========
 
-$(".active-li li").each(function(i) {
-	('click', function (i) {
-		console.log(i);
-	})
-	})	
+// $(".active-li li").each(function(i) {
+// 	('click', function (i) {
+// 		console.log(i);
+// 	})
+// 	})	
 
-	$('.active-li li').on('click', function () {
-		let index = $(".active-li li").index( this );
-		console.log(index);
-		$(".active-li li").eq(index).addClass("active-menu");
+// 	$('.active-li li').on('click', function () {
+// 		let index = $(".active-li li").index( this );
+// 		console.log(index);
+// 		$(".active-li li").eq(index).addClass("active-menu");
 		
-	})	
+// 	})	
 
 	
 $('.responses').on('click',function(){

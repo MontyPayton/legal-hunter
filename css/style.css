@@ -634,7 +634,7 @@ select {
     align-items: center;
 }
 
-.select-block p {
+.select-block-p-sort {
     margin-right: 33px;
 }
 
@@ -913,7 +913,7 @@ input[name="chacor"] {
     text-align: center;
     color: #000000;
 }
-.tab-grid div {
+.responses,.invitations {
     height: 28px;
 }
 
@@ -937,6 +937,13 @@ input[name="chacor"] {
     align-items: center;
     margin-top: 25px;
     margin-bottom: 20px;
+
+}
+.select-block-nav-p{
+    padding: 0 13px 0 16px;
+}
+.select-block-nav-p-p{
+    padding: 0 13px 0 37px;
 }
 
 /* ============ table ============== */
@@ -978,4 +985,177 @@ td {
 /* ==========================table2==================== */
 .th-svg{
     margin-right: 3px;
+}
+/* ===================vacancies=================== */
+.hr-vacancies{
+    width: 100%;
+    margin: 0;
+}
+.h4-vacancies h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 16px 0 15px 0;
+}
+.item-personal-vacancies{
+    width: 100%;
+    padding-left: 36px;
+}
+.select-block-nav-vacancies{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+}
+.select-block-nav-vacancies div{
+    display: flex;
+}
+.select-block-nav-vacancies p{
+    padding-right: 13px;
+}
+.select-block-nav-vacancies a{
+    font-size: 13px;
+line-height: 15px;
+text-align: center;
+color: #CF3C3C;
+text-decoration: none;
+
+
+}
+.select-block-vacans-p{
+    padding-left: 53px;
+}
+.select-block-btn{
+    width: 208px;
+height: 36px;
+border: 1px solid #CF3C3C;
+border-radius: 3px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-block-btn div{
+    font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #CF3C3C;
+}
+.wrapper-sticker{
+    display: flex;
+    margin-top: 24px;
+}
+.wrapper-sticker div{
+    width: 158px;
+height: 32px;
+background: #ECECEC;
+border: 1px solid #EAEAEA;
+border-radius: 7px 7px 0px 0px;
+text-align: center;
+padding: 5px;
+margin-left: 8px;
+cursor: pointer;
+}
+.wrapper-sticker div.active-vacancies{
+    background-color: var(--color-text-w);
+}
+.wrapper-vacanc-person{
+height: 244px;
+padding-left: 25px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    margin-top: 9px;
+}
+.vacans-person-head{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+}
+.vacans-person-head-name .date{
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 5px;
+}
+.vacans-person-head-name a{
+    font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #375194;
+}
+.city{
+    display: flex;
+    margin-top: 9px;
+    font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+margin-bottom: 22px;
+
+}
+.city div{
+    width: 16px;
+    text-align: center;
+}
+.vacans-person-head-fee {
+   margin-right: 16px; 
+}
+
+.vacans-person-head-fee p{
+    font-size: 12px;
+    line-height: 14px;
+    color: #8A8A8A;
+    padding-bottom: 7px;
+}
+.vacans-person-head-fee div{
+    font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+color: #8A8A8A;
+
+}
+.vacans-person-head-fee .fee{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+.vacans-person-item p{
+    font-weight: 300;
+font-size: 14px;
+line-height: 21px;
+padding-top: 8px;
+
+}
+.vacans-person-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding-right: 24px;
+}
+.vacans-person-footer-button{
+    width: 179px;
+    height: 34px;
+    background: #CF3C3C;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: #FFFFFF;
+}
+.vacans-del{
+    width: 179px;
+    height: 34px;
+    border: 1px solid #CF3C3C;
+    border-radius: 6px;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: #CF3C3C;
+}
+.emploer-footer .vacans{
+padding-top:  200px;
+}
+.container-item-wrapper.vacancies{
+    padding-bottom: 200px;
 }

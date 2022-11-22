@@ -151,3 +151,21 @@ $('.invitations').on('click',function(){
 	$('.responses h4').removeAttr("id");
 	$('table').toggle()
 })
+// =========================== открытие отклика popup =================
+$(document).ready(function($) {
+	$('.th-svg').click(function() {
+		$('#popup-max').fadeIn();
+		return false;
+	});	
+	
+	$('.colse-popup-contact').click(function() {
+		$(this).parents('#popup-max').fadeOut();
+		return false;
+	});		
+ 
+	// $(document).keydown(function(e) {
+	// 	if (e.keyCode === 27) {
+	// 		e.stopPropagation();
+	// 		$('#popup-max').fadeOut();
+	// 	}
+	})

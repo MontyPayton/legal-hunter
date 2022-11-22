@@ -218,7 +218,7 @@ body {
 .container-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
     grid-gap: 20px;
 }
 
@@ -295,7 +295,21 @@ section {
     text-decoration-line: underline;
 
 }
+.top-summary div.summary-footer-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
+}
+.tochka{
+    width: 2px;
+    height: 2px;
+    padding: 2px;
+    background-color: #000;
+    margin: 8px;
+    border-radius: 50%;
+
+}
 .item-top-body-wrapper {
     margin-bottom: 6px;
 }
@@ -452,7 +466,7 @@ footer {
     right: 25%;
 }
 
-.popup-wrapper {
+.popup-wrapper, .popup-wrapper-person {
     position: relative;
     width: 466px;
     /* height: 462px; */
@@ -1158,4 +1172,143 @@ padding-top:  200px;
 }
 .container-item-wrapper.vacancies{
     padding-bottom: 200px;
+}
+ /* ----------------------всплывающее окно-большое-pers_______________________  */
+ .ava-pers{
+    background: url(../img/ava-pers.png);
+border-radius: 138px;
+width: 139px;
+height: 139px;
+margin: 0 auto;
+ }
+ .contact-person{
+    width: 242px;
+height: 599px;
+border-right: 1px solid #C4C4C4;
+padding-top: 24px;
+
+ }
+ .contact-person-item{
+    width: 100%;
+
+ }
+ .contact-person h3{
+     font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+padding-top: 46px;
+ }
+ .contact-person p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+padding-top: 9px;
+ }
+ .person-btn{
+    margin-top: 235px;
+ }
+ .contact-person button{
+    width: 171px;
+height: 36px;
+background: #CF3C3C;
+border-radius: 3px;
+color: var(--color-text-w);
+border: none;
+cursor: pointer;
+ }
+ .contact-person button:nth-child(2) {
+    color: #CF3C3C;
+    background:var(--color-text-w);
+    cursor: pointer;
+ }
+ .popup-wrapper-person{
+    display: flex;
+ width: 950px;
+ }
+.contact-person-item-head{
+    display: flex;
+    align-items: center;
+    height: 76px;
+    border-bottom: 1px solid #C4C4C4;
+    justify-content: space-between;
+}
+ .contact-person-item-head h3{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 22px;
+    color: #CF3C3C;
+    margin-left: 30px;
+ }
+ .contact-person-item-ri{
+    margin-left: 51px;
+    text-align: left;
+ }
+ .contact-person-item-lef{
+    margin-left: 30px;
+    text-align: left;
+    max-width: 138px;
+ }
+ .contact-person-item-lef p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 12px;
+ }
+ .contact-person-item-ri p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 12px;
+ }
+ .person-item{
+   display: flex;
+   margin-top: 21px;
+ }
+/* =====================person-item-table-------------- */
+ .person-item-table{
+    border-collapse: separate;
+    margin: 0;
+    padding: 0;
+ }
+.person-item-table th{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.person-item-table tr{
+    margin: 0;
+    padding: 0;
+}
+.person-item-table td{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}     
+
+/* =================================== create-a-vacancy====================== */
+.left-svg{
+    background-image: url(../img/left.svg);
+    height: 12px;
+    width: 13.7px;
+}
+
+.ava-item.creat-a-vacavcy p{
+    padding-left: 10px;
+}
+.ava-item.creat-a-vacavcy a{
+    font-size: 14px;
+line-height: 16px;
+color: #000000;
+}
+.personal-nickname.creat-a-vacavcy{
+padding: 0;
+    background: #F5F5F5;
+    border: none;
+}
+.ava-item.creat-a-vacavcy{
+    display: flex;
+    align-items: center;
+}
+.podrasdel{
+    width: 50%;
 }

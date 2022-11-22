@@ -417,6 +417,7 @@ footer {
 .popup-iner {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     padding-top: 165px;
@@ -1324,6 +1325,7 @@ height: 14px;
 /* ==================================================Главная соискателя */
 .item-form.applicant{
     background-image: url(../img/stud.png);
+
  
 }
 
@@ -1331,3 +1333,74 @@ height: 14px;
     margin: 0 auto;
     max-width: 438px;
 }
+.time.home-applicant{
+    font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+}
+.item-top-body-wrapper{
+    display: flex;
+    background-color: white;
+}
+.home-applic-item{
+    padding: 16px 15px 16px 40px;
+}
+.home-applic-item-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.top-summary-app{
+    display: flex;
+}
+.summary-footer-block{
+    display: flex;
+    margin-top: 11px;
+}
+.summary-footer-block-div{
+    font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+}
+.home-applic-item-head a{
+    font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #375194;
+
+}
+
+.home-applic-item-body a{
+    font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+color: #000000;
+}
+.time{
+    font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+}
+
+.home-applic-ava {
+    background-image: url(../img/image\ 2-fim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 101px;
+    margin: 19px 0px 0 20px;
+}
+.home-applic-item-body-p{
+width: 767px;
+}
+
+.home-applic-item-body hr{
+    width: 100%;
+}
+.home-applic-item-body-p p{
+    font-weight: 300;
+font-size: 14px;
+line-height: 21px;
+}
+
+

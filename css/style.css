@@ -876,8 +876,6 @@ input[name="chacor"] {
     box-sizing: border-box;
     width: 100%;
     height: 39.96px;
-    left: 397px;
-    top: 325.29px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
 }
@@ -1311,4 +1309,25 @@ padding: 0;
 }
 .podrasdel{
     width: 50%;
+}
+.item-personal.creat-a-vacavcy .requirements input{
+width: 14px;
+height: 14px;
+}
+.requirements{
+    display: flex;
+}
+.item-search-input.creat-a-vacavcy{
+    padding-bottom : 107px;
+}
+
+/* ==================================================Главная соискателя */
+.item-form.applicant{
+    background-image: url(../img/stud.png);
+ 
+}
+
+.applicant-h1{
+    margin: 0 auto;
+    max-width: 438px;
 }

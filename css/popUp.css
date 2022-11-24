@@ -252,3 +252,9 @@ background-color: var(--bg-hover);
    display: flex;
    margin-top: 21px;
  }
+ .form-min{
+    display: none;
+ }
+ .form-max{
+    display: none;
+ }

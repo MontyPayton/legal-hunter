@@ -1,15 +1,31 @@
 
 // //    ===========================================
-// $('.btn-max').on('click', function () {
-//     $('.btn-max').css('background', ' #ECECEC');
-//     $('.btn-min').css('background', 'white');
-// 	$('popup-fade').css("displey", blo)
-// })
-// $('.btn-min').on('click', function () {
-//     $('.btn-max').css('background', 'white');
-//     $('.btn-min').css('background', '#ECECEC');
-// 	$('.home-bos').fadeOut()
-// })
+$('.btn-max').on('click', function () {
+    $('.btn-max').css('background', ' #ECECEC');
+    $('.btn-min').css('background', 'white');
+
+		$('.form-min').fadeIn();
+
+	})
+
+$('.btn-min').on('click', function () {
+    $('.btn-max').css('background', 'white');
+    $('.btn-min').css('background', '#ECECEC');
+
+		$('.form-max').fadeIn();
+		})
+
+		$('.btn-max').on('click', function () {
+		
+				$('.form-max').fadeOut();
+				
+			})
+			$('.btn-min').on('click', function () {
+		
+				$('.form-min').fadeOut();
+				
+			})
+
 
 
 //открытие малого====================================================
@@ -64,12 +80,11 @@ $(document).ready(function($) {
 //открытие большого====================================================
 $(document).ready(function($) {
 	$('.registration').click(function(e) {
-		
-		e.preventDefault()
 		$('#popup-max').fadeIn();
-		e.preventDefault()
+		$('.form-max').fadeIn();
+		$('.form-nin').fadeOut();
 		return false;
-		e.preventDefault()
+	
 	});	
 })
 	$('.popup-close').click(function() {

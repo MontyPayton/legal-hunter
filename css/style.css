@@ -1214,3 +1214,16 @@ line-height: 16px;
     color: #666363;
 
 }
+.kpp.resum{
+    margin-bottom: 24px;
+}
+.period{
+    display: flex;
+}
+.wrapp-tell div.period-1,
+.wrapp-tell div.period-2{
+    width: 100px;
+}
+.period-2{
+    margin-left: 12px;
+}

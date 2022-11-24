@@ -1,9 +1,13 @@
+@import "popUp.css";
+@import "accordion.css";
 :root {
     --color-text: #DB0000;
     --color-text-w: #fff;
     --bg-red: #CF3C3C;
     --bg-item: #F5F5F5;
-    ;
+    --bg-hover:#A01111;
+    --bg-active:#7E0101;
+    --bg-text-hover: #CF3C3C;
 }
 
 html {
@@ -55,7 +59,7 @@ body {
 }
 
 .nav {
-    width: 1195px;
+    max-width: 1195px;
     margin: 0 auto;
     height: 70px;
     display: flex;
@@ -191,7 +195,12 @@ body {
     color: var(--color-text-w);
 
 }
-
+.item-form button:hover{
+    background-color: var(--bg-hover);
+}
+.item-form button:active{
+    background-color: var(--bg-active);
+}
 .container-item-wrapper {
     background-color: var(--bg-item);
 }
@@ -229,7 +238,12 @@ body {
     box-shadow: 0px 1px 13px rgba(182, 191, 220, 0.24);
     border-radius: 7px;
 }
-
+.grid-item:hover{
+    background: #F0F0F0;
+}
+.grid-item:active{
+    background: #E6E6E6;
+}
 .grid-item div {
     padding-left: 25px;
 }
@@ -413,144 +427,6 @@ footer {
     line-height: 16px;
 }
 
-/* _________________________________________ окно_______________________________ */
-.popup-iner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-top: 165px;
-    display: none;
-}
-
-#popup-min,
-#popup-max {
-
-    background: rgb(127 127 127 / 77%);
-
-}
-
-.popup-button {
-    height: 39px;
-    width: 211px;
-    font-size: 15px;
-    line-height: 17px;
-    border-radius: 2px;
-    border: 2px solid #ECECEC;
-    background-color: #ECECEC;
-
-}
-
-.btn-max {
-    background-color: var(--color-text-w);
-}
-
-.but-block {
-    padding-top: 22px;
-}
-
-.colse-popup {
-    position: absolute;
-    top: -11px;
-    right: -13px;
-    width: 27px;
-    height: 27px;
-    background-color: white;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.colse-popup img {
-    position: absolute;
-    top: 30%;
-    right: 25%;
-}
-
-.popup-wrapper, .popup-wrapper-person {
-    position: relative;
-    width: 466px;
-    /* height: 462px; */
-    background: #fff;
-    border-radius: 4px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.popup-wrapper p {
-    font-size: 22px;
-    line-height: 25px;
-    padding: 49px 0 42px;
-}
-
-.popup_inp {
-    display: block;
-    width: 404px;
-    height: 43px;
-    margin: 0 auto 21px;
-    background: #FFFFFF;
-    border: 1px solid #D5D5D5;
-    padding-left: 22px;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: #000000;
-}
-
-.popup-form button {
-    width: 422px;
-    height: 46px;
-    background-color: var(--bg-red);
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
-    color: var(--color-text-w);
-    border-radius: 9px;
-    border: 0;
-    margin-top: 52px;
-
-
-}
-
-.popup-form div {
-    padding-bottom: 37px;
-    padding-top: 24px;
-}
-
-.pop-form a {
-    font-size: 16px;
-    line-height: 18px;
-    color: #545454;
-    padding-left: 5px;
-}
-
-.popup-input {
-    width: 15px;
-    height: 15px;
-    display: flex;
-    margin-right: 15px;
-}
-
-.popup-input-wrapp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.input-head {
-    width: 126px;
-    position: absolute;
-    top: -2px;
-    right: 56px;
-    display: none;
-}
-
-.input-head-active {
-    display: block;
-}
-
 /* //-------------------------search */
 /* //------------ input---------------- */
 .search-wr {
@@ -618,7 +494,7 @@ footer {
 }
 
 .item-search-input {
-    width: 1195px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
 }
@@ -688,83 +564,6 @@ select {
 /* .acor-container {
     margin: 20px 0;
 } */
-.acor-container .acor-body {
-    /* width: calc(100% - 40px); */
-    margin: 0 auto;
-    height: 0;
-    color: rgba(0, 0, 0, 0);
-    line-height: 18px;
-    padding: 0 30px;
-    box-sizing: border-box;
-    transition: color 0.5s, padding 0.5s;
-    overflow: hidden;
-}
-
-.acor-container .acor-body p {
-    margin: 0 0 11px;
-    display: flex;
-    align-items: center;
-}
-
-.acor-container label {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    cursor: pointer;
-    /* background-color: #337AB7; */
-    display: block;
-    padding: 15px 0 0 50px;
-    width: 100%;
-    /* color: #BFE2FF; */
-    box-sizing: border-box;
-    z-index: 100;
-    margin: 0 0 5px;
-    transition: color .35s;
-}
-
-/* .acor-container label:hover {
-    color: #FFF;
-} */
-input[name="chacor"] {
-    display: none;
-}
-
-.acor-container label:before {
-    content: '\276F';
-    float: right;
-}
-
-
-.acor-container input:checked+label:before {
-    transition: transform .35s;
-    transform: rotate(90deg);
-  
-}
-
-.acor-container input:checked+label+.acor-body {
-    height: auto;
-    margin-top: -5px;
-    color: #000;
-    padding: 20px 0 44px 50px;    
-}
-
-.acor-container h4 {
-    padding-left: 50px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-}
-
-.acor-body p {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    max-width: 153px;
-}
-
-.acor-body span {
-    padding-left: 14px;
-}
 
 /* ========================/аккордион============================ */
 /* //=====================================================Employers */
@@ -1172,107 +971,24 @@ padding-top:  200px;
 .container-item-wrapper.vacancies{
     padding-bottom: 200px;
 }
- /* ----------------------всплывающее окно-большое-pers_______________________  */
- .ava-pers{
-    background: url(../img/ava-pers.png);
-border-radius: 138px;
-width: 139px;
-height: 139px;
-margin: 0 auto;
- }
- .contact-person{
-    width: 242px;
-height: 599px;
-border-right: 1px solid #C4C4C4;
-padding-top: 24px;
-
- }
- .contact-person-item{
-    width: 100%;
-
- }
- .contact-person h3{
-     font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-padding-top: 46px;
- }
- .contact-person p{
-    font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-padding-top: 9px;
- }
- .person-btn{
-    margin-top: 235px;
- }
- .contact-person button{
-    width: 171px;
-height: 36px;
-background: #CF3C3C;
-border-radius: 3px;
-color: var(--color-text-w);
-border: none;
-cursor: pointer;
- }
- .contact-person button:nth-child(2) {
-    color: #CF3C3C;
-    background:var(--color-text-w);
-    cursor: pointer;
- }
- .popup-wrapper-person{
-    display: flex;
- width: 950px;
- }
-.contact-person-item-head{
-    display: flex;
-    align-items: center;
-    height: 76px;
-    border-bottom: 1px solid #C4C4C4;
-    justify-content: space-between;
-}
- .contact-person-item-head h3{
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 22px;
-    color: #CF3C3C;
-    margin-left: 30px;
- }
- .contact-person-item-ri{
-    margin-left: 51px;
-    text-align: left;
- }
- .contact-person-item-lef{
-    margin-left: 30px;
-    text-align: left;
-    max-width: 138px;
- }
- .contact-person-item-lef p{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    padding-bottom: 12px;
- }
- .contact-person-item-ri p{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    padding-bottom: 12px;
- }
- .person-item{
-   display: flex;
-   margin-top: 21px;
- }
+ 
 /* =====================person-item-table-------------- */
  .person-item-table{
+    border-spacing: 0 12px;
     border-collapse: separate;
     margin: 0;
     padding: 0;
+ }
+ .person-item-table-one{
+    height: 30px;
  }
 .person-item-table th{
     border: none;
     margin: 0;
     padding: 0;
+    padding-left: 30px;
+    vertical-align: top; 
+   
 }
 .person-item-table tr{
     margin: 0;
@@ -1282,6 +998,9 @@ cursor: pointer;
     margin: 0;
     padding: 0;
     text-align: left;
+    padding-left: 26px;
+    padding-right: 50px;
+    vertical-align: top;
 }     
 
 /* =================================== create-a-vacancy====================== */
@@ -1321,6 +1040,40 @@ height: 14px;
 .item-search-input.creat-a-vacavcy{
     padding-bottom : 107px;
 }
+.radio-h5{
+    padding-top: 37px;
+    padding-bottom: 17px;
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+.requirements{
+    margin-bottom: 17px;
+}
+.wrapp-tell h4, .kpp h4, .additionally h4{
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+margin-bottom: 9px;
+}
+.wrapp-tell-i {
+    margin-bottom: 27px;
+}
+.item-personal input.wrapp-tell-i{
+    width: 97%;
+}
+.item-personal input.wrapp-tell-i.in{
+    width: 98.5%;
+}
+.creat-vacancy-select{
+    width: 97%;
+    height: 39.9px;
+    border: 1px solid #EAEAEA;
+}
+
+
+  
+
 
 /* ==================================================Главная соискателя */
 .item-form.applicant{
@@ -1402,5 +1155,62 @@ width: 767px;
 font-size: 14px;
 line-height: 21px;
 }
+/* ======================библиотека=================== */
 
+.pretty.p-round .state label:after, .pretty.p-round .state label:before {
+    border-radius: 0;
+    margin-top: 2px;
+    background: #FFFFFF;
+}
+.pretty input:checked~.state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+    background-color: #375194!important;
+}
+.state.p-primary p{
+    padding-left: 16px;
+   
+    font-size: 14px;
+line-height: 16px;
+}
+.pretty .state label:before {
+    border-color: #EAEAEA;
+}
+/* =========================================замена кнопок=============================== */
+.form_radio_btn {
+	display: inline-block;
+	margin-top: 25px;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 45px;
+	line-height: 39px;
+	border: 1px solid #D5D5D5;
+	user-select: none;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background-color:  #ECECEC;
+}
+ 
+/* Hover */
+.form_radio_btn label:hover {
+	color: #666;
+   
+}
 
+ 
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
+}
+/* =========================================/замена кнопок=============================== */
+/* ===============================личный кабинет соискателя-резюме========================= */
+.gre{
+    color: #666363;
+
+}

@@ -1,0 +1,77 @@
+.acor-container .acor-body {
+    /* width: calc(100% - 40px); */
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+}
+
+.acor-container .acor-body p {
+    margin: 0 0 11px;
+    display: flex;
+    align-items: center;
+}
+
+.acor-container label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    /* background-color: #337AB7; */
+    display: block;
+    padding: 15px 0 0 50px;
+    width: 100%;
+    /* color: #BFE2FF; */
+    box-sizing: border-box;
+    z-index: 100;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+
+/* .acor-container label:hover {
+    color: #FFF;
+} */
+input[name="chacor"] {
+    display: none;
+}
+
+.acor-container label:before {
+    content: '\276F';
+    float: right;
+}
+
+
+.acor-container input:checked+label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+  
+}
+
+.acor-container input:checked+label+.acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 0 44px 50px;    
+}
+
+.acor-container h4 {
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.acor-body p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 153px;
+}
+
+.acor-body span {
+    padding-left: 14px;
+}

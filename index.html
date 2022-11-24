@@ -362,17 +362,26 @@
        <div class="popup-iner popup-fade" id="popup-min">
         <div class="popup-wrapper popup">
             <div class="colse-popup popup-close"><img src="./img/Vector-x.png" alt=""></div>
-            <div class="but-block">
-        <button class="popup-button btn-max">Я соискатель</button>
-        <button class="popup-button btn-min">Я работодатель</button>
-        </div>
-        <p>Добро пожаловать!</p>
-        <div class="pop-form">
+<!-- =============================================== -->
+ <div class="pop-form">
             <form class="popup-form" >
+<div class="form_radio_btn">
+	 <input name="USER_TYPE" class="radio-1"id="radio-1" type="radio" name="radio" value="1" checked> 
+      <!--  !!!=== при назначении id поставить в lable for="" -->
+	<label for="radio-1">Я соискатель</label>
+</div>
+ 
+<div class="form_radio_btn">
+	<input name="USER_TYPE" class="radio-2" id="radio-2" type="radio" name="radio" value="2">
+	<label for="radio-2">Я работодатель</label>
+</div>
+<!-- ===================/замена кнопок========================== -->
+        <p>Добро пожаловать!</p>
+       
                 <input class="popup_inp" type="email" placeholder="Ваш E-mail">
                 <input class="popup_inp" type="password" placeholder="Пароль">
                 <button type="submit">Войти</button>
-                  <div>
+                  <div class="popup-div-a">
                 <a href="#">Восстановление пароля</a>
             </div>
             </form>
@@ -383,32 +392,78 @@
         
     </div>
     <!-- ________________________________/окно___________________________ -->
-    <!-- ----------------------всплывающее окно-большое_______________________ -->
+    <!-- ----------------------всплывающее окно-большое работодатель_______________________ -->
     <div class="popup-iner" id="popup-max">
         <div class="popup-wrapper popup">
             <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
-            <div class="but-block">
+            <!-- <div class="but-block">
         <button class="popup-button btn-max">Я соискатель</button>
         <button class="popup-button btn-min">Я работодатель</button>
-        </div>
-        <p>Регистрация работодателя</p>
+        </div> -->
+
+        <!-- =============================================== -->
         <div class="pop-form">
-            <form class="popup-form" >
+ 
+    <form class="popup-form" >
+       
+<div class="form_radio_btn">
+<input name="USER_TYPE" class="radio-3"id="radio-3" type="radio" name="radio" value="1" checked> 
+<!--  !!!=== при назначении id поставить в lable for="" -->
+<label for="radio-3">Я соискатель</label>
+</div>
+
+<div class="form_radio_btn">
+<input name="USER_TYPE" class="radio-2" id="radio-4" type="radio" name="radio" value="2">
+<label for="radio-4">Я работодатель</label>
+</div>
+<!-- ===================/замена кнопок========================== -->
+        <p>Регистрация работодателя</p>
+       
+           
                 <input class="popup_inp" type="email" placeholder="Ваш E-mail">
                 <input class="popup_inp" type="text" placeholder="Телефон">
                 <input class="popup_inp" type="text" placeholder="Наименование организации">
                 <input class="popup_inp" type="text" placeholder="Город">
                 <input class="popup_inp" type="password" placeholder="Придумайте пароль">
                 <input class="popup_inp" type="password" placeholder="Повторите пароль">
-                <button type="submit">Зарегистрироваться</button>
+                  <button>Зарегистрироваться</button>
                 <div class='popup-input-wrapp'>
                         <input class="popup-input" type="checkbox" name="" id="">согласен с
              <a href="#">правилами обработки данных</a>
                 </div>
             </form>
-
+          
+        </div>
         
         </div>
+        </div>
+    </div>
+    <!-- ________________________________/окно-большое___________________________ -->
+     <!-- ----------------------всплывающее окно-большое соискатель_______________________ -->
+     <div class="popup-iner popup-fade" id="popup-max">
+        <div class="popup-wrapper popup">
+            <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
+            <div class="but-block">
+                <button class="popup-button btn-max">Я соискатель</button>
+                <button class="popup-button btn-min">Я работодатель</button>
+            </div>
+            <p>Регистрация соискателя</p>
+            <div class="pop-form">
+                <form class="popup-form">
+                    <input class="popup_inp" type="email" placeholder="Ваш E-mail">
+                    <input class="popup_inp" type="text" placeholder="Телефон">
+                
+                    <input class="popup_inp" type="password" placeholder="Придумайте пароль">
+                    <input class="popup_inp z" type="password" placeholder="Повторите пароль">
+                    <button type="submit">Зарегистрироваться</button>
+                    <div class='popup-input-wrapp'>
+                        <input class="popup-input" type="checkbox" name="" id="">согласен с
+                        <a href="#">правилами обработки данных</a>
+                    </div>
+                </form>
+
+
+            </div>
         </div>
     </div>
     <!-- ________________________________/окно-большое___________________________ -->

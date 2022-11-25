@@ -349,9 +349,9 @@ section {
 }
 
 hr {
-    margin-top: 12px;
+    /* margin-top: 12px; */
     margin-bottom: 15px;
-    width: 582px;
+    /* width: 582px; */
     height: 0px;
     border: 1px solid #EDEDED;
 }
@@ -741,7 +741,7 @@ select {
     line-height: 16px;
     text-align: center;
     color: #666363;
-    padding: 0 5px;
+   
     cursor: pointer;
 }
 #active-h4 {
@@ -897,7 +897,7 @@ cursor: pointer;
     background-color: var(--color-text-w);
 }
 .wrapper-vacanc-person{
-height: 244px;
+
 padding-left: 25px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -967,6 +967,7 @@ padding-top: 8px;
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
+    margin-bottom: 28px;
     padding-right: 24px;
 }
 .vacans-person-footer-button{
@@ -990,6 +991,7 @@ font-size: 14px;
 line-height: 16px;
 text-align: center;
 color: #CF3C3C;
+background-color: var(--color-text-w);
 }
 .emploer-footer .vacans{
 padding-top:  200px;
@@ -1314,3 +1316,6 @@ line-height: 14px;
 }
 /* ======================================= резюме для авторизированного работодателя=============== */
 
+.clozet.off{
+    display: none;
+}

@@ -320,7 +320,7 @@ section {
     height: 2px;
     padding: 2px;
     background-color: #000;
-    margin: 8px;
+    margin: 4px 8px 8px 8px;
     border-radius: 50%;
 
 }
@@ -429,6 +429,29 @@ footer {
 
 /* //-------------------------search */
 /* //------------ input---------------- */
+.input-width {
+    height:23px;
+    border:1px solid #999;
+    background:#fff;
+}
+.item-form input.input-color .del{
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #375194;
+
+}
+.item-form input.input-color{
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #375194;
+
+}
+
+.item-form input.input-color::placeholder {
+    color: #375194;
+}
 .search-wr {
     display: flex;
     flex-direction: row;
@@ -570,8 +593,11 @@ select {
 .container-personal {
     display: flex;
     padding-top: 36px;
+    
 }
-
+.nav-personal{
+    margin-right: 22px;
+}
 .nav-personal ul {
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -1227,3 +1253,64 @@ line-height: 16px;
 .period-2{
     margin-left: 12px;
 }
+.wrapp-tell a{
+    margin-bottom: 43px;
+}
+.input-leng{
+    display: flex;
+    margin-bottom: 24px;
+}
+.additionally input[class="wrapp-tell-i"]{
+    height: 39.96px;
+}
+/* =====================================личный кабинет соискателя==================== */
+.contact-person-item.open{
+display: block;
+background-color: var(--color-text-w);
+margin:0 0 430px;
+}
+.contact-person-item-head.ava-open{
+    border-bottom: var(--color-text-w);
+    margin: 24px 0 0 34px;
+}
+.contact-person-item-head.ava-open h3{
+    font-weight: 500;
+font-size: 22px;
+line-height: 25px;
+color: #000000;
+
+}
+.big-name-ava{
+    display: flex;
+}
+
+.ava-pers.ava-open-pers{
+    background: url(../img/ava-open.png);
+    border-radius: 138px;
+    width: 84px;
+    height: 84px;
+    margin: 0 auto;
+}
+.person-input-date div{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 4px;
+    font-size: 12px;
+line-height: 14px;
+}
+.person-input-date-div,
+.person-input-date-numer{
+    padding-left: 5px;
+}
+.person-item-table th{
+    width: 126px;
+}
+.person-item-table{
+    padding-bottom: 58px;
+}
+.person-item.rabot-poisk{
+   
+    flex-direction: column;
+}
+/* ======================================= резюме для авторизированного работодателя=============== */
+

@@ -4,28 +4,18 @@ $('.btn-max').on('click', function () {
     $('.btn-max').css('background', ' #ECECEC');
     $('.btn-min').css('background', 'white');
 
-		$('.form-min').fadeIn();
-
+		$('.form-min').fadeIn(10);
+	$('.form-max').fadeOut(10);
 	})
 
 $('.btn-min').on('click', function () {
     $('.btn-max').css('background', 'white');
     $('.btn-min').css('background', '#ECECEC');
-
-		$('.form-max').fadeIn();
+$('.form-min').fadeOut(10);
+		$('.form-max').fadeIn(10);
 		})
 
-		$('.btn-max').on('click', function () {
-		
-				$('.form-max').fadeOut();
-				
-			})
-			$('.btn-min').on('click', function () {
-		
-				$('.form-min').fadeOut();
-				
-			})
-
+	
 
 
 //открытие малого====================================================
@@ -140,11 +130,16 @@ $('.searh-icon').on('click', function () {
 $('.search-but').on('click', function () {
 	var num = 1
 
-	$(".none-active").append('<div class="search-wr"><input class="button-div-input"type="text" name="" id="'+(num++)+'" placeholder="текст"><div class="search-but del">x</div></div>');
+	$(".none-active").append('<div class="search-wr"><input class="button-div-input input-color"type="text" name="" id="'+(num++)+'" placeholder="текст"><div class="search-but del">x</div></div>');
 
 })
+//=================2 убираем input===========
+$(document).ready(function () {
+	$("body").on("click", ".del", function () {
+		  $(this).parent().remove();
+		});
 
-
+});
 
 
 //====================== nav pers===========

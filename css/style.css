@@ -293,10 +293,10 @@ section {
 .top-summary {
     padding: 19px 14px 0 24px;
     box-sizing: border-box;
-    width: 953px;
+    /* width: 953px;
     height: 198px;
     left: 153px;
-    top: 916px;
+    top: 916px; */
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
 }
@@ -320,7 +320,7 @@ section {
     height: 2px;
     padding: 2px;
     background-color: #000;
-    margin: 4px 8px 8px 8px;
+    margin: 6px 8px 8px 8px;
     border-radius: 50%;
 
 }
@@ -354,6 +354,7 @@ hr {
     /* width: 582px; */
     height: 0px;
     border: 1px solid #EDEDED;
+    margin-top: 10px;
 }
 
 .advertising {
@@ -1318,4 +1319,17 @@ line-height: 14px;
 
 .clozet.off{
     display: none;
+}
+
+/* ====================================== страница компании ======================================= */
+.compani-item{
+    background-color: var(--bg-item);
+      padding-top: 29px;
+}
+
+  
+
+.home-applic-ava.big-ava{
+    height: 133px;
+    width: 133px;
 }

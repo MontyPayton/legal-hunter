@@ -212,7 +212,6 @@ background-color: var(--bg-hover);
  }
 .contact-person-item-head{
     display: flex;
-    height: 76px;
     border-bottom: 1px solid #C4C4C4;
     justify-content: space-between;
     padding-right: 15px;

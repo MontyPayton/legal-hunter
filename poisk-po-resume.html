@@ -68,9 +68,10 @@
                         <div class="div-h3">Найдено 345 резюме</div>
                         <div class="select-block">
                             <p class="select-block-p-sort">Сортировать:</p>
-                            <select name="_">
-                                <option value="__">По популярности</option>
-                                <option value="__">По дате добавления</option>
+                            <select  class="select" name="_" onchange="window.location.href = this.options[this.selectedIndex].value">
+                                <option value=""></option>
+                               <option value="?sort=show_counter&method=asc">  <a href="">По популярности</a> </option>
+                                <option value="?sort=date_active_from&method=asc"> <a href="">По дате добавления</a></option>
                             </select>
                         </div>
 

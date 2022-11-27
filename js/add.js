@@ -195,5 +195,11 @@ $(document).ready(function($) {
 
 
 	})
+// ======================сортировка ссылкой
+
+var links = [];
+  links['tests'] = '?sort=show_counter&method=asc';
+  links['tests2'] = '?sort=date_active_from&method=asc'
+	
 
 

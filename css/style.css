@@ -1,12 +1,13 @@
 @import "popUp.css";
 @import "accordion.css";
+
 :root {
     --color-text: #DB0000;
     --color-text-w: #fff;
     --bg-red: #CF3C3C;
     --bg-item: #F5F5F5;
-    --bg-hover:#A01111;
-    --bg-active:#7E0101;
+    --bg-hover: #A01111;
+    --bg-active: #7E0101;
     --bg-text-hover: #CF3C3C;
 }
 
@@ -195,12 +196,15 @@ body {
     color: var(--color-text-w);
 
 }
-.item-form button:hover{
+
+.item-form button:hover {
     background-color: var(--bg-hover);
 }
-.item-form button:active{
+
+.item-form button:active {
     background-color: var(--bg-active);
 }
+
 .container-item-wrapper {
     background-color: var(--bg-item);
 }
@@ -238,12 +242,15 @@ body {
     box-shadow: 0px 1px 13px rgba(182, 191, 220, 0.24);
     border-radius: 7px;
 }
-.grid-item:hover{
+
+.grid-item:hover {
     background: #F0F0F0;
 }
-.grid-item:active{
+
+.grid-item:active {
     background: #E6E6E6;
 }
+
 .grid-item div {
     padding-left: 25px;
 }
@@ -256,7 +263,8 @@ body {
     padding-top: 15px;
     padding-bottom: 6px;
 }
-.grid-item a{
+
+.grid-item a {
     text-decoration: none;
 }
 
@@ -309,13 +317,15 @@ section {
     text-decoration-line: underline;
 
 }
-.top-summary div.summary-footer-block{
+
+.top-summary div.summary-footer-block {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
 }
-.tochka{
+
+.tochka {
     width: 2px;
     height: 2px;
     padding: 2px;
@@ -324,6 +334,7 @@ section {
     border-radius: 50%;
 
 }
+
 .item-top-body-wrapper {
     margin-bottom: 6px;
 }
@@ -358,11 +369,9 @@ hr {
 }
 
 .advertising {
-    margin-left: 21px;
-    width: 220px;
-    height: 471px;
+color: var(--color-text-w);
     background: #545454;
-    background-size: 100%;
+    /* background-size: 100%; */
     /* background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -431,28 +440,31 @@ footer {
 /* //-------------------------search */
 /* //------------ input---------------- */
 .input-width {
-    height:23px;
-    border:1px solid #999;
-    background:#fff;
+    height: 23px;
+    border: 1px solid #999;
+    background: #fff;
 }
-.item-form input.input-color .del{
+
+.item-form input.input-color .del {
     font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-color: #375194;
+    font-size: 14px;
+    line-height: 16px;
+    color: #375194;
 
 }
-.item-form input.input-color{
+
+.item-form input.input-color {
     font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-color: #375194;
+    font-size: 14px;
+    line-height: 16px;
+    color: #375194;
 
 }
 
 .item-form input.input-color::placeholder {
     color: #375194;
 }
+
 .search-wr {
     display: flex;
     flex-direction: row;
@@ -473,7 +485,8 @@ color: #375194;
     border: none;
     cursor: pointer;
 }
-.search-but.del{
+
+.search-but.del {
     display: block;
 }
 
@@ -594,11 +607,13 @@ select {
 .container-personal {
     display: flex;
     padding-top: 36px;
-    
+    padding-bottom: 207px;
 }
-.nav-personal{
+
+.nav-personal {
     margin-right: 22px;
 }
+
 .nav-personal ul {
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -742,9 +757,10 @@ select {
     line-height: 16px;
     text-align: center;
     color: #666363;
-   
+
     cursor: pointer;
 }
+
 #active-h4 {
     font-weight: 500;
     font-size: 14px;
@@ -752,7 +768,9 @@ select {
     text-align: center;
     color: #000000;
 }
-.responses,.invitations {
+
+.responses,
+.invitations {
     height: 28px;
 }
 
@@ -778,10 +796,12 @@ select {
     margin-bottom: 20px;
 
 }
-.select-block-nav-p{
+
+.select-block-nav-p {
     padding: 0 13px 0 16px;
 }
-.select-block-nav-p-p{
+
+.select-block-nav-p-p {
     padding: 0 13px 0 37px;
 }
 
@@ -790,16 +810,17 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 84px;
-   
+
 }
-.table-active{
+
+.table-active {
     display: none;
 }
 
 tr {
     background-color: var(--color-text-w);
     border: 1px solid #DFE0F0;
-  
+
 }
 
 th {
@@ -809,527 +830,771 @@ th {
     padding: 16px 0 14px 26px;
     text-align: left;
 }
+
 td {
     background: var(--color-text-w);
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
     padding: 17px 0 21px 26px;
-   
+
 }
-.th-name{
+
+.th-name {
     width: 125px;
 }
+
 /* ==========================/table==================== */
 /* ==========================table2==================== */
-.th-svg{
+.th-svg {
     margin-right: 3px;
 }
+
 /* ===================vacancies=================== */
-.hr-vacancies{
+.hr-vacancies {
     width: 100%;
     margin: 0;
 }
-.h4-vacancies h4{
+
+.h4-vacancies h4 {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     padding: 16px 0 15px 0;
 }
-.item-personal-vacancies{
+
+.item-personal-vacancies {
     width: 100%;
     padding-left: 36px;
 }
-.select-block-nav-vacancies{
+
+.select-block-nav-vacancies {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 9px;
 }
-.select-block-nav-vacancies div{
+
+.select-block-nav-vacancies div {
     display: flex;
 }
-.select-block-nav-vacancies p{
+
+.select-block-nav-vacancies p {
     padding-right: 13px;
 }
-.select-block-nav-vacancies a{
+
+.select-block-nav-vacancies a {
     font-size: 13px;
-line-height: 15px;
-text-align: center;
-color: #CF3C3C;
-text-decoration: none;
+    line-height: 15px;
+    text-align: center;
+    color: #CF3C3C;
+    text-decoration: none;
 
 
 }
-.select-block-vacans-p{
+
+.select-block-vacans-p {
     padding-left: 53px;
 }
-.select-block-btn{
+
+.select-block-btn {
     width: 208px;
-height: 36px;
-border: 1px solid #CF3C3C;
-border-radius: 3px;
-display: flex;
+    height: 36px;
+    border: 1px solid #CF3C3C;
+    border-radius: 3px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.select-block-btn div{
+
+.select-block-btn div {
     font-size: 18px;
-line-height: 21px;
-text-align: center;
-color: #CF3C3C;
+    line-height: 21px;
+    text-align: center;
+    color: #CF3C3C;
 }
-.wrapper-sticker{
+
+.wrapper-sticker {
     display: flex;
     margin-top: 24px;
 }
-.wrapper-sticker div{
+
+.wrapper-sticker div {
     width: 158px;
-height: 32px;
-background: #ECECEC;
-border: 1px solid #EAEAEA;
-border-radius: 7px 7px 0px 0px;
-text-align: center;
-padding: 5px;
-margin-left: 8px;
-cursor: pointer;
+    height: 32px;
+    background: #ECECEC;
+    border: 1px solid #EAEAEA;
+    border-radius: 7px 7px 0px 0px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+    cursor: pointer;
 }
-.wrapper-sticker div.active-vacancies{
+
+.wrapper-sticker div.active-vacancies {
     background-color: var(--color-text-w);
 }
-.wrapper-vacanc-person{
 
-padding-left: 25px;
+.wrapper-vacanc-person {
+
+    padding-left: 25px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     margin-top: 9px;
 }
-.vacans-person-head{
+
+.vacans-person-head {
     display: flex;
     justify-content: space-between;
     padding-top: 17px;
 }
-.vacans-person-head-name .date{
+
+.vacans-person-head-name .date {
     font-size: 12px;
     line-height: 14px;
     padding-bottom: 5px;
 }
-.vacans-person-head-name a{
+
+.vacans-person-head-name a {
     font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-color: #375194;
+    font-size: 18px;
+    line-height: 21px;
+    color: #375194;
 }
-.city{
+
+.city {
     display: flex;
     margin-top: 9px;
     font-weight: 300;
-font-size: 14px;
-line-height: 16px;
-margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 22px;
 
 }
-.city div{
+
+/* .city div {
     width: 16px;
     text-align: center;
-}
+} */
+
 .vacans-person-head-fee {
-   margin-right: 16px; 
+    margin-right: 16px;
 }
 
-.vacans-person-head-fee p{
+.vacans-person-head-fee p {
     font-size: 12px;
     line-height: 14px;
     color: #8A8A8A;
     padding-bottom: 7px;
 }
-.vacans-person-head-fee div{
-    font-weight: 400;
-font-size: 12px;
-line-height: 14px;
 
-color: #8A8A8A;
+.vacans-person-head-fee div {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #8A8A8A;
 
 }
-.vacans-person-head-fee .fee{
+
+.vacans-person-head-fee .fee {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     color: #000000;
 }
-.vacans-person-item p{
+
+.vacans-person-item p {
     font-weight: 300;
-font-size: 14px;
-line-height: 21px;
-padding-top: 8px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 8px;
 
 }
-.vacans-person-footer{
+
+.vacans-person-footer {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
     margin-bottom: 28px;
     padding-right: 24px;
 }
-.vacans-person-footer-button{
+
+.vacans-person-footer-button {
     width: 179px;
     height: 34px;
     background: #CF3C3C;
     border: 0;
     border-radius: 6px;
     font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
 }
-.vacans-del{
+
+.vacans-del {
     width: 179px;
     height: 34px;
     border: 1px solid #CF3C3C;
     border-radius: 6px;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-color: #CF3C3C;
-background-color: var(--color-text-w);
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #CF3C3C;
+    background-color: var(--color-text-w);
 }
-.emploer-footer .vacans{
-padding-top:  200px;
+
+.emploer-footer .vacans {
+    padding-top: 200px;
 }
-.container-item-wrapper.vacancies{
+
+.container-item-wrapper.vacancies {
     padding-bottom: 200px;
 }
- 
+
 /* =====================person-item-table-------------- */
- .person-item-table{
+.person-item-table {
     border-spacing: 0 12px;
     border-collapse: separate;
     margin: 0;
     padding: 0;
- }
- .person-item-table-one{
+}
+
+.person-item-table-one {
     height: 30px;
- }
-.person-item-table th{
+}
+
+.person-item-table th {
     border: none;
     margin: 0;
     padding: 0;
     padding-left: 30px;
-    vertical-align: top; 
-   
+    vertical-align: top;
+
 }
-.person-item-table tr{
+
+.person-item-table tr {
     margin: 0;
     padding: 0;
 }
-.person-item-table td{
+
+.person-item-table td {
     margin: 0;
     padding: 0;
     text-align: left;
     padding-left: 26px;
     padding-right: 50px;
     vertical-align: top;
-}     
+}
 
 /* =================================== create-a-vacancy====================== */
-.left-svg{
+.left-svg {
     background-image: url(../img/left.svg);
     height: 12px;
     width: 13.7px;
 }
 
-.ava-item.creat-a-vacavcy p{
+.ava-item.creat-a-vacavcy p {
     padding-left: 10px;
 }
-.ava-item.creat-a-vacavcy a{
+
+.ava-item.creat-a-vacavcy a {
     font-size: 14px;
-line-height: 16px;
-color: #000000;
+    line-height: 16px;
+    color: #000000;
 }
-.personal-nickname.creat-a-vacavcy{
-padding: 0;
+
+.personal-nickname.creat-a-vacavcy {
+    padding: 0;
     background: #F5F5F5;
     border: none;
 }
-.ava-item.creat-a-vacavcy{
+
+.ava-item.creat-a-vacavcy {
     display: flex;
     align-items: center;
 }
-.podrasdel{
+
+.podrasdel {
     width: 50%;
 }
-.item-personal.creat-a-vacavcy .requirements input{
-width: 14px;
-height: 14px;
+
+.item-personal.creat-a-vacavcy .requirements input {
+    width: 14px;
+    height: 14px;
 }
-.requirements{
+
+.requirements {
     display: flex;
 }
-.item-search-input.creat-a-vacavcy{
-    padding-bottom : 107px;
-}
-.radio-h5{
+
+/* .item-search-input.creat-a-vacavcy {
+    padding-bottom: 107px;
+} */
+
+.radio-h5 {
     padding-top: 37px;
     padding-bottom: 17px;
     font-weight: 500;
-font-size: 14px;
-line-height: 16px;
+    font-size: 14px;
+    line-height: 16px;
 }
-.requirements{
+
+.requirements {
     margin-bottom: 17px;
 }
-.wrapp-tell h4, .kpp h4, .additionally h4{
+
+.wrapp-tell h4,
+.kpp h4,
+.additionally h4 {
     font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 9px;
 }
+
 .wrapp-tell-i {
     margin-bottom: 27px;
 }
-.item-personal input.wrapp-tell-i{
+
+.item-personal input.wrapp-tell-i {
     width: 97%;
 }
-.item-personal input.wrapp-tell-i.in{
+
+.item-personal input.wrapp-tell-i.in {
     width: 98.5%;
 }
-.creat-vacancy-select{
+
+.creat-vacancy-select {
     width: 97%;
     height: 39.9px;
     border: 1px solid #EAEAEA;
 }
 
 
-  
+
 
 
 /* ==================================================Главная соискателя */
-.item-form.applicant{
+.item-form.applicant {
     background-image: url(../img/stud.png);
 
- 
+
 }
 
-.applicant-h1{
+.applicant-h1 {
     margin: 0 auto;
     max-width: 438px;
 }
-.time.home-applicant{
+
+.time.home-applicant {
     font-weight: 500;
-font-size: 16px;
-line-height: 18px;
+    font-size: 16px;
+    line-height: 18px;
 }
-.item-top-body-wrapper{
+
+.item-top-body-wrapper {
     display: flex;
     background-color: white;
 }
-.home-applic-item{
+
+.home-applic-item {
     padding: 16px 15px 16px 40px;
 }
-.home-applic-item-head{
+
+.home-applic-item-head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 4px;
 }
-.top-summary-app{
+
+.top-summary-app {
     display: flex;
 }
-.summary-footer-block{
+
+.summary-footer-block {
     display: flex;
     margin-top: 11px;
 }
-.summary-footer-block-div{
+
+.summary-footer-block-div {
     font-weight: 300;
-font-size: 14px;
-line-height: 16px;
+    font-size: 14px;
+    line-height: 16px;
 }
-.home-applic-item-head a{
+
+.home-applic-item-head a {
     font-weight: 500;
-font-size: 18px;
-line-height: 21px;
-color: #375194;
+    font-size: 18px;
+    line-height: 21px;
+    color: #375194;
 
 }
 
-.home-applic-item-body a{
+.home-applic-item-body a {
     font-weight: 300;
-font-size: 14px;
-line-height: 16px;
-color: #000000;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }
-.time-man{
+
+.time-man {
     font-weight: 500;
-font-size: 16px;
-line-height: 18px;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .home-applic-ava {
     background-image: url(../img/image\ 2-fim.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 101px;
-    height: 101px;
-    margin: 19px 0px 0 20px;
-}
-.home-applic-item-body-p{
-width: 767px;
+    width: 91px;
+    height: 91px;
+    margin: 24px;
+    padding: 34px;
 }
 
-.home-applic-item-body hr{
+/* .home-applic-item-body-p{
+width: 767px;
+} */
+
+.home-applic-item-body hr {
     width: 100%;
 }
-.home-applic-item-body-p p{
+
+.home-applic-item-body-p p {
     font-weight: 300;
-font-size: 14px;
-line-height: 21px;
+    font-size: 14px;
+    line-height: 21px;
 }
+
 /* ======================библиотека=================== */
 
-.pretty.p-round .state label:after, .pretty.p-round .state label:before {
+.pretty.p-round .state label:after,
+.pretty.p-round .state label:before {
     border-radius: 0;
     margin-top: 2px;
     background: #FFFFFF;
 }
-.pretty input:checked~.state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
-    background-color: #375194!important;
+
+.pretty input:checked~.state.p-primary label:after,
+.pretty.p-toggle .state.p-primary label:after {
+    background-color: #375194 !important;
 }
-.state.p-primary p{
+
+.state.p-primary p {
     padding-left: 16px;
-   
+
     font-size: 14px;
-line-height: 16px;
+    line-height: 16px;
 }
+
 .pretty .state label:before {
     border-color: #EAEAEA;
 }
+
 /* =========================================замена кнопок=============================== */
 .form_radio_btn {
-	display: inline-block;
-	margin-top: 25px;
-}
-.form_radio_btn input[type=radio] {
-	display: none;
-}
-.form_radio_btn label {
-	display: inline-block;
-	cursor: pointer;
-	padding: 0px 45px;
-	line-height: 39px;
-	border: 1px solid #D5D5D5;
-	user-select: none;
-}
- 
-/* Checked */
-.form_radio_btn input[type=radio]:checked + label {
-	background-color:  #ECECEC;
-}
- 
-/* Hover */
-.form_radio_btn label:hover {
-	color: #666;
-   
+    display: inline-block;
+    margin-top: 25px;
 }
 
- 
-/* Disabled */
-.form_radio_btn input[type=radio]:disabled + label {
-	background: #efefef;
-	color: #666;
+.form_radio_btn input[type=radio] {
+    display: none;
 }
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 45px;
+    line-height: 39px;
+    border: 1px solid #D5D5D5;
+    user-select: none;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked+label {
+    background-color: #ECECEC;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+    color: #666;
+
+}
+
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled+label {
+    background: #efefef;
+    color: #666;
+}
+
 /* =========================================/замена кнопок=============================== */
 /* ===============================личный кабинет соискателя-резюме========================= */
-.gre{
+.gre {
     color: #666363;
 
 }
-.kpp.resum{
+
+.kpp.resum {
     margin-bottom: 24px;
 }
-.period{
+
+.period {
     display: flex;
 }
+
 .wrapp-tell div.period-1,
-.wrapp-tell div.period-2{
+.wrapp-tell div.period-2 {
     width: 100px;
 }
-.period-2{
+
+.period-2 {
     margin-left: 12px;
 }
-.wrapp-tell a{
+
+.wrapp-tell a {
     margin-bottom: 43px;
 }
-.input-leng{
+
+.input-leng {
     display: flex;
     margin-bottom: 24px;
 }
-.additionally input[class="wrapp-tell-i"]{
+
+.additionally input[class="wrapp-tell-i"] {
     height: 39.96px;
 }
+
 /* =====================================личный кабинет соискателя==================== */
-.contact-person-item.open{
-display: block;
-background-color: var(--color-text-w);
-margin:0 0 430px;
+.contact-person-item.open {
+    display: block;
+    background-color: var(--color-text-w);
+    margin: 0 0 430px;
 }
-.contact-person-item-head.ava-open{
+
+.contact-person-item-head.ava-open {
     border-bottom: var(--color-text-w);
-    margin: 24px 0 0 34px;
+   
 }
-.contact-person-item-head.ava-open h3{
+
+.contact-person-item-head.ava-open h3 {
     font-weight: 500;
-font-size: 22px;
-line-height: 25px;
-color: #000000;
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
 
 }
-.big-name-ava{
+
+.big-name-ava {
     display: flex;
+    text-align: center;
+    background-color: var(--color-text-w);
 }
 
-.ava-pers.ava-open-pers{
+.ava-pers.ava-open-pers {
     background: url(../img/ava-open.png);
     border-radius: 138px;
     width: 84px;
     height: 84px;
     margin: 0 auto;
 }
-.person-input-date div{
+
+.person-input-date div {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 4px;
     font-size: 12px;
-line-height: 14px;
+    line-height: 14px;
 }
+
 .person-input-date-div,
-.person-input-date-numer{
+.person-input-date-numer {
     padding-left: 5px;
 }
-.person-item-table th{
+
+.person-item-table th {
     width: 126px;
 }
-.person-item-table{
+
+.person-item-table {
     padding-bottom: 58px;
 }
-.person-item.rabot-poisk{
-   
+
+.person-item.rabot-poisk {
+
     flex-direction: column;
 }
+
 /* ======================================= резюме для авторизированного работодателя=============== */
 
-.clozet.off{
+.clozet.off {
     display: none;
 }
 
 /* ====================================== страница компании ======================================= */
-.compani-item{
+.compani-item {
     background-color: var(--bg-item);
-      padding-top: 29px;
+    padding-top: 29px;
 }
 
-  
 
-.home-applic-ava.big-ava{
+
+.home-applic-ava.big-ava {
     height: 133px;
     width: 133px;
+}
+
+/* ==========================страница вакансии==================== */
+.home-applic-item-body h5 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 22px;
+    padding-top: 4px;
+}
+
+.home-applic-item-body h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.item-vacanci-centr {
+    display: flex;
+    margin-top: 16px;
+}
+
+.container-personal.ferm {
+    display: block;
+}
+
+.name-vacanci-centr {
+    width: 100%;
+    background-color: var(--color-text-w);
+    padding: 27px 33px;
+}
+
+.name-vacanci-centr-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    
+}
+
+.icon-p {
+    display: flex;
+}
+
+.icon-p p {
+    margin-left: 18px;
+}
+
+.place-date {
+    display: flex;
+}
+
+.money-vacanci {
+    margin-left: 20px;
+}
+.money-bat{
+    background-color: var(--color-text-w);
+}
+
+.money-bat button {
+    width: 300px;
+    height: 43px;
+    background: #CF3C3C;
+    border: none;
+    border-radius: 6px;
+    color: var(--color-text-w);
+
+}
+.vacancy-description h3{
+font-weight: 500;
+font-size: 15px;
+line-height: 17px;
+}
+.vacancy-description p{
+    font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+}
+.vacans-person-head-name.min{
+    border-bottom: 0.5px solid #666363;;
+}
+.similar-vacancies{
+    background-color: white;
+margin-top: 19px;
+padding: 19px;
+}
+/* =======================оставить отклик===================== */
+.name-vacanci-centr{
+    height: 500px;
+}
+.name-vacanci-centr input{
+   width: 100%;
+
+border: none; 
+font-size: 14px;
+line-height: 16px;
+color: #787878;
+}
+.money-batton{
+    width: 300px;
+    height: 43px;
+    background: #CF3C3C;
+    border: none;
+    border-radius: 6px;
+    color: var(--color-text-w);
+}
+/* ======================личный-кабинет-сщискателя======================= */
+.ava-pers.ava-open-pers.five{
+    background: url(../img/image-ava-50.png);
+    width: 50px;
+    height: 50px;
+
+}
+.ava-pers.ava-open-pers.five div{
+    text-align: left;
+}
+.big-name-ava div{
+    width: 100%;
+}
+
+.block-input-two{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.block-input-two h3,
+.block-input-one h3
+{
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #000000;
+margin-bottom: 9px;
+}
+.block-input-two input{
+height: 38px;
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+width: 100%;
+}
+.block-input-two div{
+    width: 50%;
+}
+.block-input-two div:last-child{
+    margin-left: 20px;
+}
+.block-input-two select{
+height: 38px;
+width: 100%;
+}
+.block-input-one{
+    height: 38px;
+width: 100%;
 }

@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300;400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Личный кабинет соискателя-big</title>
+    
+    <title>Личный кабинет работодателя</title>
 </head>
 
 <body>
@@ -34,7 +36,7 @@
                             <input type="text" class="input-head" placeholder="Поиск">
                             <div class="searh-icon" aria-hidden="true"></div>
                         </div>
-                        <div class="personal-area"> <a href="">Личный кабинет</a> </div>
+                        <div class="personal-area"> <a class="activ-a3"href="">Личный кабинет</a> </div>
 
                     </div>
                 </nav>
@@ -44,10 +46,10 @@
         <div class="container-item-wrapper">
             <div class="container-item">
                 <div class="container-personal">
-                    <!-- ================навигация с лева============== -->
+                    <!-- ==================================навигация с лева==================== -->
                     <nav class="nav-personal">
                         <ul>
-                            <li class="big-ul-li-a"><a class="li-a" href="#">Личный кабинет</a></li>
+                            <li class="big-ul-li-a"><a class="li-a activ-a3" href="#">Личный кабинет</a></li>
                             <div class="active-li">
                              <li  class="ul-li-a"><a class="active-a" href="#">Персональная информация</a></li>
                             <li  class="ul-li-a"><a class="active-a" href="#">Отклики</a></li>
@@ -57,70 +59,100 @@
                            
                         </ul>
                     </nav>
-       <!-- ================/навигация с лева============== -->
-
-                    <div class="contact-person-item">
+                    <!-- ==================================навигация с лева==================== -->
+                    <div class="item-personal">
                         <h3>Персональная информация</h3>
                         <hr>
-<!-- ==============================блок имя и ава===================== -->
-                        <div class="contact-person-item-head ava-open">
-                            <div class="big-name-ava ">
-                                  <div class="ava-pers ava-open-pers five">
+                        <form action="">
+                            <div class="personal-nickname">
+                                <div class="ava ava-img"></div>
+                                <div class="ava-item">
+                                    <p class="nickname">Алексеев Иван Иванович</p>
+                                    <p> <a class="activ-a1" href="#">Поменять аватарку</a> </p>
+                                </div>
+
                             </div>
-                            <div>
-                                  <h4>Алексеев Иван Иванович</h4>
-                             <a href="">Поменять аватарку</a>
+                            <hr>
+                            <div class="asu-stud">
+                                <h3>Обязательная информация из личного кабинета студента</h3>
+                                <div>
+                                    <p>
+                                        Вы можете вручную заполнить поля персональной 
+                                        информации либо 
+                                        <a class='activ-a1'href="">
+                                          заполнить их автоматически с помощью АСУ ВУЗа
+                                        </a> 
+                                    </p>
+                                </div>
                             </div>
-                           
-                            </div>
-                            
-                             </div>
-<!-- ==============================/блок имя и ава===================== -->
-<hr>
-<div>
-    <p style="width:419px ;">Вы можете вручную заполнить поля персональной информации либо заполнить их автоматически с помощью
-        АСУ ВУЗа</p>
-</div>
-<!-- ========================группа инпут========================== -->
+                       <!-- =========================инпут двойной 50%========================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last"><h3>ФИО</h3><input class="inp-col" type="text" value="" placeholder="Алексеев Иван Иванович"></div>
+    <div class="block-input-two-last-child"><h3>Дата рождения</h3><input class="inp-col"type="text" value=""placeholder="01.01.1998"></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== --> 
+        <!-- =========================инпут двойной 50%========================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last"><h3>Номер группы</h3><input class="inp-col" type="text" value=""placeholder="СП-ЮР23"></div>
+    <div class="block-input-two-last-child"><h3>Специальность</h3><input class="inp-col"type="text"placeholder="Специальность"></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== --> 
+                 <!-- =========================инпут двойной 50%========================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last"><h3>Специализация</h3><input class="inp-col"type="text"placeholder="Специализация"></div>
+    <div class="block-input-two-last-child"><h3>Институт</h3><input class="inp-col"type="text"placeholder="Институт"></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== --> 
 <!-- =========================инпут двойной 50%========================== -->
 <div class="block-input-two">
-    <div><h3>ФИО</h3><input type="text"></div>
-    <div><h3>Дата рождения</h3><input type="text"></div>
+    <div class="block-input-two-last"><h3>Уровень образования</h3><input class="inp-col"type="text" value="" placeholder="Уровень образования"></div>
+    <div class="block-input-two-last-child"><h3>Программа обучения</h3><input class="inp-col"type="text" value=""placeholder="Программа обучения"></div>
     </div>
-<!-- =========================/инпут двойной 50%========================== -->    
+<!-- =========================/инпут двойной 50%========================== --> 
+        <!-- =========================инпут двойной 50%========================== -->
 <div class="block-input-two">
-    <div><h3>ФИО</h3><input type="text"></div>
-    <div><h3>Дата рождения</h3><input type="text"></div>
-</div>
-<div class="block-input-two">
-    <div><h3>ФИО</h3><input type="text"></div>
-    <div><h3>Дата рождения</h3><input type="text"></div>
+    <div class="block-input-two-last"><h3>Курс</h3><input class="inp-col"type="text" value=""placeholder="Курс"></div>
+    <div class="block-input-two-last-child"><h3>Год набора</h3><input class="inp-col"type="text"placeholder="Год набора"></div>
     </div>
+<!-- =========================/инпут двойной 50%========================== --> 
+                 <!-- =========================инпут двойной 50%========================== -->
 <div class="block-input-two">
-    <div><h3>ФИО</h3><input type="text"></div>
-    <div><h3>Дата рождения</h3><input type="text"></div>
-</div>
-<div class="block-input-two">
-    <div><h3>ФИО</h3><input type="text"></div>
-    <div><h3>Дата рождения</h3><input type="text"></div>
+    <div class="block-input-two-last"><h3>Список дисциплин</h3><input class="inp-col"type="text"placeholder="Список дисциплин"></div>
+    <div class="block-input-two-last-child"><h3>Состояние</h3><input class="inp-col"type="text"placeholder="Состояние"></div>
     </div>
-<div class="block-input-two">
-    <div><h3>ФИО</h3><input type="text"></div>
-    <div><h3>Дата рождения</h3><input type="text"></div>
+<!-- =========================/инпут двойной 50%========================== --> 
+ <!-- =========================инпут двойной 50%========================== -->
+ <div class="block-input-two">
+    <div class="block-input-two-last"><h3>Пройдённые практики</h3><input class="inp-col"type="text"placeholder="Пройдённые практики"></div>
+    <div class="block-input-two-last-child"><h3>Средний балл диплома (для выпускников)</h3><input class="inp-col"type="text"placeholder="Средний балл диплома"></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== --> 
+<div class="diplom">
+    <h3>Курсовые работы</h3>
+<a class='activ-a1'href="">Курсовая работа1.doc</a>
+<a class='activ-a1'href="">Курсовая работа2.doc</a>
+<a class='activ-a1'href="">Курсовая работа3.doc</a>
+<h3>Дипломная работа</h3>
+<a class='activ-a1'href="">Дипломная работа.doc</a>
 </div>
-<div class="block-input-two">
-    <div><h3>ФИО</h3><input type="text"></div>
-    <div><h3>Дата рождения</h3><input type="text"></div>
+   <hr>
+<div class=" pretty p-default p-round p-smooth requirements mar-type">
+    <input type="checkbox" id="radioButton">
+    <div class="state p-primary">
+        <label><p>Согласие на публикацию обязательной информации</p></label>
+    </div>
 </div>
-<!-- ============================/группа инпут -->
+                         
+                        </form>
+                     
+                        <button class="red-activ btn-1" type="">Верифицировать аккаунт</button>
                     </div>
-
                 </div>
             </div>
         </div>
-        <footer class="emploer-footer">
+        <footer>
             <section>
-                <div class="footer-wrapper ">
+                <div class="footer-wrapper">
                     <div class="footer-logo">
                         <div class="logo">
                             <a href="#">
@@ -149,9 +181,12 @@
         </footer>
 
     </div>
-        </div>
-        </div>
-    </div>
+    <!-- ----------------------_______________________ -->
+
+    <!-- ________________________________/окно___________________________ -->
+    <!-- ----------------------всплывающее окно-большое_______________________ -->
+
+    <!-- ________________________________/окно-большое___________________________ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./js/add.js"></script>
 </body>

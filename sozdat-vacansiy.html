@@ -35,7 +35,7 @@
                             <input type="text" class="input-head" placeholder="Поиск">
                             <div class="searh-icon" aria-hidden="true"></div>
                         </div>
-                        <div class="personal-area"> <a href="">Личный кабинет</a> </div>
+                        <div class="personal-area"> <a class="activ-a3" href="">Личный кабинет</a> </div>
 
                     </div>
                 </nav>
@@ -47,7 +47,7 @@
                 <div class="container-personal">
                     <nav class="nav-personal">
                         <ul>
-                            <li class="big-ul-li-a"><a class="li-a" href="#">Личный кабинет</a></li>
+                            <li class="big-ul-li-a"><a class="li-a activ-a3" href="#">Личный кабинет</a></li>
                             <div class="active-li">
                                 <li class="ul-li-a"><a class="active-a" href="#">Персональная информация</a></li>
                                 <li class="ul-li-a"><a class="active-a" href="#">Отклики</a></li>
@@ -65,84 +65,90 @@
 <!-- ============================== стрелка в право с текстом=============== -->
                                 <div class="ava-item creat-a-vacavcy">
                                     <div class="left-svg"></div>
-                                    <p> <a href="#">Назад к вакансиям</a> </p>
+                                    <p> <a class="activ-a3" href="#">Назад к вакансиям</a> </p>
                                 </div>
                                 <!-- ============================== /стрелка в право с текстом=============== -->
 
                             </div>
                             <hr>
-                       <!-- ================== 2 инпут =====================      -->
-                            <div class="block-input-two">
-                                <div>
-                                    <h3>Название должности</h3>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <h3>Специальность</h3>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <!-- ================== /2 инпут =====================      -->
-                            <!-- ================== 1селект + 1 инпут =====================      -->
-                            <div class="block-input-two">
-                                <div>
-                                    <h3>Требуемое образование</h3>
-                                  <select>
-                                        <option value="o1">Высшее полное</option>
-                                        <option value="o2">Неполное высшее</option>
-                                        <option value="o3">Бакалавриат</option>
-                                        <option value="o4">Магистратура</option>
-                                      </select>
-                                </div>
-                                <div>
-                                    <h3>Адрес</h3>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <!-- ================== /1селект + 1 инпут =====================      -->
-                            <!-- ======================= 1 инпут 50% ============================= -->
-                            <div class="block-input-one">
-                                <h3>Подразделение</h3>
-                                <input type="text">
-                            </div>
- <!-- ======================= /1 инпут 50% ============================= -->
-                            <div class="block-input-two">
-                                <div>
-                                    <h3>Оплата в рублях</h3>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <h3>Требуемый опыт</h3>
-                                    <input type="text">
-                                </div>
+                       <!-- =========================инпут двойной 50%========================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last"><h3>Название должности</h3><input type="text" value="Старший помощник судьи"></div>
+    <div class="block-input-two-last-child"><h3>Специальность</h3><input type="text" value="Судья"></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== --> 
+ <!-- ========================= селект 50% инпут 50%========================== -->
+ <div class="block-input-two">
+    <div class="block-input-two-last">
+        <h3>Требуемое образование</h3>
+      <select>
+            <option value="o1">Высшее полное</option>
+            <option value="o2">Неполное высшее</option>
+            <option value="o3">Бакалавриат</option>
+            <option value="o4">Магистратура</option>
+          </select>
+    </div>
+    <div class="block-input-two-last-child"><h3>Адрес</h3><input type="text"value="Москва"></div>
+    </div>
+<!-- =========================/селект 50% инпут  50%========================== --> 
+<!-- ======================= 1 инпут 50% ============================= -->
+<div class="block-input-two">
+    <div class="block-input-two-last w49"><h3>Подразделение</h3><input type="text" value=""></div>
+    
+    </div>
+<!-- ======================= /1 инпут 50% ============================= -->
 
-                            </div>
-                            <div class="block-input-two">
-                                <div>
-                                    <h3>Оплата в рублях</h4>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <h3>Требуемый опыт</h4>
-                                    <input type="text">
-                                </div>
-
-                            </div>
-
-                            <div class="additionally">
-                                <h4>Дополнительная информация</h4>
-                                <input class="wrapp-tell-i in"type="text">
-                            </div>
-                            <div class="wrapp-tell">
-                                <div>
-                                    <h4>Оплата в рублях</h4>
-                                    <input class="wrapp-tell-i"type="text">
-                                </div>
-                                <div>
-                                    <h4>Оплата в рублях</h4>
-                                    <input class="wrapp-tell-i"type="text">
-                                </div>
-                            </div>
+       <!-- ========================= инпут 50%селект 50% ========================== -->
+ <div class="block-input-two">
+    <div class="block-input-two-last">
+        <h3>Оплата в рублях</h3><input type="text"value="50 000 - 60 000">
+        
+    </div>
+    <div class="block-input-two-last-child">
+        <h3>Требуемый опыт</h3>
+      <select>
+            <option value="o1">Не имеет значение</option>
+            <option value="o2">2</option>
+            <option value="o3">3</option>
+            <option value="o4">4</option>
+          </select>
+    </div>
+    </div>
+<!-- =========================/инпут  50%селект 50% ========================== --> 
+ <!-- ========================= селект 50% селект 50%========================== -->
+ <div class="block-input-two">
+    <div class="block-input-two-last">
+        <h3>Тип занятости</h3>
+      <select>
+            <option value="o1">Полная</option>
+            <option value="o2">2</option>
+            <option value="o3">3</option>
+            <option value="o4">4</option>
+          </select>
+    </div>
+    <div class="block-input-two-last-child">
+        <h3>График работы</h3>
+      <select>
+            <option value="o1">Полный рабочий день</option>
+            <option value="o2">2</option>
+            <option value="o3">3</option>
+            <option value="o4">4</option>
+          </select>
+    </div>
+    </div>
+<!-- =========================/селект 50% селект  50%========================== --> 
+<!-- ==============================инпут один 100% большой=============================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last input-100 big"><h3>Дополнительная информация</h3><input style="height:90px;" type="text" value=""></div>
+    </div>                   
+<!-- ==============================/инпут один 100%=============================== -->
+          <!-- =========================инпут двойной 50%========================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last"><h3>Требуемая специализация</h3><input type="text" value=""></div>
+    <div class="block-input-two-last-child"><h3>Необходимые практические навыки</h3><input type="text" value=""></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== -->     
+        
                              <!-- radio==========================================  -->
                             <h5 class="radio-h5">Дополнительные требования</h5>
                             <div class=" pretty p-default p-round p-smooth requirements">
@@ -179,17 +185,19 @@
                                 <div class="search-but">+</div>
                             </div>
                             </div>
-                        
+                            <!-- =====================block-btn==================== -->
+                                      <div class="btn-create-a-vacancy">
+                    <button class="wiht-activ">Сохранить как черновик</button>
+                    <button class="red-activ">Сохранить</button>
+                </div>
+                <!-- =====================/block-btn==================== -->
                         </div>
                   
                         
                     </div>
-                    
+          
                 </div>
-                 <div class="btn-create-a-vacancy">
-                    <button>Сохранить как черновик</button>
-                    <button>Сохранить</button>
-                </div>
+             
             </div>
         </div>
         <footer>

@@ -163,16 +163,16 @@ $('.responses').on('click',function(){
 	$('.invitations').removeClass("active-div");
 	$('.invitations h4').removeAttr("id");
 	$('.responses h4').prop('id', 'active-h4');
-	$('table').toggle(500)
-	$('.clozet').toggle(500)
+	$('table').toggle()
+	$('.clozet').toggle()
 })
 $('.invitations').on('click',function(){
 	$('.invitations').addClass("active-div");
 	$('.responses').removeClass("active-div");
 	$('.invitations h4').prop('id', 'active-h4');
 	$('.responses h4').removeAttr("id");
-	$('table').toggle(500)
-	$('.clozet').toggle(500)
+	$('table').toggle()
+	$('.clozet').toggle()
 })
 // =========================== открытие отклика popup =================
 $(document).ready(function($) {

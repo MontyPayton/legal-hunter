@@ -4,7 +4,8 @@
     --color-hover-a3: #CF3C3C;
     --color-activ-a3:#7E0101;
     --bg-menu-hover:#E6E6E6;;
-    --bg-menu-active: #E6E6E6;;
+    --bg-menu-active: #E6E6E6;
+    --color-bla:#000;
 }
 /* ========кнопки============= */
 .red-activ{
@@ -30,6 +31,12 @@
 .wiht-activ:active{
     background: #7E0101;
 }
+.contact-person button:nth-child(2):hover{
+color: #A01111;
+}
+.contact-person button:nth-child(2):active{
+    color: #7E0101;
+    }
 
 /* ========/кнопки============= */
 
@@ -41,10 +48,12 @@ color: var(--color-hover-a2);
     color: var(--color-activ-a2);
     }
 
-    .activ-a3:hover{
+    .activ-a3:hover,
+    .ava-item.creat-a-vacavcy a:hover{
         color: var(--color-hover-a3);
         }
-        .activ-a3:active{
+        .activ-a3:active,
+        .ava-item.creat-a-vacavcy a:active{
             color: var(--color-activ-a3);
             }
 
@@ -55,8 +64,13 @@ color: var(--color-hover-a2);
 /* -------------------------------- */
 .top-summary:hover,
 .top-summary-app:hover
+
 {
 background-color: var(--bg-hover2);
+}
+.click-item.tab-grid h4:hover
+{
+color:var(--color-bla)
 }
 
 
@@ -70,3 +84,67 @@ background-color: var(--bg-hover2);
 }
 
 /* ===================/пагинация=============== */
+
+/* ======================навигация=============== */
+.ul-li-a:hover,
+tr:hover,
+td:hover,
+.wrapper-vacanc-person:hover
+{
+    background-color: #F3F4FE;
+}
+
+/* ======================/навигация=============== */
+
+/* =====================table========================= */
+.active-green{
+    color: #2B8D41;
+}
+.td-active-vacans{
+    font-weight: 500;
+font-size: 13px;
+line-height: 17px;
+text-decoration-line: underline;
+color: #5883F1;
+cursor: pointer;
+}
+.td-active-vacans:hover {
+color:var(--color-hover-a2)
+}
+.td-active-vacans:active {
+    color:var(--color-activ-a2)
+    }
+
+    .td-active-red{
+        color: #CF3C3C;
+    }
+    .th-svg-div{
+        height: 21px;
+        width: 21px;
+        background: url("../img/arrow-n.svg");
+        background-repeat: no-repeat;
+    background-size: contain;
+    }
+    .th-svg-div:hover{
+       
+        background: url("../img/arrow-h.svg");
+     
+    }
+    .th-svg-div:active{
+       
+        background: url("../img/arrow.svg");
+     
+    }
+    /* =================вкладки================= */
+    .wrapper-sticker div:hover,
+    .wrapper-sticker div.active-vacancies:hover
+    {
+background-color:#F0F0F0;
+
+    }
+    .wrapper-sticker div:active,
+    .wrapper-sticker div.active-vacancies:active
+    {
+        background-color:#E6E6E6;
+        
+            }

@@ -857,6 +857,8 @@ td {
 
 .th-name {
     width: 125px;
+    cursor: pointer;
+    text-decoration-line: underline;
 }
 
 /* ==========================/table==================== */
@@ -1589,7 +1591,8 @@ color: #787878;
     margin-top: 30px;
 }
 .block-input-two h3,
-.block-input-one h3
+.block-input-one h3,
+.diplom h3
 {
     font-weight: 500;
 font-size: 14px;
@@ -1642,3 +1645,58 @@ margin-right: 25px;
 .wiht-activ img{
     padding-right: 8px;
 }
+.popup-name-red{
+    padding: 27px;
+}
+.btn-w-a{
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+
+border-radius: 3px;
+}
+.btn-create-a-vacancy{
+   text-align: center;
+display: flex;
+justify-content: space-between; 
+margin-top: 107px;
+}
+.btn-create-a-vacancy button{
+    width: 230px;
+}
+.ava.ava-img{
+    background-image: url("../img/ava-pers-50.png");
+    width: 50px;
+    height: 50px;
+}
+.asu-stud div{
+    border: 1px solid #EAEAEA;
+    width: 454px;
+height: 92px;
+margin: 39px 0;
+padding: 18px;
+}
+.diplom{
+    display: flex;
+    flex-direction: column;
+  
+}
+.diplom h3{
+     margin-top: 42px;
+     margin-bottom: 17px;
+}
+.diplom a{
+    margin: 17px 0;
+}
+.mar-type{
+    margin: 30px 0 70px 0;
+}
+.inp-col::placeholder{
+    color: #787878;
+}
+.cabinet{
+    padding: 24px 18px 0 34px;
+}
+ 

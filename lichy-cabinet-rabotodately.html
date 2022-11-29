@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300;400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Личный кабинет работодателя</title>
 </head>
 
@@ -34,7 +35,7 @@
                             <input type="text" class="input-head" placeholder="Поиск">
                             <div class="searh-icon" aria-hidden="true"></div>
                         </div>
-                        <div class="personal-area"> <a href="">Личный кабинет</a> </div>
+                        <div class="personal-area"> <a class="activ-a3"href="">Личный кабинет</a> </div>
 
                     </div>
                 </nav>
@@ -47,7 +48,7 @@
                     <!-- ==================================навигация с лева==================== -->
                     <nav class="nav-personal">
                         <ul>
-                            <li class="big-ul-li-a"><a class="li-a" href="#">Личный кабинет</a></li>
+                            <li class="big-ul-li-a"><a class="li-a activ-a3" href="#">Личный кабинет</a></li>
                             <div class="active-li">
                              <li  class="ul-li-a"><a class="active-a" href="#">Персональная информация</a></li>
                             <li  class="ul-li-a"><a class="active-a" href="#">Отклики</a></li>
@@ -66,65 +67,63 @@
                                 <div class="ava"></div>
                                 <div class="ava-item">
                                     <p class="nickname">Московский городской суд</p>
-                                    <p> <a href="#">Поменять аватарку</a> </p>
+                                    <p> <a class="activ-a1" href="#">Поменять аватарку</a> </p>
                                 </div>
 
                             </div>
                             <hr>
-                            <div class="wrapp-tell">
-                                <div>
-                                    <h4>Название организации*</h4>
-                            <input type="text">
-                                </div>
-                                <div>
-                                      <h4>Контактный телефон*</h4>
-                            <input type="text">
-                                </div>
-                            </div>
-                            <div class="wrapp-tell">
-                                <div>
-                                    <h4>Юридический адрес*</h4>
-                            <input type="text">
-                                </div>
-                            <div>
-                                <h4>Руководитель*</h4>
-                            <input type="text">
-
-                            </div>
-                            
-                            </div>
-                            <h4>Краткое описание деятельности организации</h4>
-                            <input type="text">
-                            <div class="wrapp-tell">
-                            <div>
-                                <h4>ИНН*</h4>
-                            <input type="text">
-                            </div>
-                            <div>
-                                <h4>ОГРН*</h4>
-                            <input type="text">
-                            </div>
-                            </div>
-                            <div class="kpp">
-                                <h4>КПП*</h4>
-                            <input type="text">
-                            </div>
-                            <div class="additionally">
-                                   <h4>Дополнительная информация</h4> 
-                            <input type="text">
-                            </div>
+                       <!-- =========================инпут двойной 50%========================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last"><h3>Название организации*</h3><input type="text" value="Московский городской суд"></div>
+    <div class="block-input-two-last-child"><h3>Контактный телефон*</h3><input type="text" value="+7 (495) 912-02-29"></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== --> 
+        <!-- =========================инпут двойной 50%========================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last"><h3>Юридический адрес*</h3><input type="text" value="ул. Богородский Вал, 8, Москва, 107076"></div>
+    <div class="block-input-two-last-child"><h3>Руководитель*</h3><input type="text"></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== --> 
+<!-- ==============================инпут один 100%=============================== -->
+<div class="block-input-two ">
+    <div class="block-input-two-last input-100"><h3>Краткое описание деятельности организации</h3><input type="text" value=""></div>
+   
+    </div>
+                        
+                            <!-- ==============================/инпут один 100%=============================== -->
+                 <!-- =========================инпут двойной 50%========================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last"><h3>ИНН*</h3><input type="text"></div>
+    <div class="block-input-two-last-child"><h3>ОГРН*</h3><input type="text"></div>
+    </div>
+<!-- =========================/инпут двойной 50%========================== --> 
+<!-- ======================= 1 инпут 50% ============================= -->
+<div class="block-input-two">
+    <div class="block-input-two-last w49"><h3>КПП*</h3><input type="text" value=""></div>
+    
+    </div>
+<!-- ======================= /1 инпут 50% ============================= -->
+<!-- ==============================инпут один 100% большой=============================== -->
+<div class="block-input-two">
+    <div class="block-input-two-last input-100 big"><h3>Дополнительная информация</h3><input style="height:90px; margin-bottom: 30px;" type="text" value=""></div>
+    
+    </div>
+                        
+                            <!-- ==============================/инпут один 100%=============================== -->
+                      
                             <div class="doc-wrap">
-                                 <button>Прикрепить выписку из ЕГРЮЛ</button>
+                                 <button class="wiht-activ btn-2"><img src="./img/skrep.svg" alt="">Прикрепить выписку из ЕГРЮЛ</button>
+                                 
                          <a href="#">Выписка из ЕГРЮЛ.doc</a><div>x</div>
                             </div>
                         <div class="doc-wrap">
-                            <button>Прикрепить устав</button>
-                         <a href="#">Выписка из ЕГРЮЛ.doc</a><div>x</div>
+                            <button class="wiht-activ btn-2"><img src="./img/skrep.svg" alt="">Прикрепить устав</button>
+                         <a href="#">Устав.doc</a><div>x</div>
                         </div>
                          
                         </form>
                         <hr>
-                        <button>Верифицировать аккаунт</button>
+                        <button class="red-activ btn-1" type="">Верифицировать аккаунт</button>
                     </div>
                 </div>
             </div>

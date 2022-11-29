@@ -1,5 +1,6 @@
 @import "popUp.css";
 @import "accordion.css";
+@import "activ-class.css";
 
 :root {
     --color-text: #DB0000;
@@ -9,6 +10,7 @@
     --bg-hover: #A01111;
     --bg-active: #7E0101;
     --bg-text-hover: #CF3C3C;
+    --bg-hover2: #F3F4FE;
 }
 
 html {
@@ -39,10 +41,26 @@ a {
 
 input {
     outline: none;
+    padding-left: 1em;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }
 
 button {
     cursor: pointer;
+    height: 43.83px;
+    border-radius:6px;
+    border: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
 }
 
 /* font-family: 'Montserrat', sans-serif;
@@ -182,28 +200,11 @@ body {
 
 .item-form button {
     width: 222px;
-    height: 43.83px;
-    background: var(--bg-red);
     border-radius: 0px 6px 6px 0px;
-    border: none;
     margin-left: 2px;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: var(--color-text-w);
-
+  
 }
 
-.item-form button:hover {
-    background-color: var(--bg-hover);
-}
-
-.item-form button:active {
-    background-color: var(--bg-active);
-}
 
 .container-item-wrapper {
     background-color: var(--bg-item);
@@ -301,12 +302,9 @@ section {
 .top-summary {
     padding: 19px 14px 0 24px;
     box-sizing: border-box;
-    /* width: 953px;
-    height: 198px;
-    left: 153px;
-    top: 916px; */
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
+    width: 100%;
 }
 
 .top-summary a {
@@ -330,9 +328,12 @@ section {
     height: 2px;
     padding: 2px;
     background-color: #000;
-    margin: 6px 8px 8px 8px;
+    margin: 4px 8px 0px 8px;
     border-radius: 50%;
 
+}
+.item-top-body{
+    margin-right: 21px;
 }
 
 .item-top-body-wrapper {
@@ -360,25 +361,19 @@ section {
 }
 
 hr {
-    /* margin-top: 12px; */
     margin-bottom: 15px;
-    /* width: 582px; */
     height: 0px;
     border: 1px solid #EDEDED;
-    margin-top: 10px;
+ 
 }
 
 .advertising {
 color: var(--color-text-w);
     background: #545454;
-    /* background-size: 100%; */
-    /* background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
+    width: 220px;
+    height: 471px;
+    padding: 18% 0px;
+    text-align: center;
 
 }
 
@@ -504,6 +499,9 @@ footer {
     color: #000000;
 
 }
+.block-input-one-50{
+    width: 49%;
+}
 
 .item-search {
     height: 207px;
@@ -578,17 +576,23 @@ select {
     justify-content: flex-start;
 }
 
-.list div {
+.list-active{
     width: 31px;
     height: 31px;
     border-radius: 50%;
     text-align: center;
     line-height: 177%;
     cursor: pointer;
+   
 }
+.list-active a{
+    font-weight: 300;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+color: #000000;
+text-decoration-line:none;
 
-.list-active {
-    background: #DFE0F0;
 }
 
 .right-item h3 {
@@ -740,7 +744,18 @@ select {
 
 .doc-wrap {
     display: flex;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+.doc-wrap div{
+    margin-left: 6px;
+}
+.doc-wrap a{
+    font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+color: #000000;
+text-decoration-line: none;
 }
 
 /* ==================================приглашения=============== */
@@ -1200,7 +1215,7 @@ td {
 }
 
 .home-applic-item {
-    padding: 16px 15px 16px 40px;
+    padding: 16px 15px 16px 23px;
 }
 
 .home-applic-item-head {
@@ -1252,8 +1267,9 @@ td {
     width: 91px;
     height: 91px;
     margin: 24px;
-    padding: 34px;
+    padding-left: 91px;
 }
+.home
 
 /* .home-applic-item-body-p{
 width: 767px;
@@ -1445,6 +1461,9 @@ width: 767px;
 .home-applic-ava.big-ava {
     height: 133px;
     width: 133px;
+    padding-left: 133px;
+    padding-bottom: 133px;
+    margin: 0px;
 }
 
 /* ==========================страница вакансии==================== */
@@ -1550,7 +1569,7 @@ color: #787878;
     border-radius: 6px;
     color: var(--color-text-w);
 }
-/* ======================личный-кабинет-сщискателя======================= */
+/* ======================личный-кабинет-сoискателя======================= */
 .ava-pers.ava-open-pers.five{
     background: url(../img/image-ava-50.png);
     width: 50px;
@@ -1584,17 +1603,42 @@ background: #FFFFFF;
 border: 1px solid #EAEAEA;
 width: 100%;
 }
-.block-input-two div{
+.block-input-two-last{
     width: 50%;
 }
-.block-input-two div:last-child{
+.block-input-two-last-child{
     margin-left: 20px;
+    width: 50%;
 }
 .block-input-two select{
 height: 38px;
 width: 100%;
 }
-.block-input-one{
-    height: 38px;
+.block-input-two-last.input-100{
+ 
 width: 100%;
+
+}
+.block-input-two-last.w49{
+    width: 49%;
+}
+
+.btn-1{
+    width: 230px;
+height: 42px;
+margin-top: 20px;
+}
+.btn-2{
+    font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+ width: 268.18px;
+height: 37.86px;
+border: 1px solid #CF3C3C;
+border-radius: 3px;
+margin-right: 25px;
+
+}
+.wiht-activ img{
+    padding-right: 8px;
 }

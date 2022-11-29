@@ -1,0 +1,72 @@
+:root{
+    --color-hover-a2:#0047FF;
+    --color-activ-a2:#0030AA;
+    --color-hover-a3: #CF3C3C;
+    --color-activ-a3:#7E0101;
+    --bg-menu-hover:#E6E6E6;;
+    --bg-menu-active: #E6E6E6;;
+}
+/* ========кнопки============= */
+.red-activ{
+    background: var(--bg-red);
+    color: var(--color-text-w);
+}
+.red-activ:hover {
+    background-color: var(--bg-hover);
+}
+
+.red-activ:active {
+    background-color: var(--bg-active);
+}
+
+.wiht-activ{
+    color:var(--color-hover-a3);
+    background-color: var(--color-text-w);
+}
+.wiht-activ:hover{
+    background: #A01111;
+    color: var(--color-text-w);
+}
+.wiht-activ:active{
+    background: #7E0101;
+}
+
+/* ========/кнопки============= */
+
+/* ============ссылки============= */
+.activ-a1:hover{
+color: var(--color-hover-a2);
+}
+.activ-a1:active{
+    color: var(--color-activ-a2);
+    }
+
+    .activ-a3:hover{
+        color: var(--color-hover-a3);
+        }
+        .activ-a3:active{
+            color: var(--color-activ-a3);
+            }
+
+
+
+
+/* ============/ссылки============= */
+/* -------------------------------- */
+.top-summary:hover,
+.top-summary-app:hover
+{
+background-color: var(--bg-hover2);
+}
+
+
+/* ---------------------------------- */
+/* ===================пагинация=============== */
+.list-active:hover{
+    background-color: var(--bg-menu-hover);
+}
+.list-active:active{
+    background-color: var(--bg-menu-active);
+}
+
+/* ===================/пагинация=============== */

@@ -4,15 +4,15 @@ $('.btn-max').on('click', function () {
     $('.btn-max').css('background', ' #ECECEC');
     $('.btn-min').css('background', 'white');
 
-		$('.form-min').fadeIn(10);
-	$('.form-max').fadeOut(10);
+		$('.form-min').fadeIn(1);
+	$('.form-max').fadeOut(1);
 	})
 
 $('.btn-min').on('click', function () {
     $('.btn-max').css('background', 'white');
     $('.btn-min').css('background', '#ECECEC');
-$('.form-min').fadeOut(10);
-		$('.form-max').fadeIn(10);
+$('.form-min').fadeOut(1);
+		$('.form-max').fadeIn(1);
 		})
 
 	
@@ -201,5 +201,13 @@ var links = [];
   links['tests'] = '?sort=show_counter&method=asc';
   links['tests2'] = '?sort=date_active_from&method=asc'
 	
-
+  $(".content-block").each(function() {
+    let more = $(this).find(".show-more");
+    let hide = $(this).find(".hide-content");
+    hide.hide();
+    more.click(function() {
+        hide.slideToggle();
+        more.text(more.text() == "Скрыть" ? "Показать еще" : "Скрыть");
+    });
+});
 

@@ -147,4 +147,11 @@ background-color:#F0F0F0;
     {
         background-color:#E6E6E6;
         
-            }
+}
+
+.colse-popup:hover{
+    background: #F0F0F0;
+}
+.colse-popup:active{
+    background: #E6E6E6;
+}

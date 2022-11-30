@@ -50,6 +50,7 @@ input {
     color: #000000;
 }
 
+
 button {
     cursor: pointer;
     height: 43.83px;
@@ -96,6 +97,7 @@ body {
     margin-right: 45px;
 }
 
+
 .color-bl a {
     text-decoration: none;
     font-family: 'Ubuntu';
@@ -106,6 +108,7 @@ body {
     color: #000;
     cursor: pointer;
 }
+
 
 .color-red a {
     text-decoration: none;
@@ -142,11 +145,28 @@ body {
 .input {
     cursor: pointer;
 }
-
 .registration {
     margin-left: 43px;
     cursor: pointer;
 }
+.mar-bl-n a:hover,
+.mar-bl a:hover,
+.input:hover,
+.registration:hover
+{
+    color: var(--bg-red);
+    font-weight: 700;
+}
+.mar-bl-n a:active,
+.mar-bl a:active,
+.input:active,
+.registration:active
+{
+    color:var(--bg-active);
+    font-weight: 700;
+}
+
+
 
 .item-form {
     height: 434px;
@@ -232,7 +252,7 @@ body {
 .container-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-rows: repeat(1, 1fr); 
     grid-gap: 20px;
 }
 
@@ -285,6 +305,18 @@ a {
 .a {
     margin-top: 24px;
 
+}
+.show-more{
+    font-weight: 400;
+font-size: 15px;
+line-height: 17px;
+text-decoration-line: underline;
+color: #5883F1;
+cursor: pointer;
+
+}
+.show-more:hover{
+    color: #0047FF;
 }
 
 section {
@@ -358,6 +390,10 @@ section {
     font-weight: 300;
     font-size: 16px;
     line-height: 21px;
+}
+
+.p-home{
+    padding-bottom: 15px;
 }
 
 hr {

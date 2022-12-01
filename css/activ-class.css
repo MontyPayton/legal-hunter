@@ -145,7 +145,7 @@ background-color:#F0F0F0;
     .wrapper-sticker div:active,
     .wrapper-sticker div.active-vacancies:active
     {
-        background-color:#E6E6E6;
+        background-color: #F3F4FE;
         
 }
 
@@ -154,4 +154,42 @@ background-color:#F0F0F0;
 }
 .colse-popup:active{
     background: #E6E6E6;
+}
+/* ==================================== */
+
+/* ===================select================================= */
+.select2-search__field{
+    display: none;
+}
+.select2-container--default 
+.select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: #FAFAFF;
+    color:#000
+}
+.select2-container--default .select2-results__option--selected {
+    background-color: var(--color-text-w);
+}
+.select2-container--default .select2-selection--single{
+    border: 1px solid #EAEAEA;
+    border-radius: 0%;
+    height: 38px;
+    padding: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+.select2-dropdown{
+    border: 1px solid #EAEAEA;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #000 transparent transparent transparent;
+    margin-left: -16px;
+    margin-top: 4px;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #000 transparent;
+}
+.select2-container{
+    width: 50%;
 }

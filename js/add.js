@@ -210,4 +210,10 @@ var links = [];
         more.text(more.text() == "Скрыть" ? "Показать еще" : "Скрыть");
     });
 });
-
+// ===========================================
+$(document).ready(function() {
+    $('.js-example-basic').select2();
+});
+$(".js-example-responsive").select2({
+    width: 'resolve' 
+});

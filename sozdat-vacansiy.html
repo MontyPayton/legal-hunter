@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,7 +82,7 @@
  <div class="block-input-two">
     <div class="block-input-two-last">
         <h3>Требуемое образование</h3>
-      <select>
+      <select class="js-example-basic">
             <option value="o1">Высшее полное</option>
             <option value="o2">Неполное высшее</option>
             <option value="o3">Бакалавриат</option>
@@ -106,7 +107,7 @@
     </div>
     <div class="block-input-two-last-child">
         <h3>Требуемый опыт</h3>
-      <select>
+      <select class="js-example-basic">
             <option value="o1">Не имеет значение</option>
             <option value="o2">2</option>
             <option value="o3">3</option>
@@ -119,7 +120,7 @@
  <div class="block-input-two">
     <div class="block-input-two-last">
         <h3>Тип занятости</h3>
-      <select>
+      <select class="js-example-basic">
             <option value="o1">Полная</option>
             <option value="o2">2</option>
             <option value="o3">3</option>
@@ -128,7 +129,7 @@
     </div>
     <div class="block-input-two-last-child">
         <h3>График работы</h3>
-      <select>
+      <select class="js-example-basic">
             <option value="o1">Полный рабочий день</option>
             <option value="o2">2</option>
             <option value="o3">3</option>
@@ -187,7 +188,7 @@
                             </div>
                             <!-- =====================block-btn==================== -->
                                       <div class="btn-create-a-vacancy">
-                    <button class="wiht-activ">Сохранить как черновик</button>
+                    <button class="wiht-activ btn-bord">Сохранить как черновик</button>
                     <button class="red-activ">Сохранить</button>
                 </div>
                 <!-- =====================/block-btn==================== -->
@@ -238,6 +239,7 @@
 
     <!-- ________________________________/окно-большое___________________________ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/add.js"></script>
 </body>
 

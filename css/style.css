@@ -360,7 +360,7 @@ section {
     height: 2px;
     padding: 2px;
     background-color: #000;
-    margin: 4px 8px 0px 8px;
+    margin: 6px 8px 0px 8px;
     border-radius: 50%;
 
 }
@@ -1069,7 +1069,7 @@ td {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     padding-right: 24px;
 }
 
@@ -1735,4 +1735,43 @@ padding: 18px;
 .cabinet{
     padding: 24px 18px 0 34px;
 }
- 
+.red-activ.poisck{
+    width: 164px;
+    margin: 40px auto;
+}
+.btn-poisck{
+    text-align: center;
+}
+
+.btn-bord{
+    border: 1px solid #CF3C3C;
+}
+.mrg-d{
+  margin-bottom: 24px;
+}
+.div-h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+.disp-fl{
+    display: flex;
+    align-items: flex-end;
+}
+.block-period{
+    width: 100px;
+}
+.block-period.two{
+    margin-left: 20px;
+}
+.wrapp-tell-a{
+    margin-top: 24px;
+    color: #375194;
+}
+.wrapp-tell-a a{
+    color: #375194;
+}
+.red-activ.btn-2.resum{
+    width: 230px;
+    margin: 70px 0 0 0;
+}

@@ -217,3 +217,7 @@ $(document).ready(function() {
 $(".js-example-responsive").select2({
     width: 'resolve' 
 });
+// --------------------------------
+$('#my-input').autoGrowInput({ minWidth: 100, maxWidth: 600, comfortZone: 40 });
+$('#grow-input').autoGrowInput({ minWidth: 40, maxWidth: function(){ return $('.search-wr.grow-input-container').width()-22; }, comfortZone: 20 });
+    $(window).resize(function(){ $('#grow-input').trigger('autogrow'); });

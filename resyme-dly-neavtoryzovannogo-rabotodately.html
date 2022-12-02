@@ -13,10 +13,10 @@
         rel="stylesheet">
         
     <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css-uikit/uikit.min.css" />
-   <script src="js-uikit/uikit.min.js"></script>
-        <script src="js-uikit/uikit-icons.min.js"></script>
-    <title>Резюме для авторизованного работодателя</title>
+   <!-- <link rel="stylesheet" href="css-uikit/uikit.min.css" />
+   <script src="js-uikit/uikit.min.js"></script> -->
+        <!-- <script src="js-uikit/uikit-icons.min.js"></script> -->
+    <title>Резюме для не авторизованного работодателя</title>
 </head>
 
 <body>
@@ -57,7 +57,11 @@
                             <div class="big-name-ava">
                                   <div class="ava-pers ava-open-pers">
                             </div>
-                             <h3>Алексеев Иван Иванович</h3>
+                            <div class='name-sity-block'>
+                                <h3>Алексеев Иван Иванович</h3>
+                                     <div class="summary-footer-block-div syt">Москва</div>
+                                 </div>
+                   
                             </div>
                           
                              <div class="person-input-date">
@@ -119,18 +123,10 @@
                                     </tr>
                                   </table>
                                   <hr style="width: 100%;">
-                                  <h3>
-                                    Чтобы пригласить соискателя, выберите вакансию из списка ваших вакансий
-                                    </h3>
+                                 <p class="block-p-a"> <a href=""> Авторизуйтесь</a>, чтобы пригласить соискателя</p>
                                   <div class="select-button">
-                                    <div class="uk-form-select" data-uk-form-select>
-                                        
-                                        <select>
-                                            <option value="">первый</option>
-                                            <option value="">второй</option>
-                                        </select>
-                                    </div>
-                                  <button>Пригласить</button>
+        
+                                  <button class="red-activ bth-205">Пригласить</button>
                                   </div>
                              </div>
                         

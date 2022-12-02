@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,9 +13,9 @@
         rel="stylesheet">
         
     <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css-uikit/uikit.min.css" />
-   <script src="js-uikit/uikit.min.js"></script>
-        <script src="js-uikit/uikit-icons.min.js"></script>
+   <!-- <link rel="stylesheet" href="css-uikit/uikit.min.css" /> -->
+   <!-- <script src="js-uikit/uikit.min.js"></script>
+        <script src="js-uikit/uikit-icons.min.js"></script> -->
     <title>Резюме для авторизованного работодателя</title>
 </head>
 
@@ -57,7 +57,11 @@
                             <div class="big-name-ava">
                                   <div class="ava-pers ava-open-pers">
                             </div>
-                             <h3>Алексеев Иван Иванович</h3>
+                            
+                             <div class='name-sity-block'>
+                           <h3>Алексеев Иван Иванович</h3>
+                                <div class="summary-footer-block-div syt">Москва</div>
+                            </div>
                             </div>
                           
                              <div class="person-input-date">
@@ -119,22 +123,27 @@
                                     </tr>
                                   </table>
                                   <hr style="width: 100%;">
-                                  <h3>
-                                    Чтобы пригласить соискателя, выберите вакансию из списка ваших вакансий
-                                    </h3>
-                                  <div class="select-button">
-                                    <div class="uk-form-select" data-uk-form-select>
-                                        
-                                        <select>
-                                            <option value="">первый</option>
-                                            <option value="">второй</option>
-                                        </select>
-                                    </div>
-                                  <button>Пригласить</button>
-                                  </div>
-                             </div>
-                        
+                                  <p class="block-p-a"> Чтобы пригласить соискателя, выберите вакансию из списка ваших вакансий</p>
+                                  <div class="seleckt-btn">
+                                  <!-- ==============================селект один 100% большой=============================== -->
+<!-- <div class="block-input-two"> -->
+    <div class="block-input-two-last input-100 big">
+        <select class="js-example-basic js-example-responsive" style="width:100% ;">
+         <option value="o1">Помощник генерального прокурора</option>
+         <option value="o2">2</option>
+         <option value="o3">3</option>
+         <option value="o4">4</option>
+      </select>
+    </div>
+    <!-- </div>                    -->
+<!-- ==============================/селект один 100%=============================== -->
+                                  <!-- <div class="select-button"> -->
         
+                                  <button class="red-activ bth-205 left-select">Пригласить</button>
+                                  </div>
+                             <!-- </div> -->
+                        
+        </div>
         
                     </div>
                 </div>
@@ -175,6 +184,7 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/add.js"></script>
 </body>
 

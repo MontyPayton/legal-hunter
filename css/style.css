@@ -25,12 +25,14 @@ html {
     box-sizing: inherit;
 }
 
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.uk-h3 {
     margin: 0;
     padding: 0;
 }
@@ -1296,7 +1298,15 @@ td {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+   
 }
+.time-man-big{
+    font-weight: 500;
+font-size: 22px;
+line-height: 25px;
+padding: 23px 0 5px 29px;
+}
+
 
 .home-applic-ava {
     background-image: url(../img/image\ 2-fim.png);
@@ -1431,8 +1441,10 @@ width: 767px;
 
 .contact-person-item-head.ava-open {
     border-bottom: var(--color-text-w);
-   
+    margin: 24px 29px;
 }
+   
+
 
 .contact-person-item-head.ava-open h3 {
     font-weight: 500;
@@ -1450,8 +1462,9 @@ width: 767px;
 
 .ava-pers.ava-open-pers {
     background: url(../img/ava-open.png);
+    background-repeat: no-repeat;
     border-radius: 138px;
-    width: 84px;
+    width: 111px;
     height: 84px;
     margin: 0 auto;
 }
@@ -1551,6 +1564,7 @@ width: 767px;
 
 .place-date {
     display: flex;
+    margin-bottom: 44px;
 }
 
 .money-vacanci {
@@ -1558,6 +1572,9 @@ width: 767px;
 }
 .money-bat{
     background-color: var(--color-text-w);
+}
+.money-bat p{
+    padding-left: 30px;
 }
 
 .money-bat button {
@@ -1567,6 +1584,7 @@ width: 767px;
     border: none;
     border-radius: 6px;
     color: var(--color-text-w);
+    margin: 22px 22px 17px 23px;
 
 }
 .vacancy-description h3{
@@ -1580,17 +1598,18 @@ font-size: 15px;
 line-height: 20px;
 }
 .vacans-person-head-name.min{
-    border-bottom: 0.5px solid #666363;;
+    border-bottom: 0.5px solid #666363;
+    margin-top: 12px;
 }
 .similar-vacancies{
     background-color: white;
-margin-top: 19px;
+margin: 19px 0;
 padding: 19px;
 }
 /* =======================оставить отклик===================== */
-.name-vacanci-centr{
+/* .name-vacanci-centr{
     height: 500px;
-}
+} */
 .name-vacanci-centr input{
    width: 100%;
 
@@ -1774,4 +1793,87 @@ padding: 18px;
 .red-activ.btn-2.resum{
     width: 230px;
     margin: 70px 0 0 0;
+}
+.name-sity-block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.name-sity-block h3{
+    margin-bottom : 5px;
+}
+.summary-footer-block-div.syt{
+    margin-left: 30px;
+    text-align: left;
+}
+.block-p-a{
+    margin-top: 22px;
+    margin-bottom: 24px;
+    margin-left: 30px;
+}
+.red-activ.bth-205{
+    height: 37px;
+    width: 205px;
+    margin: 0 0 50px 30px;
+}
+.seleckt-btn{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 52px 30px;
+}
+.seleckt-btn .block-input-two{
+    margin-top: 0px;
+}
+.red-activ.bth-205.left-select{
+    margin: 0;
+    border-radius: 0 6px 6px 0;
+}
+.block-blue {
+    margin: 27px 0;
+   
+} 
+
+.ava-item.creat-a-vacavcy.block-blue p a{
+    color: #375194;
+}
+.left-svg.left-blue{
+    background-image: url(../img/left-blue.svg);
+}
+.block-h4{
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+.btm-300{
+    width: 300px;
+height: 43px;
+margin-top: 47px;
+}
+
+.name-vacanci-centr-head h6{
+    font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: #375194;
+
+}
+.vacancy-descr-block,
+.vacancy-descr-block-ul
+{
+    margin-bottom: 30px;
+}
+.vacancy-descr-block h3,
+.vacancy-descr-block-ul h3
+{
+margin-bottom: 8px;
+}
+.similar-vacancies h3{
+    font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+margin-bottom: 12px;
+}
+.vacancy-descr-block-ul ul{
+    margin-left: 27px;
 }

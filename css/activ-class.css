@@ -66,7 +66,7 @@ color: var(--color-hover-a2);
 .top-summary-app:hover
 
 {
-background-color: var(--bg-hover2);
+background-color: #FAFAFF;;
 }
 .click-item.tab-grid h4:hover
 {
@@ -192,4 +192,8 @@ background-color:#F0F0F0;
 }
 .select2-container{
     width: 50%;
+}
+.grow-input-container{
+    display: flex;
+        justify-content: flex-end;
 }

@@ -255,7 +255,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr); 
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
 }
 
 .grid-item {
@@ -372,6 +372,7 @@ section {
 
 .item-top-body-wrapper {
     margin-bottom: 6px;
+    
 }
 
 .item-top-body-wrapper h4 {
@@ -503,20 +504,22 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 17px;
+   
 }
 
 .button-div-input {
     position: relative;
+    font-weight: 500;
 
 }
 
 .search-but {
     position: absolute;
     margin-right: 3px;
-    padding: 8px 10px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
+    color: #375194;;
 }
 
 .search-but.del {
@@ -525,6 +528,7 @@ footer {
 
 .none-active {
     display: flex;
+    margin-right: 17px;
 }
 
 /* //------------ /input---------------- */
@@ -762,6 +766,7 @@ text-decoration-line:none;
     height: 39.96px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
+
 }
 
 .wrapp-tell {
@@ -1266,6 +1271,7 @@ td {
 
 .top-summary-app {
     display: flex;
+    border: 1px solid #EAEAEA;
 }
 
 .summary-footer-block {
@@ -1361,7 +1367,7 @@ width: 767px;
 /* =========================================замена кнопок=============================== */
 .form_radio_btn {
     display: inline-block;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 .form_radio_btn input[type=radio] {
@@ -1373,7 +1379,7 @@ width: 767px;
     cursor: pointer;
     padding: 0px 45px;
     line-height: 39px;
-    border: 1px solid #D5D5D5;
+    /* border: 1px solid #D5D5D5; */
     user-select: none;
 }
 
@@ -1543,6 +1549,9 @@ width: 767px;
 
 .name-vacanci-centr {
     width: 100%;
+    
+}
+.name-vacanci-centr-wrapp{
     background-color: var(--color-text-w);
     padding: 27px 33px;
 }
@@ -1876,4 +1885,34 @@ margin-bottom: 12px;
 }
 .vacancy-descr-block-ul ul{
     margin-left: 27px;
+}
+.grid-item.hide-content{
+    margin-top: 20px;
+}
+
+.button-div-input,
+.button-div-input::placeholder
+{
+    color: #375194;;
+}
+.wr-popup-form.big-form{
+    margin: 0 auto;
+    width: 408px;
+}
+.name-vacanci-centr input[class= button-div-input-dopp]{
+  box-sizing: border-box;
+width: 100%;
+height: 39.96px;
+background: #FFFFFF;
+border: 1px solid #EAEAEA; 
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #375194; 
+}
+.name-vacanci-centr input[class= button-div-input-dopp]::placeholder{
+    color: #375194; 
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
 }

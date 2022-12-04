@@ -71,7 +71,7 @@ $(document).ready(function($) {
 $(document).ready(function($) {
 	$('.registration').click(function(e) {
 		$('#popup-max').fadeIn();
-		$('.form-max').fadeIn();
+		// $('.form-max').fadeIn();
 		$('.form-nin').fadeOut();
 		return false;
 	
@@ -125,14 +125,44 @@ $(document).ready(function($) {
 $('.searh-icon').on('click', function () {
     $('.input-head').fadeToggle()
 })
-//================2 добавляем input==========
+// //================2 добавляем input==========
 
 $('.search-but').on('click', function () {
 	var num = 1
 
-	$(".none-active").append('<div class="search-wr"><input class="button-div-input input-color"type="text" name="" id="'+(num++)+'" placeholder="текст"><div class="search-but del">x</div></div>');
+	$(".none-active").append('<div class="search-wr"> <div class="grow-input-container"><input class="button-div-input"type="text" name="" id="'+(num++)+'" value="текст"><div class="search-but del">x</div></div></div>');
 
 })
+
+
+                           
+                     
+                           
+                         
+
+// $('.search-but').on('click', function() {
+//     $('.search-wr').clone().appendTo(".none-active");
+// });
+
+
+// $('.search-but').on('click', function() {
+	
+// $('.none-active').prepend('');
+
+//      $(document.createTextNode('.search-wr')).prependTo('.none-active');
+// });
+
+$('.search-but').on('click', function() {
+	function push(e) {
+		e.preventDefault();
+		var val = $(".button-div-input").value;
+		$(".none-active").value = val;
+		return false;
+	 }
+})
+
+
+
 //=================2 убираем input===========
 $(document).ready(function () {
 	$("body").on("click", ".del", function () {
@@ -210,14 +240,25 @@ var links = [];
         more.text(more.text() == "Скрыть" ? "Показать еще" : "Скрыть");
     });
 });
-// ===========================================
+// ===========================================celect============
 $(document).ready(function() {
     $('.js-example-basic').select2();
 });
 $(".js-example-responsive").select2({
     width: 'resolve' 
 });
-// --------------------------------
-$('#my-input').autoGrowInput({ minWidth: 100, maxWidth: 600, comfortZone: 40 });
-$('#grow-input').autoGrowInput({ minWidth: 40, maxWidth: function(){ return $('.search-wr.grow-input-container').width()-22; }, comfortZone: 20 });
-    $(window).resize(function(){ $('#grow-input').trigger('autogrow'); });
+// -------------------------------- input
+
+
+// $('#my-input').autoGrowInput({ minWidth: 100, maxWidth: 600, comfortZone: 40 });
+// $('#grow-input').autoGrowInput({ minWidth: 40, maxWidth: function(){ return $('.search-wr.grow-input-container').width()-22; }, comfortZone: 30 });
+//     $(window).resize(function(){ $('#grow-input').trigger('autogrow'); });
+
+// $('#my-input').autoGrowInput({ minWidth: 100, maxWidth: 600, comfortZone: 40 });
+$('.button-div-input').autoGrowInput({ minWidth: 40, maxWidth: function(){ return $('.search-wr.grow-input-container').width()-22; }, comfortZone: 40 });
+    $(window).resize(function(){ $('.button-div-input').trigger('autogrow'); });
+
+
+	// $('button-div-input-dopp').autoGrowInput({ minWidth: 40, maxWidth: function(){ return $('.search-wr.grow-input-container').width()-22; }, comfortZone: 40 });
+    // $(window).resize(function(){ $('.button-div-input-dopp').trigger('autogrow'); });
+	

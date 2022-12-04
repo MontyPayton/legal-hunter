@@ -316,9 +316,12 @@
                             </div>
                         </div>
                         <!-- реклама доделать спросить-->
-                        <div class="advertising">
+                        <div class="wr-advertising">
+                               <div class="advertising">
                             реклама
                         </div>
+                        </div>
+                     
                     </section>
                 </div>
 
@@ -364,7 +367,8 @@
             <!-- =============================================== -->
             <div class="pop-form">
                 <form class="popup-form">
-                    <div class="form_radio_btn">
+                    <div class="wr-popup-form">
+                                 <div class="form_radio_btn">
                         <input name="USER_TYPE" class="radio-1" id="radio-1" type="radio" name="radio" value="1"
                             checked>
                         <!--  !!!=== при назначении id поставить в lable for="" -->
@@ -375,6 +379,8 @@
                         <input name="USER_TYPE" class="radio-2" id="radio-2" type="radio" name="radio" value="2">
                         <label for="radio-2">Я работодатель</label>
                     </div>
+                    </div>
+           
                     <!-- ===================/замена кнопок========================== -->
                     <p>Добро пожаловать!</p>
 
@@ -382,7 +388,7 @@
                     <input class="popup_inp" type="password" placeholder="Пароль">
                     <button class='red-activ' type="submit">Войти</button>
                     <div class="popup-div-a">
-                        <a href="#">Восстановление пароля</a>
+                        <a class="activ-a3" href="#">Восстановление пароля</a>
                     </div>
                 </form>
 
@@ -395,12 +401,28 @@
     
     <!-- ----------------------всплывающее окно-большое соискатель_______________________ -->
     <div class="popup-iner popup-fade" id="popup-max">
-        <div class="popup-wrapper popup">
+        <div class="popup-wrapper popup" style="padding-top: 25px;">
             <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
-            <div class="but-block">
+
+            <div class="wr-popup-form big-form">
+                <div class="form_radio_btn">
+       <input name="USER_TYPE" class="radio-3 btn-max" id="radio-3" type="radio" name="radio" value="3"
+           checked>
+       <!--  !!!=== при назначении id поставить в lable for="" -->
+       <label for="radio-3">Я соискатель</label>
+   </div>
+
+   <div class="form_radio_btn">
+       <input name="USER_TYPE" class="radio-4 btn-min" id="radio-4" type="radio" name="radio" value="4">
+       <label for="radio-4">Я работодатель</label>
+   </div>
+   </div>
+            
+            <!-- <div class="but-block">
                 <button class="popup-button btn-max">Я соискатель</button>
                 <button class="popup-button btn-min">Я работодатель</button>
-            </div>
+            </div> -->
+            
 <!-- ---------------------------------------------------------------------------------------------------форма-2 -->
                <main class="form-min">  
             <p>Регистрация соискателя</p>
@@ -414,8 +436,8 @@
                     <input class="popup_inp z" type="password" placeholder="Повторите пароль">
                     <button class='red-activ'type="submit">Зарегистрироваться</button>
                     <div class='popup-input-wrapp'>
-                        <input class="popup-input" type="checkbox" name="" id="">согласен с
-                        <a href="#">правилами обработки данных</a>
+                        <input class="popup-input" type="checkbox" name="" id="">согласен с&ensp;
+                        <a class="activ-a3" href="#">правилами обработки данных</a>
                     </div>
                 </form>
                 
@@ -436,8 +458,8 @@
             <input class="popup_inp z" type="password" placeholder="Повторите пароль">
             <button class='red-activ'type="submit">Зарегистрироваться</button>
             <div class='popup-input-wrapp'>
-                <input class="popup-input" type="checkbox" name="" id="">согласен с
-                <a href="#">правилами обработки данных</a>
+                <input class="popup-input" type="checkbox" name="" id="">согласен с&ensp;  
+                <a class="activ-a3" href="#">правилами обработки данных</a>
             </div>
         </form>
         

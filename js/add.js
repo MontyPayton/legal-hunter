@@ -131,7 +131,7 @@ $('.search-but').on('click', function () {
 	var num = 1
 	// $('.none-active').append($('.search-wr').html());
 	// $(".none-active").append('<div class="search-wr"> <div class="grow-input-container"><input class="button-div-input" type="text" name="" id="'+(num++)+'" value="текст"><div class="search-but del">x</div></div></div>');
-
+$(".search-wr.none").fadeIn();
 })
 
 
@@ -259,4 +259,4 @@ $('.button-div-input').autoGrowInput({ minWidth: 40, maxWidth: function(){ retur
     $(window).resize(function(){ $('.button-div-input').trigger('autogrow'); });
 
 
-	
+// ===============================	

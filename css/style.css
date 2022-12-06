@@ -537,10 +537,10 @@ footer {
     display: block;
 }
 
-.none-active {
+/* .none-active {
     display: flex;
     margin-right: 17px;
-}
+} */
 
 /* //------------ /input---------------- */
 .personal-area a {
@@ -948,6 +948,7 @@ td {
 
 .select-block-nav-vacancies div {
     display: flex;
+    
 }
 
 .select-block-nav-vacancies p {
@@ -969,7 +970,7 @@ td {
 }
 
 .select-block-btn {
-    width: 208px;
+    width: 206px;
     height: 36px;
     border: 1px solid #CF3C3C;
     border-radius: 3px;
@@ -1352,12 +1353,12 @@ width: 767px;
 
 /* ======================библиотека=================== */
 
-.pretty.p-round .state label:after,
+/* .pretty.p-round .state label:after,
 .pretty.p-round .state label:before {
     border-radius: 0;
     margin-top: 2px;
     background: #FFFFFF;
-}
+} */
 
 .pretty input:checked~.state.p-primary label:after,
 .pretty.p-toggle .state.p-primary label:after {
@@ -1931,6 +1932,58 @@ line-height: 16px;
 .grow-input-container{
     align-items: center;
 }
-/* .search-wr.none{
+.search-wr.none{
     display: none;
-} */
+    margin-left: 17px;
+}
+
+.search-wr{
+    margin-left: 17px; 
+}
+
+/* =========================== */
+.form_radio {
+	margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: black 0 0 no-repeat;
+    border-radius: 50%;
+    background: #FFFFFF;
+border: 1px solid #EAEAEA;
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+	background: #375194;
+   
+    border: 3px solid #fff;
+}
+ 
+/* Hover */
+.form_radio label:hover:before {
+	filter: brightness(120%);
+}
+ 
+/* Disabled */
+.form_radio input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}

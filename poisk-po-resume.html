@@ -51,6 +51,15 @@
                 </form>
                 <!-- =============================блок добавления тега======================== -->
                 <div class="item-search-input" style="width: 1242px;" >
+                     <!-- ========= -->
+            <div class="search-wr none">
+                <div class="grow-input-container">
+                   <input class="button-div-input" type="text" name="" id="
+                   " value="" placeholder="текст">
+                   <div class="search-but del">x</div>
+               </div>
+           </div>
+<!-- =============== -->
                     <div class="none-active"></div>
                     <div>
                     <div class="search-wr">
@@ -274,72 +283,167 @@
                             <div>
 
                                 <!-- =========аккордион================ -->
-                                <div class="acor-container">
-                                    <h4>Фильтры</h4>
-                                    <form action="">
-                                    <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
-                                    <label for="chacor1">Уровень образования</label>
-                                    <div class="acor-body ">
-                                        
-                                        <p><input type="radio" name="chacor11" id="21" checked="" /><span>Не имеет
-                                                значения</span> </p>
-                                        <p><input type="radio" name="chacor11" id="highload0" checked="" /><span>Неполное высшее</span>
-                                        </p>
-                                        <p><input type="radio" name="chacor11" id="23" checked="" /><span>Бакалавриат</span></p>
-                                        <p><input type="radio" name="chacor11" id="24" checked="" /><span>Магистратура</span>
-                                        </p>
-                                        <p><input type="radio" name="chacor11" id="25" checked="" /><span>Специалитет</span></p>
-                                    </div>
+<!-- =========аккордион================ -->
+<div class="acor-container">
+    <h4>Фильтры</h4>
+    <form action="">
+    <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
+    <label class="label-big" for="chacor1">Уровень образования</label>
+    <div class="acor-body">
+<!-- ------------------------радиоблок-------------------- -->
+        <div class="form_radio pretty p-default p-round p-smooth">
+            <input id="radio-1" type="radio" name="radio" value="1" checked>
+            <label class="lable-radio" for="radio-1">Не имеет значения</label>
+        </div>
+         
+        <div class="form_radio">
+            <input id="radio-2" type="radio" name="radio" value="2">
+            <label class="lable-radio"for="radio-2">Высшее</label>
+        </div>
+         
+        <div class="form_radio">
+            <input id="radio-3" type="radio" name="radio" value="3">
+            <label class="lable-radio"for="radio-3">Бакалавриат</label>
+        </div>
+        <div class="form_radio pretty p-default p-round p-smooth">
+            <input id="radio-4" type="radio" name="radio" value="1" checked>
+            <label class="lable-radio" for="radio-4">Магистратура</label>
+        </div>
+         
+        <div class="form_radio">
+            <input id="radio-5" type="radio" name="radio" value="2">
+            <label class="lable-radio"for="radio-5">Специалитет</label>
+        </div>
+         
+     
+<!-- ------------------------/радиоблок-------------------- -->             
+        </div>
 
-                                    <input type="checkbox" name="chacor" id="chacor2" />
-                                    <label for="chacor2">Регион</label>
-                                    <div class="acor-body">
-                                        <p><input type="checkbox" name="" id="" checked="" /><span>Москва</span></p>
-                                        <p><input type="checkbox" name="" id="" checked="" /><span>Московская
-                                                область</span></p>
-                                    </div>
+    <input type="checkbox" name="chacor" id="chacor2" />
+    <label class="label-big"for="chacor2">Регион</label>
 
-                                    <input type="checkbox" name="chacor" id="chacor3" />
-                                    <label for="chacor3">Специальность</label>
-                                    <div class="acor-body ">
-                                        <p><input type="checkbox" name="" id="" checked="" /><span>Адвокат</span></p>
-                                        <p><input type="checkbox" name="" id="" checked="" /><span>Прокурор</span></p>
-                                        <p><input type="checkbox" name="" id="" checked="" /><span>Следователь</span>
-                                        </p>
-                                        <p><input type="checkbox" name="" id="" checked="" /><span>Судья</span></p>
-                                        <p><input type="checkbox" name="" id="" checked="" /><span>Юрист международного
-                                                права</span></p>
-                                        <p><input type="checkbox" name="" id="" checked="" /><span>Адвокат</span></p>
-                                    </div>
+    <div class="acor-body">
+        <div class=" pretty p-default ">
+            <input type="checkbox" id="radioButton">
+            <div class="state p-primary">
+                <label><p>Москва</p></label>
+            </div>
+        </div>
+    
+            <div class=" pretty p-default">
+                <input type="checkbox" id="radioButton">
+                <div class="state p-primary">
+                    <label><p>Московская область</p></label>
+                </div>
+            </div>
+       
+    </div>
+    <input type="checkbox" name="chacor" id="chacor3" />
+    <label class="label-big"for="chacor3">Специальность</label>
+    <div class="acor-body ">
+         <div class=" pretty p-default ">
+            <input type="checkbox" id="radioButton11">
+            <div class="state p-primary">
+                <label><p>Адвокат</p></label>
+            </div>
+        </div>
+        <div class=" pretty p-default ">
+            <input type="checkbox" id="radioButton11">
+            <div class="state p-primary">
+                <label><p>Прокурор</p></label>
+            </div>
+        </div>
+        <div class=" pretty p-default ">
+            <input type="checkbox" id="radioButton11">
+            <div class="state p-primary">
+                <label><p>Следователь</p></label>
+            </div>
+        </div>
+        <div class=" pretty p-default ">
+            <input type="checkbox" id="radioButton11">
+            <div class="state p-primary">
+                <label><p>Судья</p></label>
+            </div>
+        </div>
+        <div class=" pretty p-default ">
+            <input type="checkbox" id="radioButton11">
+            <div class="state p-primary">
+                <label><p>Юрист </p></label>
+            </div>
+        </div>
+    </div>
 
-                                    <input type="checkbox" name="chacor" id="chacor4" />
-                                    <label for="chacor4">Опыт работы</label>
-                                    <div class="acor-body">
-                                        <p><input type="radio" name="chacor12" id="" checked="" /><span>Не имеет значения</span>
-                                        </p>
-                                        <p><input type="radio" name="chacor12" id="" checked="" /><span>Без опыта</span></p>
-                                        <p><input type="radio" name="chacor12" id="" checked="" /><span>1-3 лет</span></p>
-                                        <p><input type="radio" name="chacor12" id="" checked="" /><span>3-6 лет</span></p>
-                                        <p><input type="radio" name="chacor12" id="" checked="" /><span>Более 6 лет</span></p>
-                                    </div>
+    <input type="checkbox" name="chacor" id="chacor4" />
+    <label class="label-big"for="chacor4">Опыт работы</label>
+    <div class="acor-body">
+    <!-- ------------------------радиоблок-------------------- -->
+    <div class="form_radio pretty p-default p-round p-smooth">
+        <input id="radio-6" type="radio" name="radio1" value="1" checked>
+        <label class="lable-radio" for="radio-6">Не имеет значения</label>
+    </div>
+     
+    <div class="form_radio">
+        <input id="radio-7" type="radio" name="radio1" value="2">
+        <label class="lable-radio"for="radio-7">Без опыта</label>
+    </div>
+     
+    <div class="form_radio">
+        <input id="radio-8" type="radio" name="radio1" value="3">
+        <label class="lable-radio"for="radio-8">1-3 лет</label>
+    </div>
+    <div class="form_radio pretty p-default p-round p-smooth">
+        <input id="radio-9" type="radio" name="radio1" value="1" checked>
+        <label class="lable-radio" for="radio-9">3-6 лет</label>
+    </div>
+     
+    <div class="form_radio">
+        <input id="radio-10" type="radio" name="radio1" value="2">
+        <label class="lable-radio"for="radio-10">Более 6 лет</label>
+    </div>
+     
+ 
+<!-- ------------------------/радиоблок-------------------- -->        
+    </div>
 
-                                    <input type="checkbox" name="chacor" id="chacor5" />
-                                    <label for="chacor5">Средний балл</label>
-                                    <div class="acor-body">
-                                        <p><input type="radio" name="chacor14" id="" checked="" /><span>Не имеет значения</span>
-                                        </p>
-                                        <p><input type="radio" name="chacor14" id="" checked="" /><span>3,5-4</span></p>
-                                        <p><input type="radio" name="chacor14" id="" checked="" /><span>4-4,5</span></p>
-                                        <p><input type="radio" name="chacor14" id="" checked="" /><span>4-4,5</span></p>
-                                        <p><input type="radio" name="chacor14" id="" checked="" /><span>4-4,5</span></p>
+    <input type="checkbox" name="chacor" id="chacor5" />
+    <label class="label-big"for="chacor5">Средний балл</label>
+    <div class="acor-body">
+       <!-- ------------------------радиоблок-------------------- -->
+       <div class="form_radio pretty p-default p-round p-smooth">
+        <input id="radio-11" type="radio" name="radio2" value="1" checked>
+        <label class="lable-radio" for="radio-11">Не имеет значения</label>
+    </div>
+     
+    <div class="form_radio">
+        <input id="radio-12" type="radio" name="radio2" value="2">
+        <label class="lable-radio"for="radio-12">3,5-4</label>
+    </div>
+     
+    <div class="form_radio">
+        <input id="radio-13" type="radio" name="radio2" value="3">
+        <label class="lable-radio"for="radio-13">4-4,5</label>
+    </div>
+    <div class="form_radio pretty p-default p-round p-smooth">
+        <input id="radio-14" type="radio" name="radio2" value="1" checked>
+        <label class="lable-radio" for="radio-14">4,5-5</label>
+    </div>
+     
+   
+     
+ 
+<!-- ------------------------/радиоблок-------------------- -->        
 
-                                    </div>
-</form>
-                                    
-                                </div>
-                                <div class="btn-poisck">
-                                     <button class="red-activ poisck" type="">Фильтровать</button>
-                                </div>
+    </div>
+       </form>
+    
+</div>
+<div class="btn-poisck">
+     <button class="red-activ poisck" type="">Фильтровать</button>
+</div>
+
+<!-- =========/аккордион================ -->
+           
+                               
                                
                                 <!-- =========/аккордион================ -->
                                 <div class="advertising">

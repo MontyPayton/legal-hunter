@@ -243,10 +243,14 @@ var links = [];
 // ===========================================celect============
 $(document).ready(function() {
     $('.js-example-basic').select2();
-});
-$(".js-example-responsive").select2({
+	$(".js-example-responsive").select2({
     width: 'resolve' 
 });
+
+});
+
+
+
 // -------------------------------- input
 
 

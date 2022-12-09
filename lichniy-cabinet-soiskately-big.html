@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,7 +105,12 @@
 <!-- =========================/инпут двойной 50%========================== --> 
 <!-- =========================инпут двойной 50%========================== -->
 <div class="block-input-two">
-    <div class="block-input-two-last"><h3>Уровень образования</h3><input class="inp-col"type="text" value="" placeholder="Уровень образования"></div>
+    <div class="block-input-two-last"><h3>Уровень образования</h3> <select class="js-example-basic">
+        <option value="o1">Высшее полное</option>
+        <option value="o2">Неполное высшее</option>
+        <option value="o3">Бакалавриат</option>
+        <option value="o4">Магистратура</option>
+      </select></div>
     <div class="block-input-two-last-child"><h3>Программа обучения</h3><input class="inp-col"type="text" value=""placeholder="Программа обучения"></div>
     </div>
 <!-- =========================/инпут двойной 50%========================== --> 
@@ -188,6 +193,8 @@
 
     <!-- ________________________________/окно-большое___________________________ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/jquery.auto-grow-input.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/add.js"></script>
 </body>
 

@@ -43,7 +43,46 @@ $(document).ready(function($) {
 		}
 	});
 });
+// =========================================='''
+$(document).ready(function($) {
+	$('.input-popup-min').click(function() {
+		$('#popup-min').fadeIn();
+		$("#popup-min-pas3").fadeOut()
+		return false;
+	});	
+	
+	$('.popup-close').click(function() {
+		$(this).parents('#popup-min').fadeOut();
+		return false;
+	});		
+ 
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('#popup-min').fadeOut();
+		}
+	});
+	
+	$('#popup-min').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
+
+});
 //=====================================================
+// ==================восстановление пароля================
+$('.go-inp-pass').on('click', function () {
+    $('#popup-min-pas').fadeIn()
+	$('#popup-min').fadeOut()
+})	
+$('.go-inp').on('click', function () {
+    $('#popup-min-pas').fadeOut()
+	$('#popup-min').fadeIn()
+})	
+
+
+// =====================/восстановление пароля=============
 //закрытие малогл=====================================================
 $(document).ready(function($) {
 	// Клик по ссылке "Закрыть".
@@ -67,6 +106,102 @@ $(document).ready(function($) {
 		}
 	});	
 });
+
+// =============
+//закрытие малогл=====================================================
+$(document).ready(function($) {
+	// Клик по ссылке "Закрыть".
+	$('.popup-close').click(function() {
+		$(this).parents('#popup-min-pas').fadeOut();
+		return false;
+	});        
+ 
+	// Закрытие по клавише Esc.
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('#popup-min-pas').fadeOut();
+		}
+	});
+	
+	// Клик по фону, но не по окну.
+	$('#popup-min-pas').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});	
+});
+
+// ===========================text===================
+$(document).ready(function($) {
+	// Клик по ссылке "Закрыть".
+	$('.popup-close').click(function() {
+		$(this).parents('#popup-min-text').fadeOut();
+		return false;
+	});        
+ 
+	// Закрытие по клавише Esc.
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('#popup-min-text').fadeOut();
+		}
+	});
+	
+	// Клик по фону, но не по окну.
+	$('#popup-min-text').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});	
+});
+// ===========================text btn===================
+$(document).ready(function($) {
+	// Клик по ссылке "Закрыть".
+	$('.popup-close').click(function() {
+		$(this).parents('#popup-min-pas2').fadeOut();
+		return false;
+	});        
+ 
+	// Закрытие по клавише Esc.
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('#popup-min-pas2').fadeOut();
+		}
+	});
+	
+	// Клик по фону, но не по окну.
+	$('#popup-min-pas2').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});	
+});
+// ===========================text btn===================
+$(document).ready(function($) {
+	// Клик по ссылке "Закрыть".
+	$('.popup-close').click(function() {
+		$(this).parents('#popup-min-pas3').fadeOut();
+		return false;
+	});        
+ 
+	// Закрытие по клавише Esc.
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('#popup-min-pas3').fadeOut();
+		}
+	});
+	
+	// Клик по фону, но не по окну.
+	$('#popup-min-pas3').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});	
+});
+
 //открытие большого====================================================
 $(document).ready(function($) {
 	$('.registration').click(function(e) {
@@ -264,3 +399,52 @@ $('.button-div-input').autoGrowInput({ minWidth: 40, maxWidth: function(){ retur
 
 
 // ===============================	
+// ====================специальность
+
+
+
+
+$('.rad-btn-act').click(function(){
+	
+		if ($(this).is(':checked')){
+			$('.hide').show();
+		} else {
+			$('.hide').hide();
+		}
+
+
+	
+
+	});  
+$(document).ready(function(){
+	$('.rad-btn-act').change(function() {
+		$(this).parent().prev().find('div.wr-sel').toggleClass('class-none');
+	});
+});
+      
+	// $(document).ready(function(){
+	// 	$(".rad-btn-act").change(function(){
+	// 	  if ($(this).prop('checked')) {
+	// 		$('.hide-out').fadeOut().show();
+	// 		} 
+	// 	  });
+	//   })
+ 
+ 
+
+
+
+
+// ====================/специальность
+ 
+
+// $('.acor-container label:before').click(function() {
+	
+// 	 $('.acor-body').scroll(100);
+	
+// 	});
+	
+$('.acor-scrol').click(function() {
+	$('.acor-scrol').scroll();
+  });
+

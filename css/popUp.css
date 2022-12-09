@@ -15,10 +15,18 @@
 }
 
 #popup-min,
-#popup-max {
+#popup-max,
+#popup-min-pas,
+#popup-min-text,
+#popup-min-pas2,
+#popup-min-pas3
+{
 
     background: rgb(127 127 127 / 77%);
 
+}
+#popup-min-pas{
+    display: none;
 }
 
 .popup-button {
@@ -157,7 +165,24 @@
     /* width: 90%; */
     height: 39px;
 }
+/* ===========================для показа текста и смены пароля================= */
+.popap-active{
+    display: inline;
+}
+#popup-min-text{
+    display: none;
+}
+#popup-min-pas2,
+.class-none,
+.hide
+{
+    display: none;
+}
+#popup-min-pas3{
+    display: inline;
+}
 
+/* ===========================/для показа текста================= */
 
 /* ----------------------всплывающее окно-большое-pers_______________________  */
 .ava-pers{

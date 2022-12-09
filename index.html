@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -373,16 +373,16 @@
                     <div class="wr-popup-form">
                                  <div class="form_radio_btn">
                         <input name="USER_TYPE" class="radio-1" id="radio-1" type="radio" name="radio" value="1"
-                            checked>
+                            checked> 
                         <!--  !!!=== при назначении id поставить в lable for="" -->
-                        <label for="radio-1">Я соискатель</label>
+                         <label for="radio-1">Я соискатель</label>
                     </div>
 
                     <div class="form_radio_btn">
                         <input name="USER_TYPE" class="radio-2" id="radio-2" type="radio" name="radio" value="2">
                         <label for="radio-2">Я работодатель</label>
                     </div>
-                    </div>
+                    </div> 
            
                     <!-- ===================/замена кнопок========================== -->
                     <p>Добро пожаловать!</p>
@@ -391,7 +391,7 @@
                     <input class="popup_inp" type="password" placeholder="Пароль">
                     <button class='red-activ' type="submit">Войти</button>
                     <div class="popup-div-a">
-                        <a class="activ-a3" href="#">Восстановление пароля</a>
+                        <a class="activ-a3 go-inp-pass" href="#">Восстановление пароля</a>
                     </div>
                 </form>
 
@@ -401,6 +401,109 @@
 
     </div>
     <!-- ________________________________/окно___________________________ -->
+    <!-- ----------------------всплывающее окно замена пароля_______________________ -->
+    <div class="popup-iner popup-fade" id="popup-min-pas">
+        <div class="popup-wrapper popup">
+            <div class="colse-popup popup-close"><img src="./img/Vector-x.png" alt=""></div>
+            
+            <div class="pop-form">
+                <form class="popup-form"> 
+            
+           
+                  <p style="padding: 26px 0 42px;">Восстановление пароля</p>
+
+                    <input class="popup_inp" type="email" placeholder="Ваш E-mail" style=" margin: 0 auto;">
+                    
+                    <button class='red-activ' type="submit" style="margin-top: 42px;">Отправить ссылку для восстановления</button>
+                    <div class="popup-div-a">
+                        <a class="activ-a3 go-inp" href="#">Назад ко входу</a>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+    </div> 
+<!-- ==========================замена пороля текст====================== -->
+<div class="popup-iner popup-fade popap-active" id="popup-min-text">
+    <div class="popup-wrapper popup">
+        <div class="colse-popup popup-close"><img src="./img/Vector-x.png" alt=""></div>
+        
+        <div class="pop-form" style="padding: 23px;">
+            <form class="popup-form"> 
+        
+       
+              <p style="padding: 26px 0 42px;">Ваша ссылка на восстановление пароля
+                отправлена на электронную почту
+                <span>
+                    ivanov@mail.ru
+                </span>
+                </p>
+
+         
+            </form>
+
+
+        </div>
+    </div>
+
+</div> 
+
+
+<!-- ==========================/замена пороля текст====================== -->
+<!-- ----------------------всплывающее окно замена пароля 2 инпута_______________________ -->
+<div class="popup-iner popup-fade" id="popup-min-pas2">
+    <div class="popup-wrapper popup">
+        <div class="colse-popup popup-close"><img src="./img/Vector-x.png" alt=""></div>
+        
+        <div class="pop-form">
+            <form class="popup-form"> 
+        
+       
+              <p style="padding: 26px 0 21px;">Восстановление пароля</p>
+
+                <input class="popup_inp" type="password" placeholder="Введите новый пароль" style=" margin: 21px auto;  ">
+                <input class="popup_inp" type="password" placeholder="Повторите пароль" style=" margin: 0 auto;">
+                
+                <button class='red-activ input-popup-min' type="submit" style="margin-top: 42px;">Подтвердить</button>
+             
+            </form>
+
+
+        </div>
+    </div>
+
+</div> 
+<!-- ----------------------/всплывающее окно замена пароля 2 инпута_______________________ -->
+<!-- ----------------------всплывающее окно замена пароля  1 баттон_______________________ -->
+<div class="popup-iner popup-fade" id="popup-min-pas3">
+    <div class="popup-wrapper popup">
+        <div class="colse-popup popup-close"><img src="./img/Vector-x.png" alt=""></div>
+        
+        <div class="pop-form">
+            <form class="popup-form"> 
+        
+       
+              <p style="padding: 26px 25px 21px">Пароль для 
+                <span>
+                     ivanov@mail.ru
+                </span>
+                успешно изменен</p>
+                
+                <button class='red-activ input-popup-min' type="submit" style="margin-top: 42px;">Воити</button>
+             
+            </form>
+
+
+        </div>
+    </div>
+
+</div> 
+<!-- ----------------------/всплывающее окно замена пароля 1 баттон_______________________ -->
+
+    <!-- ________________________________/окно___________________________ -->
+    
     
     <!-- ----------------------всплывающее окно-большое соискатель_______________________ -->
     <div class="popup-iner popup-fade" id="popup-max">

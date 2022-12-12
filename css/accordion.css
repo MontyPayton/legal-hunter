@@ -1,3 +1,4 @@
+/* ==================accor=================== */
 .acor-container{
     width: 171px;
     margin-left: 50px;
@@ -46,11 +47,11 @@ input[name="chacor"] {
 
 .acor-container label:before {
     /* content: '\276F'; */
-    float: right;
+     float: right;
     content: ' \25B6';
-    color: #b1aeae;
+    color: #b1aeae; 
  
-   
+    
 }
 
 

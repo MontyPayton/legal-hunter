@@ -1,5 +1,5 @@
 @import "popUp.css";
-@import "accordion.css";
+/* @import "accordion.css"; */
 @import "activ-class.css";
 
 :root {
@@ -369,9 +369,9 @@ section {
     border-radius: 50%;
 
 }
-.item-top-body{
+/* .item-top-body{
     margin-right: 21px;
-}
+} */
 
 .item-top-body-wrapper {
     margin-bottom: 6px;
@@ -1949,7 +1949,129 @@ line-height: 16px;
 }
 
 /* =========================== */
-.form_radio {
+
+/* рад================= от сюда */
+/* ==================accor=================== */
+.acor-container{
+    width: 171px;
+    margin-left: 50px;
+}
+.acor-container .acor-body {
+    /* width: calc(100% - 40px); */
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+}
+
+.acor-container .acor-body p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+   
+}
+
+.acor-container label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    /* background-color: #337AB7; */
+    display: block;
+    padding: 15px 0 0 0;
+    width: 100%;
+    /* color: #BFE2FF; */
+    box-sizing: border-box;
+    z-index: 100;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+
+/* .acor-container label:hover {
+    color: #FFF;
+} */
+input[name="chacor"] {
+    display: none;
+}
+
+.acor-container label:before {
+    /* content: '\276F'; */
+     float: right;
+    content: ' \25B6';
+    color: #b1aeae; 
+ 
+    
+}
+
+
+.acor-container input:checked+label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+  
+}
+
+.acor-container input:checked+label+.acor-body {
+    height: auto;
+    margin-top: 15px;
+    color: #000;
+    padding: 0;  
+    display: flex;
+    flex-direction: column;  
+}
+
+.acor-container h4 {
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.acor-body p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 153px;
+}
+
+.acor-body span {
+    padding-left: 14px;
+}
+.pretty.p-default.p-round.p-smooth.requirements{
+    margin: 12px 0 ;
+}
+.acor-container label{
+    padding: 0;
+     margin-top: 30px;
+     margin-bottom: 0;
+}
+.pretty{
+    margin: 6px 0;
+}
+.pretty .state label:after, .pretty .state label:before{
+    background-color: white;
+}
+.pretty.p-default .state label:after,
+.pretty .state label:before
+{
+    margin-top: 5px;
+}
+.state.p-primary p{
+    padding-left: 6px;
+}
+.form_radio label[class=lable-radio]{
+    margin-top: 6px;
+    font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+}
+
+/* ===================================рад======================     */
+    
+    .form_radio {
 	margin-bottom: 10px;
 }
 .form_radio input[type=radio] {
@@ -1964,6 +2086,8 @@ line-height: 16px;
 	line-height: 18px;
 	user-select: none;
 }
+
+
 .form_radio label:before {
 	content: "";
 	display: inline-block;
@@ -1977,7 +2101,7 @@ line-height: 16px;
     background: #FFFFFF;
 border: 1px solid #EAEAEA;
 }
- 
+
 /* Checked */
 .form_radio input[type=radio]:checked + label:before {
 	background: #375194;

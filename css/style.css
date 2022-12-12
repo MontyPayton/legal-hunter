@@ -1280,6 +1280,7 @@ td {
 
 .home-applic-item {
     padding: 16px 15px 16px 23px;
+    width: 100%;
 }
 
 .home-applic-item-head {
@@ -1291,6 +1292,7 @@ td {
 .top-summary-app {
     display: flex;
     border: 1px solid #EAEAEA;
+    width: 100%;
 }
 
 .summary-footer-block {
@@ -2117,4 +2119,17 @@ border: 1px solid #EAEAEA;
 /* Disabled */
 .form_radio input[type=radio]:disabled + label:before {
 	filter: grayscale(100%);
+}
+
+textarea{
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #787878;
+width: 100%;
+height: 100%;
+border: none;
+padding: 15px
 }

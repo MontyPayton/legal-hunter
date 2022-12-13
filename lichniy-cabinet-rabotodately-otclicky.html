@@ -62,8 +62,8 @@
                     <div class="item-personal tab-grid">
                         <!-- -----------------------переключение отклики,приглашения--------------- -->
                         <div class="click-item tab-grid">
-                             <div class="responses "><h4>Принятые отклики</h4></div>
-                             <div class="invitations"><h4>Приглашения</h4></div>
+                             <div class="responses tab-big active-div"><h4 id="active-h4">Принятые отклики</h4></div>
+                             <div class="invitations tab-big"><h4 >Приглашения</h4></div>
                         </div>
                        <!-- -----------------------/переключение отклики,приглашения--------------- -->
                         <hr>
@@ -178,10 +178,10 @@
                                              </tr>
                    
                    
-                     </table>
+                     </table >
 
                      <!-- ========================= table2======================= -->
-                     <table >
+                     <table class="non-table-active">
                         <tr>
                            <th class="th-name">Имя</th>
                            <th>Контакты</th>
@@ -196,16 +196,16 @@
                          <td>ivanov@mail.ru</th>
                          <td>Москва</td>
                          <td class="active-green">Принято</td>
-                         <td class="td-active-vacans">Старший помощник судьи</td>
+                         <td class="td-active-vacans" data-index="0"> помощник судьи</td>
                          <td>13.10.2022</td>
-                         <th class="th-svg"><div class="th-svg-div"> </div><a href=""></a></th>
+                         <th class="th-svg"><div class="th-svg-div" > </div><a href=""></a></th>
                       </tr>
                       <tr>
                      <td class="th-name">Иванов Иван Алексеевич</td>
                       <td>ivanov@mail.ru</td>
                       <td>Москва</td>
                       <td class="td-active-red">Отклонено</td>
-                      <td class="td-active-vacans">Старший помощник судьи</td>
+                      <td class="td-active-vacans" data-index="1">Старший помощник судьи</td>
                       <td>13.10.2022</td>
                       <th class="th-svg"><div class="th-svg-div"> </div><a href=""></a></th>
                       </tr>
@@ -300,7 +300,7 @@
 
     
     <!-- ----------------------всплывающее окно-большое_______________________ -->
-    <div class="popup-iner" id="popup-max">
+    <div class="popup-iner popup-max"  data-index="1">
         <div class="popup-wrapper-person popup">
             <div>
             <div class="contact-person">
@@ -379,39 +379,96 @@
                           </table>
         
                      </div>
-                
-
-
             </div>
-
-            <!-- <div class="colse-popup"><img src="./img/Vector-x.png" alt=""></div>
-            <div class="but-block">
-        <button class="popup-button btn-max">Я соискатель</button>
-        <button class="popup-button btn-min">Я работодатель</button>
-        </div>
-        <p>Регистрация работодателя</p>
-        <div class="pop-form">
-            <form class="popup-form" >
-                <input class="popup_inp" type="email" placeholder="Ваш E-mail">
-                <input class="popup_inp" type="text" placeholder="Телефон">
-                <input class="popup_inp" type="text" placeholder="Наименование организации">
-                <input class="popup_inp" type="text" placeholder="Город">
-                <input class="popup_inp" type="password" placeholder="Придумайте пароль">
-                <input class="popup_inp" type="password" placeholder="Повторите пароль">
-                <button type="submit">Зарегистрироваться</button>
-                <div class='popup-input-wrapp'>
-                        <input class="popup-input" type="checkbox" name="" id="">согласен с
-             <a href="#">правилами обработки данных</a>
-                </div>
-            </form> -->
-
-        
-        </div>
-        </div>
+ </div>
     </div>
+            <!-- ----------------------всплывающее окно-большое второе_______________________ -->
+    <div class="popup-iner popup-max"  data-index="0">
+        <div class="popup-wrapper-person popup">
+            <div>
+            <div class="contact-person">
+                <div class="ava-pers">
+
+                </div>
+                <h3>СП-ЮР23</h3>
+                <p>ivanov@mail.ru</p>
+                <p>+79269429201</p>
+                   <div class="person-btn">
+                <button class="red-activ">Принять</button>
+                <button >Отклонить</button>
+            </div>
+            </div>
+            </div>
+         
+            <div class="contact-person-item">
+                <div class="contact-person-item-head">
+                     <h3 class="popup-name-red" >Петров Сергей Мартынович</h3>
+                     <div class="colse-popup-contact">
+                        <img src="./img/Vector-x.png" alt="">
+                    </div>
+                     </div>
+                     <div class='person-item'>
+                        <table class="person-item-table">
+                            <tr>
+                                <th class="person-item-table-one">Вакансия</th>
+                                <td class="person-item-table-one">Старший помощник судьи</td>
+                            </tr>
+                            <tr>
+                                <th>Город</th>
+                                <td>Москва</td>
+                            </tr>
+                            <tr>
+                                <th>Возраст</th>
+                                <td>24 года</td>
+                            </tr>
+                            <tr>
+                                <th>Опыт работы</th>
+                                <td>Нет опыта работы</td>
+                            </tr>
+                            <tr>
+                                <th>Образование</th>
+                                <td>
+                                    <p> Московский государственный юридический университет имени
+                        О. Е. Кутафина</p>
+                                   
+                        <p> 2014-2018 - Судопроизводство, бакалавриат</p>
+                       <p>2018-2020 - Судопроизводство, магистратура</p>
+                        </td>
+                            </tr>
+                            <tr>
+                                <th>Навыки</th>
+                                <td>Пользователь ПК, делопроизводство, грамотная речь, арбитражные
+                        суды, участие в судебных заседаниях, составление исков</td>
+                            </tr>
+                                <th>Знания языков</th>
+                                <td>
+                                    <p>Русский — Родной</p>
+                                    <p>Английский — B1 — Средний</p>
+                                    <p>Китайский — B1 — Средний</p>
+                        </td>
+                            </tr>
+                            <tr>
+                                <th>Успеваемость</th>
+                                <td>Средний балл: 4,3</td>
+                            </tr>
+                            <tr>
+                                <th>Характеристика</th>
+                                <td>Положительная</td>
+                            </tr>
+                            <tr>
+                                <th>Сопроводительное письмо</th>
+                                <td> <a class ="activ-a1"href="">Сопроводительное.docx</a> </td>
+                            </tr>
+                          </table>
+                     </div>
+            </div>
+        </div>
+        </div>
+   
     <!-- ________________________________/окно-большое___________________________ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./js/jquery.auto-grow-input.min.js"></script>
     <script src="./js/add.js"></script>
 </body>
 

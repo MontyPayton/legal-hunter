@@ -120,7 +120,7 @@ color:var(--color-hover-a2)
     }
     .th-svg-div{
         height: 21px;
-        width: 37px;
+        width: 21px;
         background: url("../img/arrow-n.svg");
         background-repeat: no-repeat;
     background-size: contain;
@@ -135,6 +135,7 @@ color:var(--color-hover-a2)
         background: url("../img/arrow.svg");
      
     }
+   
     /* =================вкладки================= */
     .wrapper-sticker div:hover,
     .wrapper-sticker div.active-vacancies:hover

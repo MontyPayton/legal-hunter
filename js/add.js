@@ -230,7 +230,7 @@ $(document).ready(function($) {
 	// Клик по ссылке "Закрыть".
 
 	$('.colse-popup').click(function() {
-		$(this).parents('#popup-max').fadeOut();
+		$(this).parents('.popup-max').fadeOut();
 		return false;
 	});        
  
@@ -238,19 +238,19 @@ $(document).ready(function($) {
 	$(document).keydown(function(e) {
 		if (e.keyCode === 27) {
 			e.stopPropagation();
-			$('#popup-max').fadeOut();
+			$('.popup-max').fadeOut();
 		}
 	});
 	
 // 	Клик по фону, но не по окну.
-	$('#popup-max').click(function(e) {
+	$('.popup-max').click(function(e) {
 		if ($(e.target).closest('.popup').length == 0) {
 			$(this).fadeOut();					
 		}
 	});	
 })
 
-	$('#popup-max').click(function(e) {
+	$('.popup-max').click(function(e) {
 		if ($(e.target).closest('.popup').length == 0) {
 			$(this).fadeOut();					
 		}
@@ -330,9 +330,10 @@ $('.responses').on('click',function(){
 	$('.invitations h4').removeAttr("id");
 	$('.invitations-two h4').removeAttr("id");
 	$('.responses h4').prop('id', 'active-h4');
-	$('table').toggle()
-	$('.clozet').toggle()
+	
 })
+	
+
 $('.invitations').on('click',function(){
 	$('.invitations').addClass("active-div");
 	$('.responses').removeClass("active-div");
@@ -340,8 +341,8 @@ $('.invitations').on('click',function(){
 	$('.invitations h4').prop('id', 'active-h4');
 	$('.responses h4').removeAttr("id");
 	$('.invitations-two h4').removeAttr("id");
-	$('table').toggle()
-	$('.clozet').toggle()
+	
+	
 })
 $('.invitations-two').on('click',function(){
 	$('.invitations-two').addClass("active-div");
@@ -350,32 +351,46 @@ $('.invitations-two').on('click',function(){
 	$('.invitations-two h4').prop('id', 'active-h4');
 	$('.responses h4').removeAttr("id");
 	$('.invitations h4').removeAttr("id");
-	$('table').toggle()
-	$('.clozet').toggle()
+	
+	
 })
 
+$('.invitations.tab-big').on('click',function(){
+	console.log("klick");
+	$('.table-active').fadeIn(10);
+	$('.non-table-active').fadeOut(10);
+})
+$('.responses.tab-big').on('click',function(){
+	
+	$('.non-table-active').fadeIn(10);
+	$('.table-active').fadeOut(10);
+})
 
 // =========================== открытие отклика popup =================
-$(document).ready(function($) {
-	$('.th-svg').click(function() {
-		$('#popup-max').fadeIn();
-		return false;
-	});	
+// // $(document).ready(function($) {
+// // 	$('.th-svg').click(function() {
+// // 		$('#popup-max').fadeIn();
+// // 		return false;
+// // 	});	
 	
-	$('.colse-popup-contact').click(function() {
-		$(this).parents('#popup-max').fadeOut();
-		return false;
-	});		
- 
+// 	$('.colse-popup-contact').click(function() {
+// 		$(this).parents('#popup-max').fadeOut();
+// 		return false;
+// 	});	
+// 	})
 
-// 		$(document).keydown(function(e) {
-// 		if (e.keyCode === 27) {
-// 			e.stopPropagation();
-// 			$('#popup-max').fadeOut();
-// 		}
+	// $(document).ready(function($) {
+	// 	$('.th-svg').click(function() {
+	// 		$('#popup-max').fadeIn();
+	// 		return false;
+	// 	});	
+		
+	// 	$('.colse-popup-contact').click(function() {
+	// 		$(this).parents('#popup-max').fadeOut();
+	// 		return false;
+	// 	});	
+	// 	})
 
-
-	})
 // ======================сортировка ссылкой
 
 var links = [];
@@ -503,4 +518,16 @@ $('.invitations-two').click(function() {
 	$('.chern-vacans').fadeIn(10);
 
   });
+// =====================
 
+  $('.td-active-vacans').click(function(){
+	
+	var _val = $(this).data('index');
+	
+	$('.popup-iner').each(function(){
+	   if (_val === $(this).data('index')){
+		console.log($(this));
+		$(this).fadeIn(10)
+		}
+	});
+  });

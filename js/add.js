@@ -326,7 +326,9 @@ $(".active-li li").each(function(i) {
 $('.responses').on('click',function(){
 	$('.responses').addClass("active-div");
 	$('.invitations').removeClass("active-div");
+	$('.invitations-two').removeClass("active-div");
 	$('.invitations h4').removeAttr("id");
+	$('.invitations-two h4').removeAttr("id");
 	$('.responses h4').prop('id', 'active-h4');
 	$('table').toggle()
 	$('.clozet').toggle()
@@ -334,11 +336,25 @@ $('.responses').on('click',function(){
 $('.invitations').on('click',function(){
 	$('.invitations').addClass("active-div");
 	$('.responses').removeClass("active-div");
+	$('.invitations-two').removeClass("active-div");
 	$('.invitations h4').prop('id', 'active-h4');
 	$('.responses h4').removeAttr("id");
+	$('.invitations-two h4').removeAttr("id");
 	$('table').toggle()
 	$('.clozet').toggle()
 })
+$('.invitations-two').on('click',function(){
+	$('.invitations-two').addClass("active-div");
+	$('.responses').removeClass("active-div");
+	$('.invitations').removeClass("active-div");
+	$('.invitations-two h4').prop('id', 'active-h4');
+	$('.responses h4').removeAttr("id");
+	$('.invitations h4').removeAttr("id");
+	$('table').toggle()
+	$('.clozet').toggle()
+})
+
+
 // =========================== открытие отклика popup =================
 $(document).ready(function($) {
 	$('.th-svg').click(function() {
@@ -446,5 +462,45 @@ $(document).ready(function(){
 	
 $('.acor-scrol').click(function() {
 	$('.acor-scrol').scroll();
+  });
+
+
+
+//    $(function() {
+//      $(".input-file").fileinput('<div class="doc-wrap"><button class="wiht-activ btn-2"><img src="./img/skrep.svg" alt="">Прикрепить устав</button></div>');
+//    });
+
+
+
+$('#review-file-one').on('change', function (e) {
+	$(this).prev('span').html(e.target.files[0].name);
+});
+
+$('#review-file-two').on('change', function (e) {
+	$(this).prev('span').html(e.target.files[0].name);
+});
+
+
+
+//    ==================
+
+$('.invitations-two').click(function() {
+	$('.arch-vacans').fadeIn(10);
+	$('.act-vacans').fadeOut(10);
+	$('.chern-vacans').fadeOut(10);
+
+  });
+
+  $('.responses').click(function() {
+	$('.arch-vacans').fadeOut(10);
+	$('.act-vacans').fadeIn(10);
+	$('.chern-vacans').fadeOut(10);
+
+  });
+  $('.invitations').click(function() {
+	$('.arch-vacans').fadeOut(10);
+	$('.act-vacans').fadeOut(10);
+	$('.chern-vacans').fadeIn(10);
+
   });
 

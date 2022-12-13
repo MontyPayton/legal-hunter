@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div>
+    
         <div class="container">
             <header>
                 <nav class="nav">
@@ -64,8 +64,7 @@
                     <div class="item-personal-vacancies">
                         <div class="h4-vacancies">
                             <h4>Мои вакансии</h4>
-                        </div>
-                       
+                        </div>                      
                         <hr class="hr-vacancies">
                         <div class="select-block-nav-vacancies">
                             <div>
@@ -77,32 +76,47 @@
                             <option value="__">По дате добавления</option>
                         </select>
                         </div>
-                    
                     </div>
                     <div class="select-block">
-                        <p class="select-block-vacans-p">Город:</p>
-                        <select class="js-example-basic"name="_">
+                        <p>Регион:</p>
+                        <div style="max-width: 25vw ;">
+                                <select class="js-example-basic" name="_"  style="width: 200px;" >
                             <option value="__">Москва</option>
-                            <option value="__">Москва</option>
+                            <option value="__">Московская область</option>
                         </select>
+                        </div>
                     </div>
+               
                             </div>
                  
 
                     <a href=""><div class="select-block-btn">
-                        <button class=" btn-w-a wiht-activ">Создать вакансию  +</button>
+                        <button class=" btn-w-a wiht-activ ">Создать вакансию  +</button>
                         </div></a>
+                        <!-- <button class="vacans-del wiht-activ">Удалить вакансию</button> -->
                     </div>
-                    <div class="wrapper-sticker">
-                        <div class="active-vacancies">Активные</div>
-                        <div>Черновики</div>
-                        <div>Архив</div>
+                    <div class="click-item tab-grid">
+                        <div class="responses">
+                            <h4>
+                                Активные
+                            </h4>
+                        </div>
+                        <div class="invitations">
+                            <h4>
+                                Черновики
+                            </h4>
+                            </div>
+                        <div class="invitations-two">
+                            <h4>
+                                Архив
+                            </h4>
+                            </div>
                     </div>
                     <hr class="hr-vacancies">
-
-                    <!-- =================карточка вакансии с кнопками================ -->
-
-               <div class="wrapper-vacanc-person">
+<!-- ===================act-vacans========================= -->
+<!-- =================карточка вакансии с кнопками================ -->
+<div class="act-vacans">
+    <div class="wrapper-vacanc-person">
                 <div class="vacans-person-head">
 <div class="vacans-person-head-name">
     <p class="date">13.10.2022</p>
@@ -131,6 +145,8 @@
                 </div>
                </div>
  <!-- =================/карточка вакансии с кнопками================ -->
+ 
+ <!-- =================карточка вакансии с кнопками================ -->
 
                <div class="wrapper-vacanc-person">
                 <div class="vacans-person-head">
@@ -161,16 +177,79 @@
                 </div>
                </div>
 
-                     <!-- ========================= table2======================= -->
-          
-                  <!-- =========================/ table2======================= -->
-                    </div>
-                    
-             
-                </div>
-                
+
+</div>            
+<!-- =================/карточка вакансии с кнопками================ -->
+<!-- ========================= archiv======================= -->       
+                    <div class="arch-vacans">
+          <div class="wrapper-vacanc-person">
+            <div class="vacans-person-head">
+<div class="vacans-person-head-name">
+<p class="date">13.10.2022</p>
+<a class="activ-a1"href="">Помощник адвоката</a>
+<div class="city">
+<p>Москва</p><div>.</div><p>Можно без опыта работы</p>
+</div>
+</div>
+<div class="vacans-person-head-fee">
+<p>Просмотров: 2352</p>
+<div class="fee">20 000 - 30 000 руб.</div>
+</div>
             </div>
+            <hr class="hr-vacancies">
+            <div class="vacans-person-item">
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Consequuntur assumenda voluptatum sed corporis, expedita 
+ inventore impedit? Aut laboriosam molestias vero autem,
+  quia repellendus quis voluptates omnis reprehenderit est saepe dolorum. </p>
+            </div>
+            <div class="vacans-person-footer">
+<button class='vacans-person-footer-button  red-activ'>Редактировать</button>
+<button class="vacans-del wiht-activ">Удалить вакансию</button>
+            </div>
+           </div>
+
+                 
+                    </div>
+             <!-- =========================/ archiv======================= -->
+              <!-- ========================= chern======================= -->
+              <div class="chern-vacans">
+    <div class="wrapper-vacanc-person">
+      <div class="vacans-person-head">
+<div class="vacans-person-head-name">
+<p class="date">13.10.2022</p>
+<a class="activ-a1"href="">Помощник судьи</a>
+<div class="city">
+<p>Москва</p><div>.</div><p>Можно без опыта работы</p>
+</div>
+
+
+</div>
+<div class="vacans-person-head-fee">
+<p>Просмотров: 2352</p>
+<div class="fee">20 000 - 30 000 руб.</div>
+</div>
+      </div>
+      <hr class="hr-vacancies">
+      <div class="vacans-person-item">
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Consequuntur assumenda voluptatum sed corporis, expedita 
+inventore impedit? Aut laboriosam molestias vero autem,
+quia repellendus quis voluptates omnis reprehenderit est saepe dolorum. </p>
+      </div>
+      <div class="vacans-person-footer">
+<button class='vacans-person-footer-button  red-activ'>Редактировать</button>
+<button class="vacans-del wiht-activ">Удалить вакансию</button>
+      </div>
+     </div>
+
+           
+              </div>      
+        <!-- =========================/ chern======================= -->      
+      </div>
         </div>
+         </div>
+            </div>
         <footer class="emploer-footer vacans">
             <section>
                 <div class="footer-wrapper ">
@@ -200,14 +279,10 @@
                 <div></div>
             </section>
         </footer>
-
-    </div>
-    <!-- ----------------------_______________________ -->
-
-    <!-- ________________________________/окно___________________________ -->
-    <!-- ----------------------всплывающее окно-большое_______________________ -->
-
-    <!-- ________________________________/окно-большое___________________________ -->
+         
+   
+      
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./js/jquery.auto-grow-input.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>

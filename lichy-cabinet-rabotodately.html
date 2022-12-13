@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div>
+   
         <div class="container">
             <header>
                 <nav class="nav">
@@ -67,7 +67,11 @@
                                 <div class="ava"></div>
                                 <div class="ava-item">
                                     <p class="nickname">Московский городской суд</p>
-                                    <p> <a class="activ-a1" href="#">Поменять аватарку</a> </p>
+        
+                                    <label class="custom-file-upload activ-a1">
+                                        <input type="file"/>
+                                        Поменять аватарку
+                                    </label>
                                 </div>
 
                             </div>
@@ -104,24 +108,34 @@
     </div>
 <!-- ======================= /1 инпут 50% ============================= -->
 <!-- ==============================инпут один 100% большой=============================== -->
-<div class="block-input-two">
-    <div class="block-input-two-last input-100 big"><h3>Дополнительная информация</h3><input style="height:90px; margin-bottom: 30px;" type="text" value=""></div>
+<div class="block-input-two text-2">
+    <div class="block-input-two-last input-100 big"><h3>Дополнительная информация</h3><textarea class="text2" name="" id="" cols="30" rows="10"></textarea></div>
     
     </div>
                         
                             <!-- ==============================/инпут один 100%=============================== -->
                       
+                       
                             <div class="doc-wrap">
-                                 <button class="wiht-activ btn-2"><img src="./img/skrep.svg" alt="">Прикрепить выписку из ЕГРЮЛ</button>
-                                 
-                         <a class="activ-a3"href="#">Выписка из ЕГРЮЛ.doc</a><div class="activ-a3">x</div>
-                            </div>
-                        <div class="doc-wrap">
-                            <button class="wiht-activ btn-2"><img src="./img/skrep.svg" alt="">Прикрепить устав</button>
-                         <a class="activ-a3"href="#">Устав.doc</a><div class="activ-a3">x</div>
+                                <label for="review-file-one" class="review-file-label wiht-activ btn-2"><img src="./img/skrep.svg" alt="">Прикрепить выписку из ЕГРЮЛ
+                                   
+                                    <span class="one-span">Документ</span>
+                                    <input type="file" id="review-file-one" accept="doc/*" style="display: none" name="photo">
+                                </label>
+                                
+                                </div>
+
+                         <div class="doc-wrap">
+                        <label for="review-file-two" class="review-file-label wiht-activ btn-2"><img src="./img/skrep.svg" alt="">Прикрепить устав
+                           
+                            <span class="two-span">Документ</span>
+                            <input type="file" id="review-file-two" accept="doc/*" style="display: none" name="photo">
+                        </label>
                         </div>
-                         
+
+
                         </form>
+                       
                         <hr>
                         <button class="red-activ btn-1" type="">Верифицировать аккаунт</button>
                     </div>
@@ -154,11 +168,11 @@
                         <p>Перейти на сайт МГЮА</p>
                     </div>
                 </div>
-                <div></div>
+                
             </section>
         </footer>
 
-    </div>
+    
     <!-- ----------------------_______________________ -->
 
     <!-- ________________________________/окно___________________________ -->
@@ -166,6 +180,9 @@
 
     <!-- ________________________________/окно-большое___________________________ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/jquery.auto-grow-input.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./js/jquery.fileinput.min.js"></script>
     <script src="./js/add.js"></script>
 </body>
 

@@ -2202,3 +2202,7 @@ margin-left: 100px;
 .hide.class-a{
     display: block;
 }
+.slome2{
+    display: flex;
+    flex-direction: column
+}

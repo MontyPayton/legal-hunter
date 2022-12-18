@@ -108,12 +108,14 @@
     </div>                   
 <!-- ==============================/инпут один 100%=============================== -->
 <!-- ===================блок место учебы============--------------- -->
+
+
 <div class="block1" id="nameSel" rebest='yesNo'>
 <!-- ==============================селект один 100% большой=============================== -->
 <div class="block-input-two">
     <div class="block-input-two-last input-100 big">
         <h3>Место учебы</h3>
-        <select class="js-example-basic">
+        <select class="js-example-basic" name="place_edu-0" rebest-1='yesNo-1'>
          <option value="o1">Московский государственный юридический университет имени О. Е. Кутафина</option>
          <option value="o2">2</option>
          <option value="o3">3</option>
@@ -126,7 +128,7 @@
     <div class="block-input-two-last">
         <h3>Специальность</h3>
         <div class="wr-sel" >
-                  <select class="js-example-basic hide-out" id="js1-sel22" >
+                  <select class="js-example-basic hide-out" id="js1-sel22" name="spec_edu-0" >
             <option value="o1">Судопроизводство</option>
             <option value="o2">Судопроизводство</option>
             <option value="o3">3</option>
@@ -134,13 +136,13 @@
           </select>
         
     </div>
-      <input class="hide" type="text" value="" placeholder="Ваша специальность" id='' reb='dod' >
+      <input class="hide" type="text" value="" placeholder="Ваша специальность" id='' reb='dod' name="spec-0">
         </div>
 
     
     <div class="block-input-two-last-child">
         <h3>Уровень образования</h3>
-      <select class="js-example-basic">
+      <select class="js-example-basic" name="lvl_edu-0">
             <option value="o1">Высшее полное</option>
             <option value="o2">2</option>
             <option value="o3">3</option>
@@ -151,7 +153,7 @@
 
     <!-- =================== -->
                             <div class=" pretty p-default  p-smooth requirements" style="margin-top: 22px;">
-                                <input class="rad-btn-act" type="checkbox" id="radioButton">
+                                <input class="rad-btn-act" type="checkbox" id="radioButton" name="no_spec-0" >
                                 <div class="state p-primary">
                                     <label><p style="padding-bottom: 2px;">Моей специальности нет в списке</p></label>
                                 </div>
@@ -163,10 +165,12 @@
 
     <div class="block-input-two-last-child disp-fl" style="margin-left: 0px;">
         <div class="block-period">
-            <h3>Начало учебы</h3><input type="text"value="2018">
+            <h3>Начало учебы</h3>
+            <input type="text"value="2018" name="start_edu-0" >
         </div>
         <div class="block-period two">
-            <h3>Конец учебы</h3><input type="text"value="2022">
+            <h3>Конец учебы</h3>
+            <input type="text"value="2022" name="end_edu-0">
         </div>
         
     </div>
@@ -175,6 +179,8 @@
 <!-- =========================/селект 50% инпут  50%========================== --> 
 </div>
 <div class="block1-duble"></div>
+
+
 
 <!-- ===================/блок место учебы============--------------- -->
 
@@ -189,10 +195,10 @@
     </div>                   
 <!-- ==============================/инпут один 100%=============================== -->
                        <!-- ========================= селект 50% селект 25%========================== -->
- <div class="block-input-two">
+  <!-- <div class="block-input-two">
     <div class="block-input-two-last">
         <h3>Знание языков</h3>
-      <select class="js-example-basic">
+      <select class="js-example-basic"name="lang-0">
             <option value="o1">Русский</option>
             <option value="o2">2</option>
             <option value="o3">3</option>
@@ -201,19 +207,20 @@
     </div>
     <div class="block-input-two-last-child select25">
         <h3 style="opacity: 0%;">1</h3>
-      <select class="js-example-basic js-example-responsive" style="width: 50%">
+      <select class="js-example-basic js-example-responsive" style="width: 50%" name="lvl-0">
             <option value="o1">Родной</option>
             <option value="o2">2</option>
             <option value="o3">3</option>
             <option value="o4">4</option>
           </select>
     </div>
-    </div>
+    </div>  -->
 <!-- =========================/селект 50% селект  25%========================== -->      
  <!-- ========================= селект 50% селект 25%========================== -->
  <div class="block-input-two block-2" id="nameBig" rebest='no' >
     <div class="block-input-two-last">
-      <select class="js-example-basic-v" style="width: 100%">
+        <h3>Знание языков</h3>
+      <select class="js-example-basic-v" style="width: 100%" name="lang-0" rebest='noo'>
             <option value="o1">Русский</option>
             <option value="o2">Английский</option>
             <option value="o3">3</option>
@@ -221,7 +228,8 @@
           </select>
     </div>
     <div class="block-input-two-last-child select25">
-      <select class="js-example-basic-v js-example-responsive-v" style="width: 50%">
+        <h3 style="opacity: 0%;">1</h3>
+      <select class="js-example-basic-v js-example-responsive-v" style="width: 50%" name="lvl-0" rebest='noo2'>
             <option value="o1">Родной</option>
             <option value="o2">2</option>
             <option value="o3">3</option>
@@ -230,7 +238,27 @@
     </div>
     </div>
 <!-- =========================/селект 50% селект  25%========================== -->  
-   
+   <!-- ========================= селект 50% селект 25%========================== -->
+ <div class="block-input-two block-2" id="nameBig" rebest='no' >
+    <div class="block-input-two-last slome">
+      <select class="js-example-basic-v" style="width: 100%" name="lang-1" rebest='noo'>
+            <option value="o1">Русский</option>
+            <option value="o2">Английский</option>
+            <option value="o3">3</option>
+            <option value="o4">4</option>
+          </select>
+    </div>
+    <div class="block-input-two-last-child select25 slome2">
+      <select class="js-example-basic-v js-example-responsive-v" style="width: 50%" name="lvl-1" rebest='noo2'>
+            <option value="o1">Родной</option>
+            <option value="o2">2</option>
+            <option value="o3">3</option>
+            <option value="o4">4</option>
+          </select>
+      
+    </div>
+    </div>
+<!-- =========================/селект 50% селект  25%========================== --> 
 <div class="block2-duble"></div>       
 
                             <div class="wrapp-tell-a bl-2">
@@ -245,8 +273,14 @@
       <!-- =========================инпут двойной 50%========================== -->
       
         <div class="block-input-two block-3" id="name" rebest='yes'>
-    <div class="block-input-two-last"><h3>Пет проект</h3><input type="text" value="Краткое описание"></div>
-    <div class="block-input-two-last-child"><h3 style="opacity: 0%;">Специальность</h3><input type="text" value="Ссылка на проект"></div>
+    <div class="block-input-two-last slome3">
+        <h3>Пет проект</h3>
+        <input type="text" value="Краткое описание" name='project_name-0'rebest='yess'>
+    </div>
+    <div class="block-input-two-last-child slome4">
+        <h3 style="opacity: 0%;">Специальность</h3>
+        <input type="text" value="Ссылка на проект" name="project_url-0"rebest='yess2'>
+    </div>
     </div>
       
       <div class="block3-duble"></div>

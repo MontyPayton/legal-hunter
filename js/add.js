@@ -622,11 +622,21 @@ $(document).ready(function(){
 				$(document).ready(function (){
 					$('.wrapp-tell-a.bl-1').click(function (){
 						var links = $("[rebest='yesNo']").length; 
+						// var links11=$("[rebest-1='yesNo-1']").length
+						// var inpOne =$('[name="place_edu-0"]')
+						// var inpTwo =$('[name="spec_edu-0"]')
+					var clone =	$('#nameSel').clone(true);
+					clone.find('select[name ="place_edu-0"]').attr('name', 'place_edu-' + links)
+					clone.find('select[name="spec_edu-0"]').attr('name', 'spec_edu-' + links)
+					clone.find('input[name ="spec-0"]').attr('name', 'spec-' + links)
+					clone.find('input[name ="no_spec-0"]').attr('name', 'no_spec-' + links)
+					clone.find('select[name="lvl_edu-0"]').attr('name', 'lvl_edu-' + links)
+					clone.find('input[name ="start_edu-0"]').attr('name', 'start_edu-' + links) 
+					clone.find('input[name ="end_edu-0"]').attr('name', 'end_edu-' + links) 
+						clone.attr('id', 'nameSel' + links) 
 						
-						
-						$('#nameSel').clone(true).attr('id', 'nameSel' + links) .appendTo('.block1-duble');
-					   
-							return false;
+						clone.appendTo('.block1-duble');
+	                    
 					  })
 				
 				
@@ -639,15 +649,19 @@ $(document).ready(function(){
 
 				$('.wrapp-tell-a.bl-2').click(function (){
 		
-					var links = $("[rebest='no']").length; 
-					$myClone = $('#nameBig').clone(true).attr('id', 'nameBig' + links)
+					var links = $("[rebest='noo']").length;
+					var links2 = $("[rebest='noo2']").length;
+
+					$myClone = $('[name="lang-0"]').clone(true).attr('name', 'lang-' + links).css('margin-top','30px');
+					$myClone2 = $('[name="lvl-0"]').clone(true).attr('name', 'lvl-' + links2).css('margin-top','30px');
 					
+					$myClone.appendTo('.block-input-two-last.slome');
+					$myClone2.appendTo('.block-input-two-last-child.select25.slome2');
 					
-					$myClone.appendTo('.block2-duble');
-						
-					
-					
-			
+					//  $(".js-example-basic-v").select2()
+			        //  $(".js-example-responsive-v").select2({
+					// 	width: 'resolve'
+					//  })
 			
 					return false;
 					
@@ -661,8 +675,16 @@ $(document).ready(function(){
 	
 		$(document).ready(function (){
 			$('.wrapp-tell-a.bl-3').click(function (){
-				var links = $("[rebest='yes']").length; 
-				$('#name').clone(true, true).attr('id', 'name' + links).appendTo('.block3-duble');
+
+				var links2 = $("[rebest='yess']").length;
+				var links3 = $("[rebest='yess2']").length;
+
+				    $myClone3 = $("[name='project_name-0']").clone(true).attr('name', 'project_name-' + links2).css('margin-top','30px');
+					$myClone4 = $('[name="project_url-0"]').clone(true).attr('name', 'project_url-' + links3).css('margin-top','30px');
+
+					$myClone3.appendTo('.block-input-two-last.slome3');
+					$myClone4.appendTo('.block-input-two-last-child.slome4');
+					
 			
 			  	  return false;
 			  })

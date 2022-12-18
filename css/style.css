@@ -57,7 +57,9 @@ input {
 }
 
 
-button {
+button,
+ .item-personal input[type=button] 
+{
     cursor: pointer;
     height: 43.83px;
     border-radius:6px;
@@ -68,6 +70,10 @@ button {
     font-size: 16px;
     line-height: 18px;
     text-align: center;
+}
+.item-personal input[type=button]{
+    width: 230px;
+    padding-left: 0px;
 }
 
 /* font-family: 'Montserrat', sans-serif;
@@ -1534,9 +1540,13 @@ width: 767px;
 
 /* ======================================= резюме для авторизированного работодателя=============== */
 
-.clozet.off {
+.clozet-otclick {
     display: none;
 }
+.clozet-prigl{
+    display: block;
+}
+
 
 /* ====================================== страница компании ======================================= */
 .compani-item {
@@ -2147,9 +2157,9 @@ border: none;
 padding: 15px
 }
 
-input[type="file"] {
+/* input[type="file"] {
     display: none;
-}
+} */
 .custom-file-upload {
     display: inline-block;
     padding: 6px 12px;
@@ -2188,4 +2198,7 @@ margin-left: 100px;
 .chern-vacans
 {
     display: none;
+}
+.hide.class-a{
+    display: block;
 }

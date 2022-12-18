@@ -355,8 +355,19 @@ $('.invitations-two').on('click',function(){
 	
 })
 
+// -----------------
+$('.invitations.otklik').on('click', function () {
+    $('.clozet-prigl').fadeIn(1)
+	$('.clozet-otclick').fadeOut(1)
+})	
+$('.responses.otklik').on('click', function () {
+    $('.clozet-prigl').fadeOut(1)
+	$('.clozet-otclick').fadeIn(1)
+})	
+
+
 $('.invitations.tab-big').on('click',function(){
-	console.log("klick");
+	
 	$('.table-active').fadeIn(10);
 	$('.non-table-active').fadeOut(10);
 })
@@ -373,11 +384,11 @@ $('.responses.tab-big').on('click',function(){
 // // 		return false;
 // // 	});	
 	
-// 	$('.colse-popup-contact').click(function() {
-// 		$(this).parents('#popup-max').fadeOut();
-// 		return false;
-// 	});	
-// 	})
+	// $('.colse-popup-contact').click(function() {
+	// 	$(this).parents('#popup-max').fadeOut();
+	// 	return false;
+	// });	
+	// })
 
 	// $(document).ready(function($) {
 	// 	$('.th-svg').click(function() {
@@ -393,27 +404,106 @@ $('.responses.tab-big').on('click',function(){
 
 // ======================сортировка ссылкой
 
-var links = [];
-  links['tests'] = '?sort=show_counter&method=asc';
-  links['tests2'] = '?sort=date_active_from&method=asc'
+// var links = [];
+//   links['tests'] = '?sort=show_counter&method=asc';
+//   links['tests2'] = '?sort=date_active_from&method=asc';
 	
-  $(".content-block").each(function() {
-    let more = $(this).find(".show-more");
-    let hide = $(this).find(".hide-content");
-    hide.hide();
-    more.click(function() {
-        hide.slideToggle();
-        more.text(more.text() == "Скрыть" ? "Показать еще" : "Скрыть");
-    });
-});
-// ===========================================celect============
+//   $(".content-block").each(function() {
+//     let more = $(this).find(".show-more");
+//     let hide = $(this).find(".hide-content");
+//     hide.hide();
+//     more.click(function() {
+//         hide.slideToggle();
+//         more.text(more.text() == "Скрыть" ? "Показать еще" : "Скрыть");
+//     });
+// });
+
+// ======================сортировка ссылкой
+
+// var links = [];
+//   links['tests'] = '?sort=show_counter&method=asc';
+//   links['tests2'] = '?sort=date_active_from&method=asc'
+	
+//   $(".content-block").each(function() {
+//     let more = $(this).find(".show-more");
+//     let hide = $(this).find(".hide-content");
+//     hide.hide();
+//     more.click(function() {
+//         hide.slideToggle();
+//         more.text(more.text() == "Скрыть" ? "Показать еще" : "Скрыть");
+//     });
+// });
+
+// ===================аня======================
+// ===========================================
+function insertParam(key, value) {
+    key = encodeURIComponent(key);
+    value = encodeURIComponent(value);image.png
+
+    // kvp looks like ['key1=value1', 'key2=value2', ...]
+    var kvp = document.location.search.substr(1).split('&');
+    let i=0;
+
+    for(; i<kvp.length; i++){
+        if (kvp[i].startsWith(key + '=')) {
+            let pair = kvp[i].split('=');
+            pair[1] = value;
+            kvp[i] = pair.join('=');
+            break;
+        }
+    }
+
+    if(i >= kvp.length){
+        kvp[kvp.length] = [key,value].join('=');
+    }
+
+    // can return this or...
+    let params = kvp.join('&');
+
+    // reload page with new params
+    document.location.search = params;
+}
+
 $(document).ready(function() {
-    $('.js-example-basic').select2();
-	$(".js-example-responsive").select2({
-    width: 'resolve' 
+	let divSelect =  $('.js-example-basic.select');
+	 
+    divSelect.change(function() {
+
+		 let paramSort = $(this.options[this.selectedIndex]).attr('data-param');
+		let paramSort1 = $(this.options[this.selectedIndex]).attr('data-param1');
+		
+		let paramVal = $(this.options[this.selectedIndex]).attr('data-value');
+		let paramVal1 = $(this.options[this.selectedIndex]).attr('data-value1');
+
+
+
+
+			insertParam(paramSort, paramVal);
+			insertParam(paramSort1, paramVal1);
+	  });
+	 
 });
 
-});
+// =======================/аня======================
+// ==================================================
+
+//  $('.js-example-basic.select.region').change(function() {
+// 		var selUrl2 = this.options[this.selectedIndex].value;
+// 			window.location.href = selUrl2
+// 		  });
+
+// onchange="window.location.href = this.options[this.selectedIndex].value"
+
+// ===========================================celect============
+// $(document).ready(function() {
+//     $('.js-example-basic').select2();
+	
+// 	$(".js-example-responsive").select2({
+//     width: 'resolve'
+	
+// });
+
+// });
 
 
 
@@ -430,44 +520,7 @@ $('.button-div-input').autoGrowInput({ minWidth: 40, maxWidth: function(){ retur
 
 
 // ===============================	
-// ====================специальность
 
-
-
-
-$('.rad-btn-act').click(function(){
-	
-		if ($(this).is(':checked')){
-			$('.hide').show();
-		} else {
-			$('.hide').hide();
-		}
-
-
-	
-
-	});  
-$(document).ready(function(){
-	$('.rad-btn-act').change(function() {
-		$(this).parent().prev().find('div.wr-sel').toggleClass('class-none');
-	});
-});
-      
-	// $(document).ready(function(){
-	// 	$(".rad-btn-act").change(function(){
-	// 	  if ($(this).prop('checked')) {
-	// 		$('.hide-out').fadeOut().show();
-	// 		} 
-	// 	  });
-	//   })
- 
- 
-
-
-
-
-// ====================/специальность
- 
 
 // $('.acor-container label:before').click(function() {
 	
@@ -531,3 +584,95 @@ $('.invitations-two').click(function() {
 		}
 	});
   });
+  
+  	$('.colse-popup-contact').click(function() {
+		$(this).parents('.popup-max').fadeOut();
+		return false;
+	});	
+
+
+// =================// ====================специальность
+
+$('.rad-btn-act').click(function(){
+	
+		// if ($(this).is(':checked')){
+		// 	$('.hide').show();
+		// } else {
+		// 	$('.hide').hide();
+		// }
+		
+		
+
+
+		 });  
+
+
+
+$(document).ready(function(){
+	$('.rad-btn-act').change(function() {
+		$(this).parent().prev().find('div.wr-sel').toggleClass('class-none');
+		$(this).parent().prev().find('.hide').toggleClass('class-a');
+	});
+});
+      
+// ====================/специальность
+//  =+block=============
+
+			  
+				$(document).ready(function (){
+					$('.wrapp-tell-a.bl-1').click(function (){
+						var links = $("[rebest='yesNo']").length; 
+						
+						
+						$('#nameSel').clone(true).attr('id', 'nameSel' + links) .appendTo('.block1-duble');
+					   
+							return false;
+					  })
+				
+				
+				
+					})		
+
+
+			$(document).ready(function (){
+				
+
+				$('.wrapp-tell-a.bl-2').click(function (){
+		
+					var links = $("[rebest='no']").length; 
+					$myClone = $('#nameBig').clone(true).attr('id', 'nameBig' + links)
+					
+					
+					$myClone.appendTo('.block2-duble');
+						
+					
+					
+			
+			
+					return false;
+					
+				});
+					
+
+				  })
+
+
+
+	
+		$(document).ready(function (){
+			$('.wrapp-tell-a.bl-3').click(function (){
+				var links = $("[rebest='yes']").length; 
+				$('#name').clone(true, true).attr('id', 'name' + links).appendTo('.block3-duble');
+			
+			  	  return false;
+			  })
+		
+			})	
+			
+			
+
+
+
+
+	
+	
